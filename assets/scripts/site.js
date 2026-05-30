@@ -1,10 +1,5 @@
 const root = document.documentElement;
 const cat = document.querySelector('[data-cat]');
-const catFrames = [
-  './assets/images/cat-walk-0.png',
-  './assets/images/cat-walk-4.png',
-  './assets/images/cat-jump-4.png',
-];
 
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 let ticking = false;
@@ -18,12 +13,8 @@ function updateMotion() {
   root.style.setProperty('--motion-y', `${y}px`);
   root.style.setProperty('--motion-x', `${x}px`);
 
-  if (cat && catFrames.length > 0) {
-    const frameIndex = Math.min(catFrames.length - 1, Math.floor(progress * catFrames.length * 3) % catFrames.length);
-    const nextSrc = catFrames[frameIndex];
-    if (!cat.src.endsWith(nextSrc.replace('./', ''))) {
-      cat.src = nextSrc;
-    }
+  if (cat) {
+    cat.style.rotate = `${Math.round(Math.sin(progress * Math.PI * 3) * 5)}deg`;
   }
 
   ticking = false;

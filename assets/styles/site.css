@@ -427,12 +427,11 @@ p {
 
 .scroll-cat {
   bottom: 48px;
-  height: 96px;
-  image-rendering: pixelated;
+  height: auto;
   position: absolute;
   right: 30%;
   transform: translate(var(--motion-x), calc(var(--motion-y) * 0.22));
-  width: 96px;
+  width: 104px;
   z-index: 5;
 }
 
@@ -635,11 +634,10 @@ p {
 
 .closing-cat {
   bottom: 70px;
-  height: 120px;
-  image-rendering: pixelated;
+  height: auto;
   position: absolute;
   right: max(24px, calc((100vw - var(--content)) / 2));
-  width: 120px;
+  width: 132px;
 }
 
 .reveal.is-visible {
@@ -737,9 +735,8 @@ p {
 
   .scroll-cat {
     bottom: 16px;
-    height: 72px;
     right: 22%;
-    width: 72px;
+    width: 82px;
   }
 
   .alarm-item strong {
