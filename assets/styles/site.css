@@ -10,6 +10,17 @@
   --content: 1120px;
   --motion-y: 0px;
   --motion-x: 0px;
+  --hero-fast-y: 0px;
+  --hero-slow-y: 0px;
+  --hero-drift-x: 0px;
+  --hero-drift-x-neg: 0px;
+  --pointer-main-x: 0px;
+  --pointer-main-y: 0px;
+  --pointer-side-x: 0px;
+  --pointer-side-y: 0px;
+  --pointer-soft-x: 0px;
+  --pointer-soft-x-neg: 0px;
+  --pointer-soft-y: 0px;
 }
 
 * {
@@ -255,6 +266,7 @@ p {
 .hero-stage {
   min-height: 620px;
   position: relative;
+  perspective: 1000px;
 }
 
 .color-rail {
@@ -268,14 +280,16 @@ p {
   background: var(--red);
   right: 8%;
   top: 6%;
-  transform: rotate(12deg) translateY(calc(var(--motion-y) * -0.25));
+  transform: translate(var(--pointer-soft-x), calc(var(--hero-slow-y) - var(--pointer-soft-y))) rotate(12deg);
+  transition: transform 160ms ease-out;
 }
 
 .rail-blue {
   background: var(--blue);
   left: 12%;
   top: 48%;
-  transform: rotate(-18deg) translateY(calc(var(--motion-y) * 0.15));
+  transform: translate(var(--pointer-soft-x-neg), calc(var(--hero-fast-y) + var(--pointer-soft-y))) rotate(-18deg);
+  transition: transform 160ms ease-out;
 }
 
 .app-icon-tile {
@@ -286,7 +300,8 @@ p {
   object-fit: cover;
   position: absolute;
   top: 42px;
-  transform: rotate(-8deg) translateY(calc(var(--motion-y) * 0.1));
+  transform: translate(var(--pointer-side-x), var(--pointer-side-y)) rotate(-8deg);
+  transition: transform 160ms ease-out;
   width: 118px;
   z-index: 3;
 }
@@ -307,7 +322,10 @@ p {
   height: 470px;
   left: 18%;
   top: 54px;
-  transform: rotate(-3deg) translateY(calc(var(--motion-y) * -0.08));
+  transform:
+    translate(calc(var(--hero-drift-x) + var(--pointer-main-x)), calc(var(--hero-slow-y) + var(--pointer-main-y)))
+    rotate(-3deg);
+  transition: transform 160ms ease-out;
   width: 250px;
   z-index: 4;
 }
@@ -316,7 +334,10 @@ p {
   height: 380px;
   right: 6%;
   top: 170px;
-  transform: rotate(5deg) translateY(calc(var(--motion-y) * 0.1));
+  transform:
+    translate(calc(var(--hero-drift-x-neg) + var(--pointer-side-x)), calc(var(--hero-fast-y) + var(--pointer-side-y)))
+    rotate(5deg);
+  transition: transform 160ms ease-out;
   width: 220px;
   z-index: 2;
 }
@@ -430,7 +451,8 @@ p {
   height: auto;
   position: absolute;
   right: 30%;
-  transform: translate(var(--motion-x), calc(var(--motion-y) * 0.22));
+  transform: translate(calc(var(--motion-x) + var(--pointer-main-x)), calc(var(--hero-fast-y) + var(--pointer-main-y)));
+  transition: transform 160ms ease-out;
   width: 104px;
   z-index: 5;
 }
