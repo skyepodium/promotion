@@ -284,6 +284,8 @@ p {
   grid-template-columns: minmax(0, 0.9fr) minmax(360px, 1.1fr);
   min-height: calc(100vh - 64px);
   overflow: hidden;
+  padding-left: max(18px, calc((100% - var(--content)) / 2));
+  padding-right: max(18px, calc((100% - var(--content)) / 2));
 }
 
 .hero-copy {
