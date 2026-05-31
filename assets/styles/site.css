@@ -95,6 +95,11 @@ a {
   opacity: 1;
 }
 
+.nav-links a[aria-current="page"] {
+  font-size: 18px;
+  font-weight: 950;
+}
+
 .language-switcher {
   flex-shrink: 0;
 }
@@ -111,7 +116,7 @@ a {
   border: 2px solid var(--black);
   box-shadow: 3px 3px 0 var(--black);
   display: grid;
-  grid-template-columns: repeat(5, 48px);
+  grid-template-columns: repeat(8, 44px);
   overflow: hidden;
 }
 
@@ -179,6 +184,10 @@ h1 {
   font-size: 76px;
   line-height: 0.92;
   margin-bottom: 22px;
+}
+
+.kitsnyang-page .hero h1 {
+  font-size: clamp(84px, 7vw, 112px);
 }
 
 h2 {
@@ -747,6 +756,10 @@ p {
     font-size: 58px;
   }
 
+  .kitsnyang-page .hero h1 {
+    font-size: 68px;
+  }
+
   h2 {
     font-size: 38px;
   }
@@ -785,19 +798,22 @@ p {
 
 @media (max-width: 560px) {
   .site-header {
-    gap: 10px;
-    height: 58px;
-    justify-content: flex-start;
-    padding: 0 12px;
+    display: grid;
+    gap: 10px 12px;
+    grid-template-columns: auto 1fr;
+    height: auto;
+    justify-content: stretch;
+    min-height: 58px;
+    padding: 10px 12px 12px;
   }
 
   .header-tools {
-    gap: 10px;
-    margin-left: 8px;
+    display: contents;
   }
 
   .nav-links {
-    display: none;
+    display: flex;
+    justify-self: end;
   }
 
   .brand-link,
@@ -805,8 +821,18 @@ p {
     font-size: 13px;
   }
 
+  .nav-links a[aria-current="page"] {
+    font-size: 18px;
+  }
+
+  .language-switcher {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+
   .language-menu {
-    grid-template-columns: repeat(5, 40px);
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    width: 100%;
   }
 
   .language-menu button {
@@ -820,6 +846,10 @@ p {
 
   h1 {
     font-size: 48px;
+  }
+
+  .kitsnyang-page .hero h1 {
+    font-size: clamp(52px, 14vw, 58px);
   }
 
   h2 {
