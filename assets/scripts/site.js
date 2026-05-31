@@ -44,8 +44,8 @@ const TRANSLATIONS = {
     'kitsnyang.alarm.weekdays': '평일',
     'kitsnyang.alarm.weekend': '주말',
     'kitsnyang.sound.label': '알림음',
-    'kitsnyang.sound.featured': '오늘이 켜져',
-    'kitsnyang.sound.caption': '띵띵, 눈을 떠',
+    'kitsnyang.sound.featured': '거제도의 바람',
+    'kitsnyang.sound.caption': '푸른바다의 냄새',
     'kitsnyang.statement.eyebrow': '소음 없이',
     'kitsnyang.statement.title': '필요한 것만 남겼습니다.',
     'kitsnyang.statement.free': '무료',
@@ -62,17 +62,44 @@ const TRANSLATIONS = {
     'kitsnyang.screen.time.body': '휠은 가볍고 정확하게.',
     'kitsnyang.screen.sound.title': '알림음',
     'kitsnyang.sound.wizard': '마법사의 새벽',
+    'kitsnyang.sound.orum': '오름바람 올라라',
+    'kitsnyang.sound.orum.poem': '제주 오름길을 따라,\n걱정도 바람처럼 가벼워진다.',
+    'kitsnyang.sound.orum.highlight': '오름길',
     'kitsnyang.sound.today': '오늘이 켜져',
+    'kitsnyang.sound.today.poem': '띵띵, 눈을 떠\n오늘이 널 기다려',
+    'kitsnyang.sound.today.highlight': '눈을 떠',
+    'kitsnyang.sound.jeju': '제주 귤톡톡',
+    'kitsnyang.sound.jeju.poem': '노란 햇살이 톡 터지고,\n기분까지 새콤달콤해진다.',
+    'kitsnyang.sound.jeju.highlight': '톡',
+    'kitsnyang.sound.stayBlue': '네온의 바다로',
+    'kitsnyang.sound.stayBlue.poem': '네온의 물결 속에,\n푸른 여운이 아직 머문다.',
+    'kitsnyang.sound.stayBlue.highlight': '푸른 여운',
     'kitsnyang.sound.dawn': '새벽의 서곡',
     'kitsnyang.screen.dismiss.title': '알람 해제',
     'kitsnyang.screen.dismiss.action': '끄기',
     'kitsnyang.screen.dismiss.body': '눈 뜨면 바로 알 수 있게.',
     'kitsnyang.sounds.eyebrow': '알림음',
     'kitsnyang.sounds.title': '기분마다 다른 아침.',
-    'kitsnyang.sounds.aria': '대표 알림음',
+    'kitsnyang.sounds.body': '앱의 첫 순서대로, 지금 바로 짧게 들어보세요.',
+    'kitsnyang.sounds.aria': '대표 알림음 재생 플레이어',
     'kitsnyang.sound.paradise': '파라파라다이스',
+    'kitsnyang.sound.paradise.poem': '생각은 잠시 내려놓고,\n파라파라나 춰야겠다.',
+    'kitsnyang.sound.paradise.highlight': '파라파라',
     'kitsnyang.sound.geoje': '거제도의 바람',
+    'kitsnyang.sound.geoje.poem': '창문틈으로 번진,\n푸른바다의 냄새',
+    'kitsnyang.sound.geoje.highlight': '푸른바다',
+    'kitsnyang.sound.ventanas': '빛나는 바다의 창',
+    'kitsnyang.sound.ventanas.poem': '바다 위 별처럼 빛나는 창,\n도시는 천천히 춤을 시작한다.',
+    'kitsnyang.sound.ventanas.highlight': '빛나는 창',
     'kitsnyang.sound.infinite': '무한의 회랑',
+    'kitsnyang.player.eyebrow': '지금 미리듣기',
+    'kitsnyang.player.ready': '트랙을 눌러 재생하세요.',
+    'kitsnyang.player.playing': '재생 중',
+    'kitsnyang.player.paused': '일시정지됨',
+    'kitsnyang.player.ended': '다시 들으려면 재생을 누르세요.',
+    'kitsnyang.player.play': '재생',
+    'kitsnyang.player.pause': '일시정지',
+    'kitsnyang.player.error': '이 트랙을 재생할 수 없습니다.',
     'kitsnyang.closing.eyebrow': '부드럽게 일어나기',
     'kitsnyang.closing.title': '일어나는 일도<br />조금은 귀여울 수 있게.',
     'kitsnyang.closing.body': '키츠냥은 무료이고, 광고가 없고, 아침을 위한 소리를 고릅니다.',
@@ -118,8 +145,8 @@ const TRANSLATIONS = {
     'kitsnyang.alarm.weekdays': 'Weekdays',
     'kitsnyang.alarm.weekend': 'Weekend',
     'kitsnyang.sound.label': 'Alarm sound',
-    'kitsnyang.sound.featured': 'Today Lights Up',
-    'kitsnyang.sound.caption': 'Ding ding, wake up',
+    'kitsnyang.sound.featured': 'Geoje Sea Breeze',
+    'kitsnyang.sound.caption': 'Blue salt breeze',
     'kitsnyang.statement.eyebrow': 'No noise',
     'kitsnyang.statement.title': 'Only what you need.',
     'kitsnyang.statement.free': 'Free',
@@ -136,17 +163,44 @@ const TRANSLATIONS = {
     'kitsnyang.screen.time.body': 'The wheel stays light and precise.',
     'kitsnyang.screen.sound.title': 'Alarm sounds',
     'kitsnyang.sound.wizard': 'Spellbreak Dawn',
+    'kitsnyang.sound.orum': 'Orum Breeze, Rise Up',
+    'kitsnyang.sound.orum.poem': 'Along a Jeju orum trail,\nworries lift light on the wind.',
+    'kitsnyang.sound.orum.highlight': 'orum',
     'kitsnyang.sound.today': 'Today Lights Up',
+    'kitsnyang.sound.today.poem': 'Ding ding. Eyes open.\nThe day is already waiting.',
+    'kitsnyang.sound.today.highlight': 'Eyes open',
+    'kitsnyang.sound.jeju': 'Jeju Tangerine Tok Tok',
+    'kitsnyang.sound.jeju.poem': 'Golden sunlight pops open,\nand the whole mood turns sweet-tart.',
+    'kitsnyang.sound.jeju.highlight': 'pops',
+    'kitsnyang.sound.stayBlue': 'Into the Neon Sea',
+    'kitsnyang.sound.stayBlue.poem': 'Even as you melt into neon,\nthe blue afterglow stays.',
+    'kitsnyang.sound.stayBlue.highlight': 'blue afterglow',
     'kitsnyang.sound.dawn': 'Dawn Overture',
     'kitsnyang.screen.dismiss.title': 'Dismiss alarm',
     'kitsnyang.screen.dismiss.action': 'Dismiss',
     'kitsnyang.screen.dismiss.body': 'Clear at a glance when you wake.',
     'kitsnyang.sounds.eyebrow': 'Alarm sounds',
     'kitsnyang.sounds.title': 'A different morning for each mood.',
-    'kitsnyang.sounds.aria': 'Featured alarm sounds',
+    'kitsnyang.sounds.body': 'Preview the first tracks in the same order as the app.',
+    'kitsnyang.sounds.aria': 'Featured alarm sound player',
     'kitsnyang.sound.paradise': 'Paraparadise',
+    'kitsnyang.sound.paradise.poem': 'Set the thoughts down for a minute.\nTime to para para.',
+    'kitsnyang.sound.paradise.highlight': 'para para',
     'kitsnyang.sound.geoje': 'Geoje Sea Breeze',
+    'kitsnyang.sound.geoje.poem': 'A blue salt breeze\nslips through the window.',
+    'kitsnyang.sound.geoje.highlight': 'blue salt',
+    'kitsnyang.sound.ventanas': 'Bright Sea Windows',
+    'kitsnyang.sound.ventanas.poem': 'Windows shine like stars over the sea,\nand the city lights begin to dance.',
+    'kitsnyang.sound.ventanas.highlight': 'stars over the sea',
     'kitsnyang.sound.infinite': 'Endless Corridor',
+    'kitsnyang.player.eyebrow': 'Now previewing',
+    'kitsnyang.player.ready': 'Tap a track to play.',
+    'kitsnyang.player.playing': 'Playing',
+    'kitsnyang.player.paused': 'Paused',
+    'kitsnyang.player.ended': 'Press play to hear it again.',
+    'kitsnyang.player.play': 'Play',
+    'kitsnyang.player.pause': 'Pause',
+    'kitsnyang.player.error': 'This track cannot be played.',
     'kitsnyang.closing.eyebrow': 'Wake softly',
     'kitsnyang.closing.title': 'Even waking up<br />can be a little cute.',
     'kitsnyang.closing.body': '키츠냥 is free, has no ads, and lets you choose sounds made for morning.',
@@ -192,8 +246,8 @@ const TRANSLATIONS = {
     'kitsnyang.alarm.weekdays': '平日',
     'kitsnyang.alarm.weekend': '週末',
     'kitsnyang.sound.label': '通知音',
-    'kitsnyang.sound.featured': '今日が灯る',
-    'kitsnyang.sound.caption': 'ディンディン、目を覚まして',
+    'kitsnyang.sound.featured': '巨済の潮風',
+    'kitsnyang.sound.caption': '青い海の匂い',
     'kitsnyang.statement.eyebrow': 'ノイズなし',
     'kitsnyang.statement.title': '必要なものだけ残しました。',
     'kitsnyang.statement.free': '無料',
@@ -210,17 +264,44 @@ const TRANSLATIONS = {
     'kitsnyang.screen.time.body': 'ホイールは軽く、正確に。',
     'kitsnyang.screen.sound.title': '通知音',
     'kitsnyang.sound.wizard': '魔法使いの夜明け',
+    'kitsnyang.sound.orum': 'オルム風よ上がれ',
+    'kitsnyang.sound.orum.poem': '済州のオルム道を歩けば、\n悩みも風みたいに軽くなる。',
+    'kitsnyang.sound.orum.highlight': 'オルム道',
     'kitsnyang.sound.today': '今日が灯る',
+    'kitsnyang.sound.today.poem': 'リンリン、目を開けて。\n今日がもう君を待っている。',
+    'kitsnyang.sound.today.highlight': '目を開けて',
+    'kitsnyang.sound.jeju': '済州みかんトクトク',
+    'kitsnyang.sound.jeju.poem': '黄色い陽ざしがトクッとはじけて、\n気分まで甘酸っぱくなる。',
+    'kitsnyang.sound.jeju.highlight': 'トクッ',
+    'kitsnyang.sound.stayBlue': 'ネオンの海へ',
+    'kitsnyang.sound.stayBlue.poem': 'ネオンの海に溶けても、\n青い余韻だけはまだ消えない。',
+    'kitsnyang.sound.stayBlue.highlight': '青い余韻',
     'kitsnyang.sound.dawn': '夜明けの序曲',
     'kitsnyang.screen.dismiss.title': 'アラーム解除',
     'kitsnyang.screen.dismiss.action': '解除',
     'kitsnyang.screen.dismiss.body': '目覚めたらすぐ分かるように。',
     'kitsnyang.sounds.eyebrow': '通知音',
     'kitsnyang.sounds.title': '気分に合わせて朝を変える。',
-    'kitsnyang.sounds.aria': '代表的な通知音',
+    'kitsnyang.sounds.body': 'アプリと同じ先頭順で、短く試聴できます。',
+    'kitsnyang.sounds.aria': '代表的な通知音プレイヤー',
     'kitsnyang.sound.paradise': 'パラパラダイス',
+    'kitsnyang.sound.paradise.poem': '考えごとはいったん置いて、\n今はパラパラを踊ろう。',
+    'kitsnyang.sound.paradise.highlight': 'パラパラ',
     'kitsnyang.sound.geoje': '巨済の潮風',
+    'kitsnyang.sound.geoje.poem': '窓の隙間から、\n青い海の匂いがすべり込む。',
+    'kitsnyang.sound.geoje.highlight': '青い海',
+    'kitsnyang.sound.ventanas': 'きらめく海の窓',
+    'kitsnyang.sound.ventanas.poem': '海の上の星みたいに窓が光り、\n街の灯りがゆっくり踊りはじめる。',
+    'kitsnyang.sound.ventanas.highlight': '窓が光り',
     'kitsnyang.sound.infinite': '無限回廊',
+    'kitsnyang.player.eyebrow': '今の試聴',
+    'kitsnyang.player.ready': 'トラックを押すと再生します。',
+    'kitsnyang.player.playing': '再生中',
+    'kitsnyang.player.paused': '一時停止中',
+    'kitsnyang.player.ended': 'もう一度聴くには再生を押してください。',
+    'kitsnyang.player.play': '再生',
+    'kitsnyang.player.pause': '一時停止',
+    'kitsnyang.player.error': 'このトラックを再生できません。',
     'kitsnyang.closing.eyebrow': 'やさしく起きる',
     'kitsnyang.closing.title': '起きることも<br />少しだけかわいく。',
     'kitsnyang.closing.body': '키츠냥は無料で、広告がなく、朝のための音を選べます。',
@@ -266,8 +347,8 @@ const TRANSLATIONS = {
     'kitsnyang.alarm.weekdays': '工作日',
     'kitsnyang.alarm.weekend': '周末',
     'kitsnyang.sound.label': '闹钟音',
-    'kitsnyang.sound.featured': '今天亮了',
-    'kitsnyang.sound.caption': '叮叮，睁开眼',
+    'kitsnyang.sound.featured': '巨济海风',
+    'kitsnyang.sound.caption': '蓝色海风',
     'kitsnyang.statement.eyebrow': '没有噪音',
     'kitsnyang.statement.title': '只留下需要的东西。',
     'kitsnyang.statement.free': '免费',
@@ -284,17 +365,44 @@ const TRANSLATIONS = {
     'kitsnyang.screen.time.body': '滚轮轻巧又准确。',
     'kitsnyang.screen.sound.title': '闹钟音',
     'kitsnyang.sound.wizard': '破咒黎明',
+    'kitsnyang.sound.orum': '小丘风，起来吧',
+    'kitsnyang.sound.orum.poem': '沿着济州小丘路走，\n烦恼也像风一样变轻。',
+    'kitsnyang.sound.orum.highlight': '小丘路',
     'kitsnyang.sound.today': '今天亮了',
+    'kitsnyang.sound.today.poem': '叮叮，睁开眼。\n今天已经在等你。',
+    'kitsnyang.sound.today.highlight': '睁开眼',
+    'kitsnyang.sound.jeju': '济州橘子啵啵',
+    'kitsnyang.sound.jeju.poem': '黄色阳光啵地绽开，\n心情也变得酸甜。',
+    'kitsnyang.sound.jeju.highlight': '啵',
+    'kitsnyang.sound.stayBlue': '驶向霓虹之海',
+    'kitsnyang.sound.stayBlue.poem': '即使融进霓虹之海，\n蓝色余韵仍没有散去。',
+    'kitsnyang.sound.stayBlue.highlight': '蓝色余韵',
     'kitsnyang.sound.dawn': '黎明序曲',
     'kitsnyang.screen.dismiss.title': '关闭闹钟',
     'kitsnyang.screen.dismiss.action': '关闭',
     'kitsnyang.screen.dismiss.body': '睁开眼就能一眼看懂。',
     'kitsnyang.sounds.eyebrow': '闹钟音',
     'kitsnyang.sounds.title': '每种心情都有不同早晨。',
-    'kitsnyang.sounds.aria': '代表闹钟音',
+    'kitsnyang.sounds.body': '按照应用中的前几首顺序，直接短暂试听。',
+    'kitsnyang.sounds.aria': '代表闹钟音播放器',
     'kitsnyang.sound.paradise': 'Paraparadise',
+    'kitsnyang.sound.paradise.poem': '先把脑袋放空，\n现在只管跳 ParaPara。',
+    'kitsnyang.sound.paradise.highlight': 'ParaPara',
     'kitsnyang.sound.geoje': '巨济海风',
+    'kitsnyang.sound.geoje.poem': '蓝色海风，\n从窗缝悄悄溜进来。',
+    'kitsnyang.sound.geoje.highlight': '蓝色海风',
+    'kitsnyang.sound.ventanas': '闪亮的海窗',
+    'kitsnyang.sound.ventanas.poem': '窗像海上的星星一样发亮，\n城市灯火也开始跳舞。',
+    'kitsnyang.sound.ventanas.highlight': '海上的星星',
     'kitsnyang.sound.infinite': '无尽回廊',
+    'kitsnyang.player.eyebrow': '正在试听',
+    'kitsnyang.player.ready': '点击曲目即可播放。',
+    'kitsnyang.player.playing': '播放中',
+    'kitsnyang.player.paused': '已暂停',
+    'kitsnyang.player.ended': '想再听一次，请按播放。',
+    'kitsnyang.player.play': '播放',
+    'kitsnyang.player.pause': '暂停',
+    'kitsnyang.player.error': '无法播放此曲目。',
     'kitsnyang.closing.eyebrow': '温柔醒来',
     'kitsnyang.closing.title': '起床这件事<br />也可以有点可爱。',
     'kitsnyang.closing.body': '키츠냥 免费、无广告，并让你选择为早晨准备的声音。',
@@ -340,8 +448,8 @@ const TRANSLATIONS = {
     'kitsnyang.alarm.weekdays': '平日',
     'kitsnyang.alarm.weekend': '週末',
     'kitsnyang.sound.label': '鬧鐘音',
-    'kitsnyang.sound.featured': '今天亮了',
-    'kitsnyang.sound.caption': '叮叮，醒來吧',
+    'kitsnyang.sound.featured': '巨濟海風',
+    'kitsnyang.sound.caption': '藍色海風',
     'kitsnyang.statement.eyebrow': '沒有雜訊',
     'kitsnyang.statement.title': '只留下需要的東西。',
     'kitsnyang.statement.free': '免費',
@@ -358,17 +466,44 @@ const TRANSLATIONS = {
     'kitsnyang.screen.time.body': '轉輪輕巧又精準。',
     'kitsnyang.screen.sound.title': '鬧鐘音',
     'kitsnyang.sound.wizard': '破咒黎明',
+    'kitsnyang.sound.orum': '小丘風，起來吧',
+    'kitsnyang.sound.orum.poem': '沿著濟州小丘路走，\n煩惱也像風一樣變輕。',
+    'kitsnyang.sound.orum.highlight': '小丘路',
     'kitsnyang.sound.today': '今天亮了',
+    'kitsnyang.sound.today.poem': '叮叮，睜開眼。\n今天已經在等你。',
+    'kitsnyang.sound.today.highlight': '睜開眼',
+    'kitsnyang.sound.jeju': '濟州橘子啵啵',
+    'kitsnyang.sound.jeju.poem': '黃色陽光啵地綻開，\n心情也變得酸甜。',
+    'kitsnyang.sound.jeju.highlight': '啵',
+    'kitsnyang.sound.stayBlue': '駛向霓虹之海',
+    'kitsnyang.sound.stayBlue.poem': '即使融進霓虹之海，\n藍色餘韻仍沒有散去。',
+    'kitsnyang.sound.stayBlue.highlight': '藍色餘韻',
     'kitsnyang.sound.dawn': '黎明序曲',
     'kitsnyang.screen.dismiss.title': '解除鬧鐘',
     'kitsnyang.screen.dismiss.action': '關閉',
     'kitsnyang.screen.dismiss.body': '起床時一眼就能看懂。',
     'kitsnyang.sounds.eyebrow': '鬧鐘音',
     'kitsnyang.sounds.title': '每種心情都有不同早晨。',
-    'kitsnyang.sounds.aria': '代表鬧鐘音',
+    'kitsnyang.sounds.body': '按照應用程式中的前幾首順序，直接短暫試聽。',
+    'kitsnyang.sounds.aria': '代表鬧鐘音播放器',
     'kitsnyang.sound.paradise': 'Paraparadise',
+    'kitsnyang.sound.paradise.poem': '先把腦袋放空，\n現在只管跳 ParaPara。',
+    'kitsnyang.sound.paradise.highlight': 'ParaPara',
     'kitsnyang.sound.geoje': '巨濟海風',
+    'kitsnyang.sound.geoje.poem': '藍色海風，\n從窗縫悄悄溜進來。',
+    'kitsnyang.sound.geoje.highlight': '藍色海風',
+    'kitsnyang.sound.ventanas': '閃亮的海窗',
+    'kitsnyang.sound.ventanas.poem': '窗像海上的星星一樣發亮，\n城市燈火也開始跳舞。',
+    'kitsnyang.sound.ventanas.highlight': '海上的星星',
     'kitsnyang.sound.infinite': '無盡迴廊',
+    'kitsnyang.player.eyebrow': '正在試聽',
+    'kitsnyang.player.ready': '點選曲目即可播放。',
+    'kitsnyang.player.playing': '播放中',
+    'kitsnyang.player.paused': '已暫停',
+    'kitsnyang.player.ended': '想再聽一次，請按播放。',
+    'kitsnyang.player.play': '播放',
+    'kitsnyang.player.pause': '暫停',
+    'kitsnyang.player.error': '無法播放此曲目。',
     'kitsnyang.closing.eyebrow': '溫柔醒來',
     'kitsnyang.closing.title': '起床這件事<br />也可以有點可愛。',
     'kitsnyang.closing.body': '키츠냥 免費、無廣告，並讓你選擇為早晨準備的聲音。',
@@ -414,8 +549,8 @@ const TRANSLATIONS = {
     'kitsnyang.alarm.weekdays': 'Ngày thường',
     'kitsnyang.alarm.weekend': 'Cuối tuần',
     'kitsnyang.sound.label': 'Âm báo',
-    'kitsnyang.sound.featured': 'Ngày bật sáng',
-    'kitsnyang.sound.caption': 'Ting ting, thức dậy nào',
+    'kitsnyang.sound.featured': 'Gió biển Geoje',
+    'kitsnyang.sound.caption': 'Mùi biển xanh',
     'kitsnyang.statement.eyebrow': 'Không nhiễu',
     'kitsnyang.statement.title': 'Chỉ giữ lại những gì cần thiết.',
     'kitsnyang.statement.free': 'Miễn phí',
@@ -432,17 +567,44 @@ const TRANSLATIONS = {
     'kitsnyang.screen.time.body': 'Vòng chọn nhẹ và chính xác.',
     'kitsnyang.screen.sound.title': 'Âm báo',
     'kitsnyang.sound.wizard': 'Bình minh giải chú',
+    'kitsnyang.sound.orum': 'Gió oreum bay lên',
+    'kitsnyang.sound.orum.poem': 'Trên lối oreum ở Jeju,\nmuộn phiền nhẹ đi theo gió.',
+    'kitsnyang.sound.orum.highlight': 'oreum',
     'kitsnyang.sound.today': 'Ngày bật sáng',
+    'kitsnyang.sound.today.poem': 'Ding ding, mở mắt ra.\nNgày hôm nay đã đợi sẵn.',
+    'kitsnyang.sound.today.highlight': 'mở mắt',
+    'kitsnyang.sound.jeju': 'Quýt Jeju tok tok',
+    'kitsnyang.sound.jeju.poem': 'Nắng vàng bật tok,\ntâm trạng cũng chua ngọt vui lên.',
+    'kitsnyang.sound.jeju.highlight': 'tok',
+    'kitsnyang.sound.stayBlue': 'Ra biển neon',
+    'kitsnyang.sound.stayBlue.poem': 'Dẫu tan vào biển neon,\ndư âm xanh vẫn còn ở lại.',
+    'kitsnyang.sound.stayBlue.highlight': 'dư âm xanh',
     'kitsnyang.sound.dawn': 'Khúc dạo bình minh',
     'kitsnyang.screen.dismiss.title': 'Tắt báo thức',
     'kitsnyang.screen.dismiss.action': 'Tắt',
     'kitsnyang.screen.dismiss.body': 'Vừa mở mắt là hiểu ngay.',
     'kitsnyang.sounds.eyebrow': 'Âm báo',
     'kitsnyang.sounds.title': 'Mỗi tâm trạng là một buổi sáng khác.',
-    'kitsnyang.sounds.aria': 'Âm báo tiêu biểu',
+    'kitsnyang.sounds.body': 'Nghe thử nhanh các bài đầu tiên theo đúng thứ tự trong ứng dụng.',
+    'kitsnyang.sounds.aria': 'Trình phát âm báo tiêu biểu',
     'kitsnyang.sound.paradise': 'Paraparadise',
+    'kitsnyang.sound.paradise.poem': 'Tạm gác mọi suy nghĩ.\nGiờ thì nhảy para para thôi.',
+    'kitsnyang.sound.paradise.highlight': 'para para',
     'kitsnyang.sound.geoje': 'Gió biển Geoje',
+    'kitsnyang.sound.geoje.poem': 'Mùi biển xanh\nlen qua khe cửa sổ.',
+    'kitsnyang.sound.geoje.highlight': 'biển xanh',
+    'kitsnyang.sound.ventanas': 'Những ô cửa biển lấp lánh',
+    'kitsnyang.sound.ventanas.poem': 'Những ô cửa sáng như sao trên biển,\nrồi ánh phố bắt đầu nhảy múa.',
+    'kitsnyang.sound.ventanas.highlight': 'sao trên biển',
     'kitsnyang.sound.infinite': 'Hành lang vô tận',
+    'kitsnyang.player.eyebrow': 'Đang nghe thử',
+    'kitsnyang.player.ready': 'Chạm vào một bài để phát.',
+    'kitsnyang.player.playing': 'Đang phát',
+    'kitsnyang.player.paused': 'Đã tạm dừng',
+    'kitsnyang.player.ended': 'Nhấn phát để nghe lại.',
+    'kitsnyang.player.play': 'Phát',
+    'kitsnyang.player.pause': 'Tạm dừng',
+    'kitsnyang.player.error': 'Không thể phát bài này.',
     'kitsnyang.closing.eyebrow': 'Thức dậy nhẹ nhàng',
     'kitsnyang.closing.title': 'Ngay cả việc thức dậy<br />cũng có thể đáng yêu hơn một chút.',
     'kitsnyang.closing.body': '키츠냥 miễn phí, không có quảng cáo và cho bạn chọn âm thanh dành cho buổi sáng.',
@@ -488,8 +650,8 @@ const TRANSLATIONS = {
     'kitsnyang.alarm.weekdays': 'Laborables',
     'kitsnyang.alarm.weekend': 'Fin de semana',
     'kitsnyang.sound.label': 'Sonido',
-    'kitsnyang.sound.featured': 'Se enciende el día',
-    'kitsnyang.sound.caption': 'Ding ding, abre los ojos',
+    'kitsnyang.sound.featured': 'Brisa de Geoje',
+    'kitsnyang.sound.caption': 'Azul de sal',
     'kitsnyang.statement.eyebrow': 'Sin ruido',
     'kitsnyang.statement.title': 'Solo lo necesario.',
     'kitsnyang.statement.free': 'Gratis',
@@ -506,17 +668,44 @@ const TRANSLATIONS = {
     'kitsnyang.screen.time.body': 'La rueda es ligera y precisa.',
     'kitsnyang.screen.sound.title': 'Sonidos',
     'kitsnyang.sound.wizard': 'Amanecer del conjuro',
+    'kitsnyang.sound.orum': 'Brisa de orum, arriba',
+    'kitsnyang.sound.orum.poem': 'Por un sendero orum de Jeju,\nlas preocupaciones se aligeran con el viento.',
+    'kitsnyang.sound.orum.highlight': 'orum',
     'kitsnyang.sound.today': 'Se enciende el día',
+    'kitsnyang.sound.today.poem': 'Ding ding. Abre los ojos.\nEl día ya te está esperando.',
+    'kitsnyang.sound.today.highlight': 'Abre los ojos',
+    'kitsnyang.sound.jeju': 'Mandarina Jeju tok tok',
+    'kitsnyang.sound.jeju.poem': 'El sol dorado estalla en tok,\ny el ánimo se vuelve agridulce.',
+    'kitsnyang.sound.jeju.highlight': 'tok',
+    'kitsnyang.sound.stayBlue': 'Al mar de neón',
+    'kitsnyang.sound.stayBlue.poem': 'Aunque se disuelvan en neón,\nel resplandor azul se queda.',
+    'kitsnyang.sound.stayBlue.highlight': 'resplandor azul',
     'kitsnyang.sound.dawn': 'Obertura del alba',
     'kitsnyang.screen.dismiss.title': 'Apagar alarma',
     'kitsnyang.screen.dismiss.action': 'Apagar',
     'kitsnyang.screen.dismiss.body': 'Claro de un vistazo al despertar.',
     'kitsnyang.sounds.eyebrow': 'Sonidos',
     'kitsnyang.sounds.title': 'Una mañana distinta para cada ánimo.',
-    'kitsnyang.sounds.aria': 'Sonidos destacados',
+    'kitsnyang.sounds.body': 'Escucha las primeras pistas en el mismo orden de la app.',
+    'kitsnyang.sounds.aria': 'Reproductor de sonidos destacados',
     'kitsnyang.sound.paradise': 'Paraparaíso',
+    'kitsnyang.sound.paradise.poem': 'Deja la mente en pausa.\nAhora toca bailar para para.',
+    'kitsnyang.sound.paradise.highlight': 'para para',
     'kitsnyang.sound.geoje': 'Brisa de Geoje',
+    'kitsnyang.sound.geoje.poem': 'Una brisa azul de sal\nse cuela por la ventana.',
+    'kitsnyang.sound.geoje.highlight': 'azul de sal',
+    'kitsnyang.sound.ventanas': 'Ventanas marinas brillantes',
+    'kitsnyang.sound.ventanas.poem': 'Las ventanas brillan como estrellas sobre el mar,\ny la ciudad empieza a bailar.',
+    'kitsnyang.sound.ventanas.highlight': 'estrellas sobre el mar',
     'kitsnyang.sound.infinite': 'Pasillo infinito',
+    'kitsnyang.player.eyebrow': 'Vista previa',
+    'kitsnyang.player.ready': 'Toca una pista para reproducirla.',
+    'kitsnyang.player.playing': 'Reproduciendo',
+    'kitsnyang.player.paused': 'En pausa',
+    'kitsnyang.player.ended': 'Pulsa reproducir para escucharla otra vez.',
+    'kitsnyang.player.play': 'Reproducir',
+    'kitsnyang.player.pause': 'Pausar',
+    'kitsnyang.player.error': 'No se puede reproducir esta pista.',
     'kitsnyang.closing.eyebrow': 'Despertar suave',
     'kitsnyang.closing.title': 'Incluso despertar<br />puede ser un poco adorable.',
     'kitsnyang.closing.body': '키츠냥 es gratis, no tiene anuncios y te deja elegir sonidos pensados para la mañana.',
@@ -562,8 +751,8 @@ const TRANSLATIONS = {
     'kitsnyang.alarm.weekdays': 'Semaine',
     'kitsnyang.alarm.weekend': 'Week-end',
     'kitsnyang.sound.label': 'Son',
-    'kitsnyang.sound.featured': 'Le jour s’allume',
-    'kitsnyang.sound.caption': 'Ding ding, ouvre les yeux',
+    'kitsnyang.sound.featured': 'Brise de Geoje',
+    'kitsnyang.sound.caption': 'Brise bleue',
     'kitsnyang.statement.eyebrow': 'Sans bruit',
     'kitsnyang.statement.title': 'Seulement l’essentiel.',
     'kitsnyang.statement.free': 'Gratuit',
@@ -580,17 +769,44 @@ const TRANSLATIONS = {
     'kitsnyang.screen.time.body': 'La roue reste légère et précise.',
     'kitsnyang.screen.sound.title': 'Sons',
     'kitsnyang.sound.wizard': 'Aube du sort brisé',
+    'kitsnyang.sound.orum': 'Brise d’oreum, monte',
+    'kitsnyang.sound.orum.poem': 'Sur un sentier d’oreum à Jeju,\nles soucis deviennent légers comme le vent.',
+    'kitsnyang.sound.orum.highlight': 'oreum',
     'kitsnyang.sound.today': 'Le jour s’allume',
+    'kitsnyang.sound.today.poem': 'Ding ding. Ouvre les yeux.\nLe jour t’attend déjà.',
+    'kitsnyang.sound.today.highlight': 'Ouvre les yeux',
+    'kitsnyang.sound.jeju': 'Mandarine de Jeju tok tok',
+    'kitsnyang.sound.jeju.poem': 'Le soleil doré éclate en tok,\net l’humeur devient douce-acidulée.',
+    'kitsnyang.sound.jeju.highlight': 'tok',
+    'kitsnyang.sound.stayBlue': 'Vers la mer de néon',
+    'kitsnyang.sound.stayBlue.poem': 'Même fondu dans le néon,\nle sillage bleu demeure.',
+    'kitsnyang.sound.stayBlue.highlight': 'sillage bleu',
     'kitsnyang.sound.dawn': 'Ouverture de l’aube',
     'kitsnyang.screen.dismiss.title': 'Arrêter l’alarme',
     'kitsnyang.screen.dismiss.action': 'Arrêter',
     'kitsnyang.screen.dismiss.body': 'Clair d’un coup d’œil au réveil.',
     'kitsnyang.sounds.eyebrow': 'Sons',
     'kitsnyang.sounds.title': 'Un matin différent selon l’humeur.',
-    'kitsnyang.sounds.aria': 'Sons mis en avant',
+    'kitsnyang.sounds.body': 'Écoute les premières pistes dans le même ordre que l’app.',
+    'kitsnyang.sounds.aria': 'Lecteur des sons mis en avant',
     'kitsnyang.sound.paradise': 'Paraparadis',
+    'kitsnyang.sound.paradise.poem': 'Pose les pensées une minute.\nC’est l’heure du para para.',
+    'kitsnyang.sound.paradise.highlight': 'para para',
     'kitsnyang.sound.geoje': 'Brise de Geoje',
+    'kitsnyang.sound.geoje.poem': 'Une brise bleue et salée\nse glisse par la fenêtre.',
+    'kitsnyang.sound.geoje.highlight': 'bleue',
+    'kitsnyang.sound.ventanas': 'Fenêtres marines brillantes',
+    'kitsnyang.sound.ventanas.poem': 'Les fenêtres brillent comme des étoiles sur la mer,\net les lumières de la ville commencent à danser.',
+    'kitsnyang.sound.ventanas.highlight': 'étoiles sur la mer',
     'kitsnyang.sound.infinite': 'Couloir sans fin',
+    'kitsnyang.player.eyebrow': 'Extrait en cours',
+    'kitsnyang.player.ready': 'Touchez une piste pour la lire.',
+    'kitsnyang.player.playing': 'Lecture en cours',
+    'kitsnyang.player.paused': 'En pause',
+    'kitsnyang.player.ended': 'Appuyez sur lecture pour l’écouter encore.',
+    'kitsnyang.player.play': 'Lire',
+    'kitsnyang.player.pause': 'Pause',
+    'kitsnyang.player.error': 'Impossible de lire cette piste.',
     'kitsnyang.closing.eyebrow': 'Se réveiller en douceur',
     'kitsnyang.closing.title': 'Même se réveiller<br />peut devenir un peu mignon.',
     'kitsnyang.closing.body': '키츠냥 est gratuit, sans publicité, et te laisse choisir des sons pensés pour le matin.',
@@ -600,9 +816,20 @@ const TRANSLATIONS = {
 const root = document.documentElement;
 const cat = document.querySelector('[data-cat]');
 const heroStage = document.querySelector('[data-hero-stage]');
+const soundPlayer = document.querySelector('[data-sound-player]');
+const audioPlayer = document.querySelector('[data-audio-player]');
+const playerToggle = document.querySelector('[data-player-toggle]');
+const playerToggleIcon = document.querySelector('[data-player-toggle-icon]');
+const playerTitle = document.querySelector('[data-player-title]');
+const playerStatus = document.querySelector('[data-player-status]');
+const playerPoem = document.querySelector('[data-player-poem]');
+const playerProgress = document.querySelector('[data-player-progress]');
+const trackButtons = Array.from(document.querySelectorAll('[data-track-id]'));
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 let ticking = false;
+let activeTrackButton = null;
+let playerStatusKey = 'kitsnyang.player.ready';
 
 function clamp(value, min, max) {
   return Math.min(Math.max(value, min), max);
@@ -717,6 +944,36 @@ function getTranslation(language, key) {
   return formatTranslation(language, getRawTranslation(language, key));
 }
 
+function escapeHtml(value) {
+  return value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+function renderHighlightedTranslation(language, textKey, highlightKey) {
+  const text = getTranslation(language, textKey);
+  const highlight = getTranslation(language, highlightKey);
+  const escapedText = escapeHtml(text).replace(/\n/g, '<br />');
+
+  if (!highlight) {
+    return escapedText;
+  }
+
+  const escapedHighlight = escapeHtml(highlight);
+  const highlightIndex = escapedText.indexOf(escapedHighlight);
+
+  if (highlightIndex < 0) {
+    return escapedText;
+  }
+
+  return `${escapedText.slice(0, highlightIndex)}<mark>${escapedHighlight}</mark>${escapedText.slice(
+    highlightIndex + escapedHighlight.length,
+  )}`;
+}
+
 function updateLanguageUrl(language) {
   const url = new URL(window.location.href);
 
@@ -806,6 +1063,7 @@ function updateLocalizedContent(language) {
 
   updateLanguageButtons(language);
   updateLocalLinks(language);
+  syncSoundPlayerText(language);
 }
 
 function setLanguage(language, options = {}) {
@@ -833,6 +1091,167 @@ function bindLanguageControls() {
       });
     });
   }
+}
+
+function getCurrentLanguage() {
+  return root.dataset.language || DEFAULT_LANGUAGE;
+}
+
+function getTrackTitle(button, language) {
+  return getTranslation(language, button.getAttribute('data-track-key'));
+}
+
+function getTrackPoemHtml(button, language) {
+  return renderHighlightedTranslation(
+    language,
+    button.getAttribute('data-track-poem-key'),
+    button.getAttribute('data-track-highlight-key'),
+  );
+}
+
+function setPlayerStatus(key) {
+  playerStatusKey = key;
+
+  if (playerStatus) {
+    playerStatus.textContent = getTranslation(getCurrentLanguage(), playerStatusKey);
+  }
+}
+
+function syncSoundPlayerText(language) {
+  if (!soundPlayer || !activeTrackButton) {
+    return;
+  }
+
+  if (playerTitle) {
+    playerTitle.textContent = getTrackTitle(activeTrackButton, language);
+  }
+
+  if (playerStatus) {
+    playerStatus.textContent = getTranslation(language, playerStatusKey);
+  }
+
+  if (playerPoem) {
+    playerPoem.innerHTML = getTrackPoemHtml(activeTrackButton, language);
+  }
+
+  syncPlayerToggleLabel();
+}
+
+function syncPlayerToggleLabel() {
+  if (!playerToggle || !audioPlayer) {
+    return;
+  }
+
+  const labelKey = audioPlayer.paused
+    ? playerToggle.getAttribute('data-player-play-label')
+    : playerToggle.getAttribute('data-player-pause-label');
+
+  playerToggle.setAttribute('aria-label', getTranslation(getCurrentLanguage(), labelKey));
+
+  if (playerToggleIcon) {
+    playerToggleIcon.textContent = audioPlayer.paused ? '▶' : 'Ⅱ';
+  }
+}
+
+function updatePlayerProgress() {
+  if (!audioPlayer || !playerProgress) {
+    return;
+  }
+
+  const duration = Number.isFinite(audioPlayer.duration) && audioPlayer.duration > 0 ? audioPlayer.duration : 1;
+  const progress = clamp(audioPlayer.currentTime / duration, 0, 1);
+  playerProgress.style.transform = `scaleX(${progress})`;
+}
+
+function selectTrack(button) {
+  if (!button || !audioPlayer) {
+    return;
+  }
+
+  activeTrackButton = button;
+
+  for (const trackButton of trackButtons) {
+    const isActive = trackButton === button;
+    trackButton.classList.toggle('is-active', isActive);
+    trackButton.setAttribute('aria-pressed', String(isActive));
+  }
+
+  const src = button.getAttribute('data-audio-src');
+  if (src && audioPlayer.dataset.activeSrc !== src) {
+    audioPlayer.src = src;
+    audioPlayer.dataset.activeSrc = src;
+    audioPlayer.load();
+    updatePlayerProgress();
+  }
+
+  syncSoundPlayerText(getCurrentLanguage());
+}
+
+function setPlayerPlaying(isPlaying) {
+  soundPlayer?.classList.toggle('is-playing', isPlaying);
+  syncPlayerToggleLabel();
+}
+
+function playActiveTrack() {
+  if (!audioPlayer || !activeTrackButton) {
+    return;
+  }
+
+  audioPlayer.play().then(() => {
+    setPlayerStatus('kitsnyang.player.playing');
+  }).catch(error => {
+    console.warn('Unable to play preview track.', error);
+    setPlayerStatus('kitsnyang.player.error');
+    setPlayerPlaying(false);
+  });
+}
+
+function bindSoundPlayer() {
+  if (!soundPlayer || !audioPlayer || trackButtons.length === 0) {
+    return;
+  }
+
+  selectTrack(trackButtons[0]);
+  setPlayerStatus('kitsnyang.player.ready');
+
+  for (const button of trackButtons) {
+    button.addEventListener('click', () => {
+      selectTrack(button);
+      audioPlayer.currentTime = 0;
+      playActiveTrack();
+    });
+  }
+
+  playerToggle?.addEventListener('click', () => {
+    if (audioPlayer.paused) {
+      playActiveTrack();
+      return;
+    }
+
+    audioPlayer.pause();
+  });
+
+  audioPlayer.addEventListener('play', () => {
+    setPlayerPlaying(true);
+    setPlayerStatus('kitsnyang.player.playing');
+  });
+
+  audioPlayer.addEventListener('pause', () => {
+    setPlayerPlaying(false);
+
+    if (!audioPlayer.ended) {
+      setPlayerStatus('kitsnyang.player.paused');
+    }
+  });
+
+  audioPlayer.addEventListener('ended', () => {
+    setPlayerPlaying(false);
+    setPlayerStatus('kitsnyang.player.ended');
+    updatePlayerProgress();
+  });
+
+  audioPlayer.addEventListener('timeupdate', updatePlayerProgress);
+  audioPlayer.addEventListener('loadedmetadata', updatePlayerProgress);
 }
 
 function updateMotion() {
@@ -928,6 +1347,7 @@ function observeRevealElements() {
 }
 
 bindLanguageControls();
+bindSoundPlayer();
 setLanguage(getPreferredLanguage(), {persist: false, updateUrl: false});
 observeRevealElements();
 

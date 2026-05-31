@@ -222,9 +222,9 @@
             <span class="screen-kicker">03</span>
             <h3 data-i18n="kitsnyang.screen.sound.title">알림음</h3>
             <ul class="sound-lines">
-              <li data-i18n="kitsnyang.sound.wizard">마법사의 새벽</li>
+              <li data-i18n="kitsnyang.sound.geoje">거제도의 바람</li>
+              <li data-i18n="kitsnyang.sound.orum">오름바람 올라라</li>
               <li data-i18n="kitsnyang.sound.today">오늘이 켜져</li>
-              <li data-i18n="kitsnyang.sound.dawn">새벽의 서곡</li>
             </ul>
           </article>
           <article class="phone-mock showcase-phone reveal">
@@ -240,14 +240,135 @@
         <div class="section-heading">
           <p class="eyebrow" data-i18n="kitsnyang.sounds.eyebrow">알림음</p>
           <h2 id="sound-title" data-i18n="kitsnyang.sounds.title">기분마다 다른 아침.</h2>
+          <p data-i18n="kitsnyang.sounds.body">앱의 첫 순서대로, 지금 바로 짧게 들어보세요.</p>
         </div>
-        <div class="sound-marquee" aria-label="대표 알림음" data-i18n-aria-label="kitsnyang.sounds.aria">
-          <span data-i18n="kitsnyang.sound.wizard">마법사의 새벽</span>
-          <span data-i18n="kitsnyang.sound.paradise">파라파라다이스</span>
-          <span data-i18n="kitsnyang.sound.geoje">거제도의 바람</span>
-          <span data-i18n="kitsnyang.sound.today">오늘이 켜져</span>
-          <span data-i18n="kitsnyang.sound.infinite">무한의 회랑</span>
-          <span data-i18n="kitsnyang.sound.dawn">새벽의 서곡</span>
+        <div
+          class="sound-player"
+          data-sound-player
+          aria-label="대표 알림음 재생 플레이어"
+          data-i18n-aria-label="kitsnyang.sounds.aria"
+        >
+          <div class="player-now">
+            <button
+              class="player-toggle"
+              type="button"
+              data-player-toggle
+              aria-label="재생"
+              data-player-play-label="kitsnyang.player.play"
+              data-player-pause-label="kitsnyang.player.pause"
+            >
+              <span data-player-toggle-icon>▶</span>
+            </button>
+            <div class="player-copy">
+              <span data-i18n="kitsnyang.player.eyebrow">지금 미리듣기</span>
+              <strong data-player-title data-i18n="kitsnyang.sound.geoje">거제도의 바람</strong>
+              <p class="player-status" data-player-status>트랙을 눌러 재생하세요.</p>
+              <p class="player-poem" data-player-poem>창문틈으로 번진,<br /><mark>푸른바다</mark>의 냄새</p>
+            </div>
+            <div class="player-bars" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="player-progress" aria-hidden="true">
+            <span data-player-progress></span>
+          </div>
+          <div class="track-list">
+            <button
+              class="track-button"
+              type="button"
+              data-track-id="geoje_island_breeze"
+              data-track-key="kitsnyang.sound.geoje"
+              data-track-poem-key="kitsnyang.sound.geoje.poem"
+              data-track-highlight-key="kitsnyang.sound.geoje.highlight"
+              data-audio-src="./assets/music/geoje_island_breeze.mp3"
+            >
+              <span>01</span>
+              <strong data-i18n="kitsnyang.sound.geoje">거제도의 바람</strong>
+              <em>30s</em>
+            </button>
+            <button
+              class="track-button"
+              type="button"
+              data-track-id="orum_baram_ollara"
+              data-track-key="kitsnyang.sound.orum"
+              data-track-poem-key="kitsnyang.sound.orum.poem"
+              data-track-highlight-key="kitsnyang.sound.orum.highlight"
+              data-audio-src="./assets/music/orum_baram_ollara.mp3"
+            >
+              <span>02</span>
+              <strong data-i18n="kitsnyang.sound.orum">오름바람 올라라</strong>
+              <em>25s</em>
+            </button>
+            <button
+              class="track-button"
+              type="button"
+              data-track-id="ding_ding"
+              data-track-key="kitsnyang.sound.today"
+              data-track-poem-key="kitsnyang.sound.today.poem"
+              data-track-highlight-key="kitsnyang.sound.today.highlight"
+              data-audio-src="./assets/music/ding_ding.mp3"
+            >
+              <span>03</span>
+              <strong data-i18n="kitsnyang.sound.today">오늘이 켜져</strong>
+              <em>30s</em>
+            </button>
+            <button
+              class="track-button"
+              type="button"
+              data-track-id="jeju_gyul_toktok"
+              data-track-key="kitsnyang.sound.jeju"
+              data-track-poem-key="kitsnyang.sound.jeju.poem"
+              data-track-highlight-key="kitsnyang.sound.jeju.highlight"
+              data-audio-src="./assets/music/jeju_gyul_toktok.mp3"
+            >
+              <span>04</span>
+              <strong data-i18n="kitsnyang.sound.jeju">제주 귤톡톡</strong>
+              <em>26s</em>
+            </button>
+            <button
+              class="track-button"
+              type="button"
+              data-track-id="stay_blue"
+              data-track-key="kitsnyang.sound.stayBlue"
+              data-track-poem-key="kitsnyang.sound.stayBlue.poem"
+              data-track-highlight-key="kitsnyang.sound.stayBlue.highlight"
+              data-audio-src="./assets/music/stay_blue.mp3"
+            >
+              <span>05</span>
+              <strong data-i18n="kitsnyang.sound.stayBlue">네온의 바다로</strong>
+              <em>23s</em>
+            </button>
+            <button
+              class="track-button"
+              type="button"
+              data-track-id="paraparadise"
+              data-track-key="kitsnyang.sound.paradise"
+              data-track-poem-key="kitsnyang.sound.paradise.poem"
+              data-track-highlight-key="kitsnyang.sound.paradise.highlight"
+              data-audio-src="./assets/music/paraparadise.mp3"
+            >
+              <span>06</span>
+              <strong data-i18n="kitsnyang.sound.paradise">파라파라다이스</strong>
+              <em>30s</em>
+            </button>
+            <button
+              class="track-button"
+              type="button"
+              data-track-id="ventanas_marinas_brillantes"
+              data-track-key="kitsnyang.sound.ventanas"
+              data-track-poem-key="kitsnyang.sound.ventanas.poem"
+              data-track-highlight-key="kitsnyang.sound.ventanas.highlight"
+              data-audio-src="./assets/music/ventanas_marinas_brillantes.mp3"
+            >
+              <span>07</span>
+              <strong data-i18n="kitsnyang.sound.ventanas">빛나는 바다의 창</strong>
+              <em>29s</em>
+            </button>
+          </div>
+          <audio data-audio-player preload="metadata"></audio>
         </div>
       </section>
 
