@@ -19,34 +19,86 @@
       </a>
       <div class="header-tools">
         <nav class="nav-links" aria-label="페이지" data-i18n-aria-label="common.nav.aria">
-          <a aria-current="page" href="./kitsnyang.html">키츠냥</a>
+          <a aria-current="page" href="./kitsnyang.html" data-i18n="common.appName">키츠냥</a>
         </nav>
-        <div class="language-switcher" aria-label="언어 선택" data-i18n-aria-label="common.language.aria">
-          <button type="button" data-language-option="ko" aria-label="한국어" data-i18n-aria-label="common.language.ko">
-            KO
-          </button>
-          <button type="button" data-language-option="en" aria-label="English" data-i18n-aria-label="common.language.en">
-            EN
-          </button>
-          <button type="button" data-language-option="ja" aria-label="日本語" data-i18n-aria-label="common.language.ja">
-            JA
-          </button>
+        <div
+          class="language-switcher"
+          data-language-menu
+          aria-label="언어 선택"
+          data-i18n-aria-label="common.language.aria"
+        >
           <button
+            class="language-trigger"
             type="button"
-            data-language-option="zh-TW"
-            aria-label="繁體中文"
-            data-i18n-aria-label="common.language.zhTW"
+            data-language-trigger
+            aria-haspopup="true"
+            aria-expanded="false"
           >
-            TW
+            <span class="language-current" data-language-current>한국어</span>
+            <span class="language-current-code" data-language-current-code>KO</span>
           </button>
-          <button
-            type="button"
-            data-language-option="vi"
-            aria-label="Tiếng Việt"
-            data-i18n-aria-label="common.language.vi"
-          >
-            VI
-          </button>
+          <div class="language-menu" role="menu">
+            <button
+              type="button"
+              role="menuitemradio"
+              data-language-option="ko"
+              data-language-label="한국어"
+              data-language-code="KO"
+              aria-label="한국어"
+              data-i18n-aria-label="common.language.ko"
+            >
+              <span>한국어</span>
+              <strong>KO</strong>
+            </button>
+            <button
+              type="button"
+              role="menuitemradio"
+              data-language-option="en"
+              data-language-label="영어"
+              data-language-code="EN"
+              aria-label="English"
+              data-i18n-aria-label="common.language.en"
+            >
+              <span>영어</span>
+              <strong>EN</strong>
+            </button>
+            <button
+              type="button"
+              role="menuitemradio"
+              data-language-option="ja"
+              data-language-label="일본어"
+              data-language-code="JA"
+              aria-label="日本語"
+              data-i18n-aria-label="common.language.ja"
+            >
+              <span>일본어</span>
+              <strong>JA</strong>
+            </button>
+            <button
+              type="button"
+              role="menuitemradio"
+              data-language-option="zh-TW"
+              data-language-label="Chinese"
+              data-language-code="TW"
+              aria-label="繁體中文"
+              data-i18n-aria-label="common.language.zhTW"
+            >
+              <span>Chinese</span>
+              <strong>TW</strong>
+            </button>
+            <button
+              type="button"
+              role="menuitemradio"
+              data-language-option="vi"
+              data-language-label="베트남"
+              data-language-code="VI"
+              aria-label="Tiếng Việt"
+              data-i18n-aria-label="common.language.vi"
+            >
+              <span>베트남</span>
+              <strong>VI</strong>
+            </button>
+          </div>
         </div>
       </div>
     </header>
@@ -55,7 +107,7 @@
       <section class="hero section-band section-green" aria-labelledby="kitsnyang-title">
         <div class="hero-copy">
           <p class="eyebrow" data-i18n="kitsnyang.hero.eyebrow">무료 알람 앱 / 광고 없음</p>
-          <h1 id="kitsnyang-title">키츠냥</h1>
+          <h1 id="kitsnyang-title" data-i18n="common.appName">키츠냥</h1>
           <p class="hero-line" data-i18n="kitsnyang.hero.line">아침을 조금 덜 미워하게 만드는 알람.</p>
           <div class="proof-row" aria-label="키츠냥 핵심 특징" data-i18n-aria-label="kitsnyang.proof.aria">
             <span data-i18n="kitsnyang.proof.free">무료</span>

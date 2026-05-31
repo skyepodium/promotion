@@ -4,6 +4,7 @@ const LANGUAGE_STORAGE_KEY = 'kitsnyang-promotion-language';
 
 const TRANSLATIONS = {
   ko: {
+    'common.appName': '키츠냥',
     'common.header.aria': '주요 탐색',
     'common.home.aria': 'skyepodium 홈',
     'common.nav.aria': '페이지',
@@ -74,6 +75,7 @@ const TRANSLATIONS = {
     'kitsnyang.closing.body': '키츠냥은 무료이고, 광고가 없고, 아침을 위한 소리를 고릅니다.',
   },
   en: {
+    'common.appName': 'Kitsnyang',
     'common.header.aria': 'Primary navigation',
     'common.home.aria': 'skyepodium home',
     'common.nav.aria': 'Pages',
@@ -144,6 +146,7 @@ const TRANSLATIONS = {
     'kitsnyang.closing.body': '키츠냥 is free, has no ads, and lets you choose sounds made for morning.',
   },
   ja: {
+    'common.appName': 'キツニャン',
     'common.header.aria': '主要ナビゲーション',
     'common.home.aria': 'skyepodium ホーム',
     'common.nav.aria': 'ページ',
@@ -214,6 +217,7 @@ const TRANSLATIONS = {
     'kitsnyang.closing.body': '키츠냥は無料で、広告がなく、朝のための音を選べます。',
   },
   'zh-TW': {
+    'common.appName': '起喵',
     'common.header.aria': '主要導覽',
     'common.home.aria': 'skyepodium 首頁',
     'common.nav.aria': '頁面',
@@ -284,6 +288,7 @@ const TRANSLATIONS = {
     'kitsnyang.closing.body': '키츠냥 免費、無廣告，並讓你選擇為早晨準備的聲音。',
   },
   vi: {
+    'common.appName': 'Mèo Dậy',
     'common.header.aria': 'Điều hướng chính',
     'common.home.aria': 'Trang chủ skyepodium',
     'common.nav.aria': 'Trang',
@@ -358,6 +363,10 @@ const TRANSLATIONS = {
 const root = document.documentElement;
 const cat = document.querySelector('[data-cat]');
 const heroStage = document.querySelector('[data-hero-stage]');
+const languageMenu = document.querySelector('[data-language-menu]');
+const languageTrigger = document.querySelector('[data-language-trigger]');
+const languageCurrent = document.querySelector('[data-language-current]');
+const languageCurrentCode = document.querySelector('[data-language-current-code]');
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 let ticking = false;
@@ -438,7 +447,7 @@ function getPreferredLanguage() {
   return DEFAULT_LANGUAGE;
 }
 
-function getTranslation(language, key) {
+function getRawTranslation(language, key) {
   const activeTranslations = TRANSLATIONS[language] || TRANSLATIONS[DEFAULT_LANGUAGE];
 
   if (Object.prototype.hasOwnProperty.call(activeTranslations, key)) {
@@ -446,6 +455,15 @@ function getTranslation(language, key) {
   }
 
   return TRANSLATIONS[DEFAULT_LANGUAGE][key] || '';
+}
+
+function formatTranslation(language, value) {
+  const appName = getRawTranslation(language, 'common.appName');
+  return value.split('키츠냥').join(appName);
+}
+
+function getTranslation(language, key) {
+  return formatTranslation(language, getRawTranslation(language, key));
 }
 
 function updateLanguageUrl(language) {
@@ -506,7 +524,13 @@ function updateLanguageButtons(language) {
     const option = button.getAttribute('data-language-option');
     const isActive = option === language;
 
+    if (isActive && languageCurrent && languageCurrentCode) {
+      languageCurrent.textContent = button.dataset.languageLabel || getTranslation(language, 'common.language.aria');
+      languageCurrentCode.textContent = button.dataset.languageCode || language.toUpperCase();
+    }
+
     button.setAttribute('aria-pressed', String(isActive));
+    button.setAttribute('aria-checked', String(isActive));
     button.classList.toggle('is-active', isActive);
   }
 }
@@ -555,15 +579,48 @@ function setLanguage(language, options = {}) {
   }
 }
 
+function closeLanguageMenu() {
+  languageMenu?.classList.remove('is-open');
+  languageTrigger?.setAttribute('aria-expanded', 'false');
+}
+
+function toggleLanguageMenu() {
+  const isOpen = languageMenu?.classList.contains('is-open') || false;
+
+  languageMenu?.classList.toggle('is-open', !isOpen);
+  languageTrigger?.setAttribute('aria-expanded', String(!isOpen));
+}
+
 function bindLanguageControls() {
+  languageTrigger?.addEventListener('click', event => {
+    event.stopPropagation();
+    toggleLanguageMenu();
+  });
+
   for (const button of document.querySelectorAll('[data-language-option]')) {
     button.addEventListener('click', () => {
       setLanguage(button.getAttribute('data-language-option'), {
         persist: true,
         updateUrl: true,
       });
+      closeLanguageMenu();
     });
   }
+
+  document.addEventListener('click', event => {
+    if (event.target instanceof Node && languageMenu?.contains(event.target)) {
+      return;
+    }
+
+    closeLanguageMenu();
+  });
+
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') {
+      closeLanguageMenu();
+      languageTrigger?.focus();
+    }
+  });
 }
 
 function updateMotion() {
