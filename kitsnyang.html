@@ -5,62 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
+      data-i18n-content="kitsnyang.meta.description"
       content="키츠냥은 무료이고 광고 없는 아침 알람 앱입니다. 여러 알림음과 감각적인 알람 설정 화면을 제공합니다."
     />
-    <title>키츠냥 - 아침을 조금 덜 미워하게 만드는 알람</title>
+    <title data-i18n="kitsnyang.meta.title">키츠냥 - 아침을 조금 덜 미워하게 만드는 알람</title>
     <link rel="stylesheet" href="./assets/styles/site.css" />
     <script src="./assets/scripts/site.js" defer></script>
   </head>
   <body class="kitsnyang-page">
-    <header class="site-header" aria-label="주요 탐색">
-      <a class="brand-link" href="./index.html" aria-label="skyepodium 홈">skyepodium</a>
-      <nav class="nav-links" aria-label="페이지">
-        <a aria-current="page" href="./kitsnyang.html">키츠냥</a>
-      </nav>
+    <header class="site-header" aria-label="주요 탐색" data-i18n-aria-label="common.header.aria">
+      <a class="brand-link" href="./index.html" aria-label="skyepodium 홈" data-i18n-aria-label="common.home.aria">
+        skyepodium
+      </a>
+      <div class="header-tools">
+        <nav class="nav-links" aria-label="페이지" data-i18n-aria-label="common.nav.aria">
+          <a aria-current="page" href="./kitsnyang.html">키츠냥</a>
+        </nav>
+        <div class="language-switcher" aria-label="언어 선택" data-i18n-aria-label="common.language.aria">
+          <button type="button" data-language-option="ko" aria-label="한국어" data-i18n-aria-label="common.language.ko">
+            KO
+          </button>
+          <button type="button" data-language-option="en" aria-label="English" data-i18n-aria-label="common.language.en">
+            EN
+          </button>
+          <button type="button" data-language-option="ja" aria-label="日本語" data-i18n-aria-label="common.language.ja">
+            JA
+          </button>
+        </div>
+      </div>
     </header>
 
     <main>
       <section class="hero section-band section-green" aria-labelledby="kitsnyang-title">
         <div class="hero-copy">
-          <p class="eyebrow">Free alarm app / no ads</p>
+          <p class="eyebrow" data-i18n="kitsnyang.hero.eyebrow">무료 알람 앱 / 광고 없음</p>
           <h1 id="kitsnyang-title">키츠냥</h1>
-          <p class="hero-line">아침을 조금 덜 미워하게 만드는 알람.</p>
-          <div class="proof-row" aria-label="키츠냥 핵심 특징">
-            <span>무료</span>
-            <span>광고 없음</span>
-            <span>여러 알림음</span>
+          <p class="hero-line" data-i18n="kitsnyang.hero.line">아침을 조금 덜 미워하게 만드는 알람.</p>
+          <div class="proof-row" aria-label="키츠냥 핵심 특징" data-i18n-aria-label="kitsnyang.proof.aria">
+            <span data-i18n="kitsnyang.proof.free">무료</span>
+            <span data-i18n="kitsnyang.proof.noAds">광고 없음</span>
+            <span data-i18n="kitsnyang.proof.sounds">여러 알림음</span>
           </div>
         </div>
 
-        <div class="hero-stage" data-hero-stage aria-label="키츠냥 앱 화면 미리보기">
+        <div
+          class="hero-stage"
+          data-hero-stage
+          aria-label="키츠냥 앱 화면 미리보기"
+          data-i18n-aria-label="kitsnyang.heroStage.aria"
+        >
           <div class="color-rail rail-red" aria-hidden="true"></div>
           <div class="color-rail rail-blue" aria-hidden="true"></div>
-          <img class="app-icon-tile" src="./assets/images/kitsnyang-app-icon.png" alt="키츠냥 앱 아이콘" />
-          <div class="phone-mock hero-phone phone-main" aria-label="알람 목록 화면 예시">
+          <img
+            class="app-icon-tile"
+            src="./assets/images/kitsnyang-app-icon.png"
+            alt="키츠냥 앱 아이콘"
+            data-i18n-alt="kitsnyang.icon.alt"
+          />
+          <div
+            class="phone-mock hero-phone phone-main"
+            aria-label="알람 목록 화면 예시"
+            data-i18n-aria-label="kitsnyang.phone.list.aria"
+          >
             <div class="phone-top">
               <span>06:30</span>
               <span class="phone-pill"></span>
             </div>
             <div class="alarm-list">
               <div class="alarm-item accent-red">
-                <span>매일</span>
+                <span data-i18n="kitsnyang.alarm.daily">매일</span>
                 <strong>07:20</strong>
               </div>
               <div class="alarm-item accent-blue">
-                <span>평일</span>
+                <span data-i18n="kitsnyang.alarm.weekdays">평일</span>
                 <strong>08:00</strong>
               </div>
               <div class="alarm-item accent-green">
-                <span>주말</span>
+                <span data-i18n="kitsnyang.alarm.weekend">주말</span>
                 <strong>09:10</strong>
               </div>
             </div>
           </div>
-          <div class="phone-mock hero-phone phone-side" aria-label="알림음 선택 화면 예시">
+          <div
+            class="phone-mock hero-phone phone-side"
+            aria-label="알림음 선택 화면 예시"
+            data-i18n-aria-label="kitsnyang.phone.sound.aria"
+          >
             <div class="sound-screen">
-              <span class="screen-label">알림음</span>
-              <strong>오늘이 켜져</strong>
-              <p>띵띵, 눈을 떠</p>
+              <span class="screen-label" data-i18n="kitsnyang.sound.label">알림음</span>
+              <strong data-i18n="kitsnyang.sound.featured">오늘이 켜져</strong>
+              <p data-i18n="kitsnyang.sound.caption">띵띵, 눈을 떠</p>
               <div class="mini-player">
                 <span></span>
                 <span></span>
@@ -79,78 +113,78 @@
       </section>
 
       <section class="statement section-band" aria-labelledby="statement-title">
-        <p class="eyebrow">No noise</p>
-        <h2 id="statement-title">필요한 것만 남겼습니다.</h2>
+        <p class="eyebrow" data-i18n="kitsnyang.statement.eyebrow">소음 없이</p>
+        <h2 id="statement-title" data-i18n="kitsnyang.statement.title">필요한 것만 남겼습니다.</h2>
         <div class="statement-grid">
-          <p class="statement-word color-red">무료</p>
-          <p class="statement-word color-blue">광고 없음</p>
-          <p class="statement-word color-green">음악 여러 개</p>
-          <p class="statement-word color-pink">아침 전용</p>
+          <p class="statement-word color-red" data-i18n="kitsnyang.statement.free">무료</p>
+          <p class="statement-word color-blue" data-i18n="kitsnyang.statement.noAds">광고 없음</p>
+          <p class="statement-word color-green" data-i18n="kitsnyang.statement.music">음악 여러 개</p>
+          <p class="statement-word color-pink" data-i18n="kitsnyang.statement.morning">아침 전용</p>
         </div>
       </section>
 
       <section class="showcase section-band section-white" aria-labelledby="screen-title">
         <div class="section-heading">
-          <p class="eyebrow">Four screens</p>
-          <h2 id="screen-title">네 화면이면 충분해요.</h2>
-          <p>시간을 고르고, 색을 고르고, 소리를 고르고, 아침에 끄면 끝.</p>
+          <p class="eyebrow" data-i18n="kitsnyang.showcase.eyebrow">네 개의 화면</p>
+          <h2 id="screen-title" data-i18n="kitsnyang.showcase.title">네 화면이면 충분해요.</h2>
+          <p data-i18n="kitsnyang.showcase.body">시간을 고르고, 색을 고르고, 소리를 고르고, 아침에 끄면 끝.</p>
         </div>
 
-        <div class="screen-stack" aria-label="키츠냥 주요 화면 4개">
+        <div class="screen-stack" aria-label="키츠냥 주요 화면 4개" data-i18n-aria-label="kitsnyang.showcase.aria">
           <article class="phone-mock showcase-phone reveal">
             <span class="screen-kicker">01</span>
-            <h3>알람 목록</h3>
+            <h3 data-i18n="kitsnyang.screen.list.title">알람 목록</h3>
             <div class="screen-time">07:20</div>
-            <p>켜진 알람만 선명하게.</p>
+            <p data-i18n="kitsnyang.screen.list.body">켜진 알람만 선명하게.</p>
           </article>
           <article class="phone-mock showcase-phone reveal">
             <span class="screen-kicker">02</span>
-            <h3>시간 설정</h3>
+            <h3 data-i18n="kitsnyang.screen.time.title">시간 설정</h3>
             <div class="wheel-preview">
               <span>06</span>
               <strong>07</strong>
               <span>08</span>
             </div>
-            <p>휠은 가볍고 정확하게.</p>
+            <p data-i18n="kitsnyang.screen.time.body">휠은 가볍고 정확하게.</p>
           </article>
           <article class="phone-mock showcase-phone reveal">
             <span class="screen-kicker">03</span>
-            <h3>알림음</h3>
+            <h3 data-i18n="kitsnyang.screen.sound.title">알림음</h3>
             <ul class="sound-lines">
-              <li>마법사의 새벽</li>
-              <li>오늘이 켜져</li>
-              <li>새벽의 서곡</li>
+              <li data-i18n="kitsnyang.sound.wizard">마법사의 새벽</li>
+              <li data-i18n="kitsnyang.sound.today">오늘이 켜져</li>
+              <li data-i18n="kitsnyang.sound.dawn">새벽의 서곡</li>
             </ul>
           </article>
           <article class="phone-mock showcase-phone reveal">
             <span class="screen-kicker">04</span>
-            <h3>알람 해제</h3>
-            <div class="dismiss-dot">끄기</div>
-            <p>눈 뜨면 바로 알 수 있게.</p>
+            <h3 data-i18n="kitsnyang.screen.dismiss.title">알람 해제</h3>
+            <div class="dismiss-dot" data-i18n="kitsnyang.screen.dismiss.action">끄기</div>
+            <p data-i18n="kitsnyang.screen.dismiss.body">눈 뜨면 바로 알 수 있게.</p>
           </article>
         </div>
       </section>
 
       <section class="sounds section-band section-black" aria-labelledby="sound-title">
         <div class="section-heading">
-          <p class="eyebrow">Alarm sounds</p>
-          <h2 id="sound-title">기분마다 다른 아침.</h2>
+          <p class="eyebrow" data-i18n="kitsnyang.sounds.eyebrow">알림음</p>
+          <h2 id="sound-title" data-i18n="kitsnyang.sounds.title">기분마다 다른 아침.</h2>
         </div>
-        <div class="sound-marquee" aria-label="대표 알림음">
-          <span>마법사의 새벽</span>
-          <span>파라파라다이스</span>
-          <span>거제도의 바람</span>
-          <span>오늘이 켜져</span>
-          <span>무한의 회랑</span>
-          <span>새벽의 서곡</span>
+        <div class="sound-marquee" aria-label="대표 알림음" data-i18n-aria-label="kitsnyang.sounds.aria">
+          <span data-i18n="kitsnyang.sound.wizard">마법사의 새벽</span>
+          <span data-i18n="kitsnyang.sound.paradise">파라파라다이스</span>
+          <span data-i18n="kitsnyang.sound.geoje">거제도의 바람</span>
+          <span data-i18n="kitsnyang.sound.today">오늘이 켜져</span>
+          <span data-i18n="kitsnyang.sound.infinite">무한의 회랑</span>
+          <span data-i18n="kitsnyang.sound.dawn">새벽의 서곡</span>
         </div>
       </section>
 
       <section class="closing section-band section-pink" aria-labelledby="closing-title">
         <img class="closing-cat reveal" src="./assets/images/kitsnyang-cat.png" alt="" aria-hidden="true" />
-        <p class="eyebrow">Wake softly</p>
-        <h2 id="closing-title">일어나는 일도<br />조금은 귀여울 수 있게.</h2>
-        <p>키츠냥은 무료이고, 광고가 없고, 아침을 위한 소리를 고릅니다.</p>
+        <p class="eyebrow" data-i18n="kitsnyang.closing.eyebrow">부드럽게 일어나기</p>
+        <h2 id="closing-title" data-i18n-html="kitsnyang.closing.title">일어나는 일도<br />조금은 귀여울 수 있게.</h2>
+        <p data-i18n="kitsnyang.closing.body">키츠냥은 무료이고, 광고가 없고, 아침을 위한 소리를 고릅니다.</p>
       </section>
     </main>
   </body>
