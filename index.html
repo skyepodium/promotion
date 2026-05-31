@@ -24,79 +24,55 @@
         <div
           class="language-switcher"
           data-language-menu
+          role="radiogroup"
           aria-label="언어 선택"
           data-i18n-aria-label="common.language.aria"
         >
-          <button
-            class="language-trigger"
-            type="button"
-            data-language-trigger
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            <span class="language-current" data-language-current>한국어</span>
-            <span class="language-current-code" data-language-current-code>KO</span>
-          </button>
-          <div class="language-menu" role="menu">
+          <div class="language-menu">
             <button
               type="button"
-              role="menuitemradio"
+              role="radio"
               data-language-option="ko"
-              data-language-label="한국어"
-              data-language-code="KO"
               aria-label="한국어"
               data-i18n-aria-label="common.language.ko"
             >
-              <span>한국어</span>
-              <strong>KO</strong>
+              KO
             </button>
             <button
               type="button"
-              role="menuitemradio"
+              role="radio"
               data-language-option="en"
-              data-language-label="영어"
-              data-language-code="EN"
               aria-label="English"
               data-i18n-aria-label="common.language.en"
             >
-              <span>영어</span>
-              <strong>EN</strong>
+              EN
             </button>
             <button
               type="button"
-              role="menuitemradio"
+              role="radio"
               data-language-option="ja"
-              data-language-label="일본어"
-              data-language-code="JA"
               aria-label="日本語"
               data-i18n-aria-label="common.language.ja"
             >
-              <span>일본어</span>
-              <strong>JA</strong>
+              JA
             </button>
             <button
               type="button"
-              role="menuitemradio"
+              role="radio"
               data-language-option="zh-TW"
-              data-language-label="Chinese"
-              data-language-code="TW"
               aria-label="繁體中文"
               data-i18n-aria-label="common.language.zhTW"
             >
-              <span>Chinese</span>
-              <strong>TW</strong>
+              TW
             </button>
             <button
               type="button"
-              role="menuitemradio"
+              role="radio"
               data-language-option="vi"
-              data-language-label="베트남"
-              data-language-code="VI"
               aria-label="Tiếng Việt"
               data-i18n-aria-label="common.language.vi"
             >
-              <span>베트남</span>
-              <strong>VI</strong>
+              VI
             </button>
           </div>
         </div>

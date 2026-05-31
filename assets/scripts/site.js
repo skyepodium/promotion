@@ -363,10 +363,6 @@ const TRANSLATIONS = {
 const root = document.documentElement;
 const cat = document.querySelector('[data-cat]');
 const heroStage = document.querySelector('[data-hero-stage]');
-const languageMenu = document.querySelector('[data-language-menu]');
-const languageTrigger = document.querySelector('[data-language-trigger]');
-const languageCurrent = document.querySelector('[data-language-current]');
-const languageCurrentCode = document.querySelector('[data-language-current-code]');
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 let ticking = false;
@@ -524,12 +520,6 @@ function updateLanguageButtons(language) {
     const option = button.getAttribute('data-language-option');
     const isActive = option === language;
 
-    if (isActive && languageCurrent && languageCurrentCode) {
-      languageCurrent.textContent = button.dataset.languageLabel || getTranslation(language, 'common.language.aria');
-      languageCurrentCode.textContent = button.dataset.languageCode || language.toUpperCase();
-    }
-
-    button.setAttribute('aria-pressed', String(isActive));
     button.setAttribute('aria-checked', String(isActive));
     button.classList.toggle('is-active', isActive);
   }
@@ -579,48 +569,15 @@ function setLanguage(language, options = {}) {
   }
 }
 
-function closeLanguageMenu() {
-  languageMenu?.classList.remove('is-open');
-  languageTrigger?.setAttribute('aria-expanded', 'false');
-}
-
-function toggleLanguageMenu() {
-  const isOpen = languageMenu?.classList.contains('is-open') || false;
-
-  languageMenu?.classList.toggle('is-open', !isOpen);
-  languageTrigger?.setAttribute('aria-expanded', String(!isOpen));
-}
-
 function bindLanguageControls() {
-  languageTrigger?.addEventListener('click', event => {
-    event.stopPropagation();
-    toggleLanguageMenu();
-  });
-
   for (const button of document.querySelectorAll('[data-language-option]')) {
     button.addEventListener('click', () => {
       setLanguage(button.getAttribute('data-language-option'), {
         persist: true,
         updateUrl: true,
       });
-      closeLanguageMenu();
     });
   }
-
-  document.addEventListener('click', event => {
-    if (event.target instanceof Node && languageMenu?.contains(event.target)) {
-      return;
-    }
-
-    closeLanguageMenu();
-  });
-
-  document.addEventListener('keydown', event => {
-    if (event.key === 'Escape') {
-      closeLanguageMenu();
-      languageTrigger?.focus();
-    }
-  });
 }
 
 function updateMotion() {
