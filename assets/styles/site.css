@@ -418,7 +418,7 @@ p {
     translate(calc(var(--hero-drift-x-neg) + var(--pointer-side-x)), calc(var(--hero-fast-y) + var(--pointer-side-y)))
     rotate(5deg);
   transition: transform 160ms ease-out;
-  width: 220px;
+  width: 252px;
   z-index: 2;
 }
 
@@ -478,7 +478,7 @@ p {
 .sound-screen {
   display: grid;
   gap: 20px;
-  padding: 30px 22px;
+  padding: 30px 20px;
 }
 
 .screen-label {
@@ -488,8 +488,16 @@ p {
 }
 
 .sound-screen strong {
-  font-size: 34px;
+  font-size: 30px;
   line-height: 1.08;
+  word-break: keep-all;
+}
+
+html:lang(ko) .sound-screen strong,
+html:lang(ja) .sound-screen strong,
+html:lang(zh) .sound-screen strong,
+html:lang(zh-TW) .sound-screen strong {
+  white-space: nowrap;
 }
 
 .sound-screen p {
@@ -1125,9 +1133,9 @@ html:lang(zh-TW) .track-button strong {
 
   .phone-side {
     height: 300px;
-    right: -12px;
+    right: -8px;
     top: 156px;
-    width: 170px;
+    width: 206px;
   }
 
   .scroll-cat {
@@ -1151,7 +1159,7 @@ html:lang(zh-TW) .track-button strong {
   }
 
   .sound-screen strong {
-    font-size: 26px;
+    font-size: 22px;
   }
 
   .sound-marquee span {
