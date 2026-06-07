@@ -1049,6 +1049,19 @@ html:lang(zh-TW) .track-button strong {
   margin-bottom: 0;
 }
 
+.privacy-block ul {
+  display: grid;
+  gap: 10px;
+  margin: 16px 0 0;
+  padding-left: 22px;
+}
+
+.privacy-block li {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.55;
+}
+
 .privacy-block a {
   font-weight: 900;
   overflow-wrap: anywhere;

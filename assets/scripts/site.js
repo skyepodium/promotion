@@ -1,4 +1,4 @@
-const SUPPORTED_LANGUAGES = ['ko', 'en', 'ja', 'zh', 'zh-TW', 'vi', 'es', 'fr'];
+const SUPPORTED_LANGUAGES = ['ko', 'en', 'ja', 'zh', 'zh-TW', 'vi', 'es', 'fr', 'de', 'pt', 'id', 'it', 'th', 'ar', 'ru'];
 const DEFAULT_LANGUAGE = 'ko';
 const LANGUAGE_STORAGE_KEY = 'kitsnyang-promotion-language';
 
@@ -818,11 +818,11 @@ const PRIVACY_TRANSLATIONS = {
     'common.privacy': '개인정보',
     'common.privacyLong': '개인정보 처리방침',
     'privacy.meta.description':
-      '키츠냥은 개인정보를 수집하거나 외부로 전송하지 않습니다. 알람 설정 데이터는 기기 내에만 저장됩니다.',
+      '키츠냥은 개인정보를 수집하거나 추적하지 않습니다. 알람 설정과 복구용 상태 데이터는 기기 내에만 저장됩니다.',
     'privacy.meta.title': '키츠냥 개인정보 처리방침',
     'privacy.hero.eyebrow': '개인정보 처리방침',
     'privacy.hero.title': '키츠냥은 개인정보를 수집하지 않습니다.',
-    'privacy.hero.lead': '알람 시간, 요일, 알림음 같은 설정은 사용자의 기기 안에만 저장됩니다.',
+    'privacy.hero.lead': '알람 시간, 요일, 알림음, 알람 복구용 상태 데이터는 사용자의 기기 안에만 저장됩니다.',
     'privacy.summary.aria': '개인정보 요약',
     'privacy.summary.collect.title': '수집 없음',
     'privacy.summary.collect.body': '이름, 이메일, 위치, 연락처, 기기 식별자를 수집하지 않습니다.',
@@ -835,27 +835,43 @@ const PRIVACY_TRANSLATIONS = {
     'privacy.collection.body':
       '키츠냥은 이름, 이메일, 위치, 연락처, 기기 식별자 등 개인을 식별할 수 있는 정보를 수집하지 않습니다.',
     'privacy.local.title': '기기 내 저장 데이터',
-    'privacy.local.body': '알람 시간, 요일, 알림음, 색상 같은 앱 설정은 사용자의 기기 안에만 저장됩니다.',
+    'privacy.local.body':
+      '키츠냥은 알람 기능을 제공하고 앱을 안정적으로 복구하기 위해 아래 데이터를 기기 내 저장소에 저장할 수 있습니다.',
+    'privacy.local.item.alarm': '알람 시간, 반복 요일, 알림음, 색상, 켜짐/꺼짐 상태',
+    'privacy.local.item.preference': '테마와 앱 표시 같은 사용자가 선택한 설정',
+    'privacy.local.item.recovery': '알람 울림, 해제, 앱 재시작 후 복구에 필요한 로컬 상태 기록',
+    'privacy.permissions.title': '권한 사용 목적',
+    'privacy.permissions.body': '키츠냥이 요청하는 권한은 알람을 예약하고 울리기 위한 목적에만 사용됩니다.',
+    'privacy.permissions.item.notification': '알림 권한: 설정한 시간에 알람을 표시하고 울리기 위해 사용합니다.',
+    'privacy.permissions.item.alarm':
+      '정확한 알람 권한: 기기 잠금 상태나 절전 상태에서도 예약한 시간에 알람을 울리기 위해 사용합니다.',
+    'privacy.permissions.item.sound': '소리와 진동: 선택한 알림음과 진동으로 알람을 알려주기 위해 사용합니다.',
     'privacy.sharing.title': '외부 전송 및 제3자 제공',
     'privacy.sharing.body': '키츠냥은 저장된 데이터를 외부 서버로 전송하거나 제3자에게 제공하지 않습니다.',
     'privacy.ads.title': '광고 및 분석 도구',
     'privacy.ads.body': '키츠냥은 광고 SDK, 분석 SDK, 제3자 추적 도구를 사용하지 않습니다.',
     'privacy.delete.title': '데이터 삭제',
     'privacy.delete.body': '기기 내 저장 데이터는 앱 삭제 시 함께 삭제됩니다.',
+    'privacy.retention.title': '보관 기간',
+    'privacy.retention.body': '기기 내 저장 데이터는 사용자가 알람을 삭제하거나 앱을 삭제할 때까지 기기 안에 보관됩니다.',
+    'privacy.children.title': '아동 개인정보',
+    'privacy.children.body': '키츠냥은 아동을 포함한 모든 사용자에게서 개인정보를 의도적으로 수집하지 않습니다.',
+    'privacy.changes.title': '처리방침 변경',
+    'privacy.changes.body': '개인정보 처리 방식이 바뀌면 이 페이지의 시행일과 내용을 업데이트합니다.',
     'privacy.contact.title': '문의',
     'privacy.contact.body': '개인정보 처리방침에 관한 문의는 이메일로 보내 주세요.',
-    'privacy.updated': '시행일: 2026년 5월 31일',
+    'privacy.updated': '시행일: 2026년 6월 7일',
     'privacy.backCta': '키츠냥 소개로 돌아가기',
   },
   en: {
     'common.privacy': 'Privacy',
     'common.privacyLong': 'Privacy Policy',
     'privacy.meta.description':
-      'Kitsnyang does not collect or transmit personal information. Alarm settings stay on your device.',
+      'Kitsnyang does not collect or track personal information. Alarm settings and recovery state stay on your device.',
     'privacy.meta.title': 'Kitsnyang Privacy Policy',
     'privacy.hero.eyebrow': 'Privacy Policy',
     'privacy.hero.title': 'Kitsnyang does not collect personal information.',
-    'privacy.hero.lead': 'Settings like alarm time, repeat days, and alarm sounds stay on your device.',
+    'privacy.hero.lead': 'Alarm time, repeat days, alarm sounds, and recovery state stay on your device.',
     'privacy.summary.aria': 'Privacy summary',
     'privacy.summary.collect.title': 'No collection',
     'privacy.summary.collect.body': 'We do not collect names, email addresses, location, contacts, or device IDs.',
@@ -868,16 +884,34 @@ const PRIVACY_TRANSLATIONS = {
     'privacy.collection.body':
       'Kitsnyang does not collect information that can identify you, such as name, email, location, contacts, or device identifiers.',
     'privacy.local.title': 'Data stored on your device',
-    'privacy.local.body': 'App settings such as alarm time, repeat days, alarm sound, and color are stored only on your device.',
+    'privacy.local.body':
+      'Kitsnyang may store the following data on your device to provide alarms and recover the app reliably.',
+    'privacy.local.item.alarm': 'Alarm time, repeat days, alarm sound, color, and on/off state',
+    'privacy.local.item.preference': 'User-selected settings such as theme and app display preferences',
+    'privacy.local.item.recovery': 'Local state records needed for alarm ringing, dismissal, and restart recovery',
+    'privacy.permissions.title': 'How permissions are used',
+    'privacy.permissions.body': 'Permissions requested by Kitsnyang are used only to schedule and ring alarms.',
+    'privacy.permissions.item.notification': 'Notifications: used to show and ring alarms at the time you set.',
+    'privacy.permissions.item.alarm':
+      'Exact alarms: used to ring alarms at the scheduled time while the device is locked or conserving power.',
+    'privacy.permissions.item.sound': 'Sound and vibration: used to alert you with the selected alarm sound and vibration.',
     'privacy.sharing.title': 'External transfer and third-party sharing',
     'privacy.sharing.body': 'Kitsnyang does not send stored data to external servers or share it with third parties.',
     'privacy.ads.title': 'Ads and analytics',
     'privacy.ads.body': 'Kitsnyang does not use ad SDKs, analytics SDKs, or third-party tracking tools.',
     'privacy.delete.title': 'Deleting data',
     'privacy.delete.body': 'Data stored on your device is deleted when you delete the app.',
+    'privacy.retention.title': 'Retention period',
+    'privacy.retention.body':
+      'Data stored on your device remains there until you delete the alarm data or delete the app.',
+    'privacy.children.title': 'Children’s privacy',
+    'privacy.children.body': 'Kitsnyang does not knowingly collect personal information from any user, including children.',
+    'privacy.changes.title': 'Changes to this policy',
+    'privacy.changes.body':
+      'If Kitsnyang’s data handling practices change, we will update the effective date and the content of this page.',
     'privacy.contact.title': 'Contact',
     'privacy.contact.body': 'For questions about this Privacy Policy, please email us.',
-    'privacy.updated': 'Effective date: May 31, 2026',
+    'privacy.updated': 'Effective date: June 7, 2026',
     'privacy.backCta': 'Back to Kitsnyang',
   },
   ja: {
@@ -910,7 +944,7 @@ const PRIVACY_TRANSLATIONS = {
     'privacy.delete.body': '端末内に保存されたデータは、アプリを削除すると一緒に削除されます。',
     'privacy.contact.title': 'お問い合わせ',
     'privacy.contact.body': 'このプライバシーポリシーに関するお問い合わせはメールでご連絡ください。',
-    'privacy.updated': '施行日: 2026年5月31日',
+    'privacy.updated': '施行日: 2026年6月7日',
     'privacy.backCta': 'キツニャン紹介へ戻る',
   },
   zh: {
@@ -941,7 +975,7 @@ const PRIVACY_TRANSLATIONS = {
     'privacy.delete.body': '设备内保存的数据会在删除应用时一并删除。',
     'privacy.contact.title': '联系',
     'privacy.contact.body': '如对本隐私政策有疑问，请通过电子邮件联系我们。',
-    'privacy.updated': '生效日期：2026年5月31日',
+    'privacy.updated': '生效日期：2026年6月7日',
     'privacy.backCta': '返回奇茨喵介绍',
   },
   'zh-TW': {
@@ -972,7 +1006,7 @@ const PRIVACY_TRANSLATIONS = {
     'privacy.delete.body': '裝置內儲存的資料會在刪除應用程式時一併刪除。',
     'privacy.contact.title': '聯絡',
     'privacy.contact.body': '如對本隱私權政策有疑問，請透過電子郵件聯絡我們。',
-    'privacy.updated': '生效日期：2026年5月31日',
+    'privacy.updated': '生效日期：2026年6月7日',
     'privacy.backCta': '返回奇茲喵介紹',
   },
   vi: {
@@ -1005,7 +1039,7 @@ const PRIVACY_TRANSLATIONS = {
     'privacy.delete.body': 'Dữ liệu lưu trên thiết bị sẽ bị xóa cùng khi bạn xóa ứng dụng.',
     'privacy.contact.title': 'Liên hệ',
     'privacy.contact.body': 'Nếu có câu hỏi về Chính sách quyền riêng tư này, vui lòng gửi email cho chúng tôi.',
-    'privacy.updated': 'Ngày có hiệu lực: 31 tháng 5, 2026',
+    'privacy.updated': 'Ngày có hiệu lực: 7 tháng 6, 2026',
     'privacy.backCta': 'Quay lại Kitsnyang',
   },
   es: {
@@ -1038,7 +1072,7 @@ const PRIVACY_TRANSLATIONS = {
     'privacy.delete.body': 'Los datos guardados en tu dispositivo se eliminan al eliminar la app.',
     'privacy.contact.title': 'Contacto',
     'privacy.contact.body': 'Para preguntas sobre esta Política de privacidad, escríbenos por email.',
-    'privacy.updated': 'Fecha de entrada en vigor: 31 de mayo de 2026',
+    'privacy.updated': 'Fecha de entrada en vigor: 7 de junio de 2026',
     'privacy.backCta': 'Volver a Kitsnyang',
   },
   fr: {
@@ -1071,7 +1105,7 @@ const PRIVACY_TRANSLATIONS = {
     'privacy.delete.body': 'Les données stockées sur votre appareil sont supprimées lorsque vous supprimez l’app.',
     'privacy.contact.title': 'Contact',
     'privacy.contact.body': 'Pour toute question sur cette Politique de confidentialité, contactez-nous par email.',
-    'privacy.updated': 'Date d’entrée en vigueur : 31 mai 2026',
+    'privacy.updated': 'Date d’entrée en vigueur : 7 juin 2026',
     'privacy.backCta': 'Retour à Kitsnyang',
   },
 };
@@ -1147,6 +1181,34 @@ function normalizeLanguage(value) {
     return 'fr';
   }
 
+  if (language.startsWith('de')) {
+    return 'de';
+  }
+
+  if (language.startsWith('pt')) {
+    return 'pt';
+  }
+
+  if (language.startsWith('id')) {
+    return 'id';
+  }
+
+  if (language.startsWith('it')) {
+    return 'it';
+  }
+
+  if (language.startsWith('th')) {
+    return 'th';
+  }
+
+  if (language.startsWith('ar')) {
+    return 'ar';
+  }
+
+  if (language.startsWith('ru')) {
+    return 'ru';
+  }
+
   return null;
 }
 
@@ -1193,10 +1255,14 @@ function getPreferredLanguage() {
 }
 
 function getRawTranslation(language, key) {
-  const activeTranslations = TRANSLATIONS[language] || TRANSLATIONS[DEFAULT_LANGUAGE];
+  const activeTranslations = TRANSLATIONS[language];
 
-  if (Object.prototype.hasOwnProperty.call(activeTranslations, key)) {
+  if (activeTranslations && Object.prototype.hasOwnProperty.call(activeTranslations, key)) {
     return activeTranslations[key];
+  }
+
+  if (language !== 'en' && Object.prototype.hasOwnProperty.call(TRANSLATIONS.en, key)) {
+    return TRANSLATIONS.en[key];
   }
 
   return TRANSLATIONS[DEFAULT_LANGUAGE][key] || '';
@@ -1305,7 +1371,7 @@ function updateLanguageButtons(language) {
 }
 
 function updateLocalizedContent(language) {
-  root.lang = language;
+  root.lang = TRANSLATIONS[language] ? language : 'en';
   root.dataset.language = language;
 
   for (const element of document.querySelectorAll('[data-i18n]')) {
