@@ -1197,7 +1197,7 @@ html:lang(zh-TW) .track-button strong {
 
   .language-menu {
     display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     min-width: 0;
     max-width: 100%;
     width: 100%;
@@ -1213,11 +1213,11 @@ html:lang(zh-TW) .track-button strong {
     border-left: 2px solid var(--black);
   }
 
-  .language-menu button:nth-child(5n + 1) {
+  .language-menu button:nth-child(4n + 1) {
     border-left: 0;
   }
 
-  .language-menu button:nth-child(n + 6) {
+  .language-menu button:nth-child(n + 5) {
     border-top: 2px solid var(--black);
   }
 
