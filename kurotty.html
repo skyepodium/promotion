@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      data-i18n-content="kurotty.meta.description"
+      content="Kurotty is a macOS-first terminal emulator built with Swift, Zig, and Metal. Download the latest alpha build for macOS."
+    />
+    <title data-i18n="kurotty.meta.title">Kurotty - macOS terminal with a sharper pulse</title>
+    <link rel="stylesheet" href="./assets/styles/site.css?v=20260628-kurotty1" />
+    <script src="./assets/scripts/site.js?v=20260628-kurotty1" defer></script>
+  </head>
+  <body class="kurotty-page" data-default-language="en" data-supported-languages="en,ko">
+    <header class="site-header" aria-label="Primary navigation" data-i18n-aria-label="common.header.aria">
+      <a class="brand-link" href="./index.html" aria-label="skyepodium home" data-i18n-aria-label="common.home.aria">
+        skyepodium
+      </a>
+      <div class="header-tools">
+        <nav class="nav-links" aria-label="Pages" data-i18n-aria-label="common.nav.aria">
+          <a aria-current="page" href="./kurotty.html" data-i18n="kurotty.nav">Kurotty</a>
+        </nav>
+        <div
+          class="language-switcher"
+          data-language-menu
+          role="radiogroup"
+          aria-label="Choose language"
+          data-i18n-aria-label="common.language.aria"
+        >
+          <div class="language-menu language-menu-compact">
+            <button
+              type="button"
+              role="radio"
+              data-language-option="en"
+              aria-label="English"
+              data-i18n-aria-label="common.language.en"
+            >
+              EN
+            </button>
+            <button
+              type="button"
+              role="radio"
+              data-language-option="ko"
+              aria-label="한국어"
+              data-i18n-aria-label="common.language.ko"
+            >
+              KO
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="kurotty-hero" aria-labelledby="kurotty-title">
+        <div class="kurotty-hero-copy">
+          <p class="eyebrow" data-i18n="kurotty.hero.eyebrow">macOS terminal emulator</p>
+          <h1 id="kurotty-title" data-i18n-html="kurotty.hero.title">Kurotty</h1>
+          <p class="kurotty-lead" data-i18n="kurotty.hero.lead">
+            Kurotty blends a native AppKit feel, a Zig terminal core, and a Metal renderer into a macOS-first terminal.
+          </p>
+          <div class="kurotty-actions">
+            <a
+              class="kurotty-download"
+              href="https://github.com/skyepodium/kurotty/releases/download/v0.1.0-alpha.3/kurotty-0.1.0-alpha.3-macos.zip"
+              data-i18n="kurotty.download.primary"
+            >
+              Download for macOS
+            </a>
+            <a
+              class="kurotty-release-link"
+              href="https://github.com/skyepodium/kurotty/releases/tag/v0.1.0-alpha.3"
+              data-i18n="kurotty.download.secondary"
+            >
+              View releases
+            </a>
+          </div>
+          <p class="kurotty-download-note" data-i18n="kurotty.download.note">
+            Latest alpha: v0.1.0-alpha.3. macOS 14 or newer recommended.
+          </p>
+        </div>
+
+        <div
+          class="kurotty-stage"
+          data-hero-stage
+          aria-label="Animated Kurotty mascot and terminal preview"
+          data-i18n-aria-label="kurotty.visual.aria"
+        >
+          <div class="kurotty-grid" aria-hidden="true"></div>
+          <img
+            class="kurotty-cat"
+            data-cat
+            src="./assets/images/kurotty-icon.png"
+            alt="Kurotty cat app icon"
+            data-i18n-alt="kurotty.icon.alt"
+          />
+          <div class="kurotty-terminal-card">
+            <div class="kurotty-terminal-top">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <pre aria-hidden="true"><code>$ swift run kurotty
+Metal device: ready
+Zig core: linked
+PTY: awake
+cursor: blinking</code></pre>
+          </div>
+          <img
+            class="kurotty-preview"
+            src="./assets/images/kurotty-preview.gif"
+            alt="Kurotty terminal app preview"
+            data-i18n-alt="kurotty.preview.alt"
+          />
+        </div>
+      </section>
+
+      <section class="kurotty-badges" aria-label="Kurotty technology highlights">
+        <span data-i18n="kurotty.badge.native">Native AppKit</span>
+        <span data-i18n="kurotty.badge.metal">Metal renderer</span>
+        <span data-i18n="kurotty.badge.zig">Zig core</span>
+        <span data-i18n="kurotty.badge.ime">IME aware</span>
+      </section>
+
+      <section class="kurotty-section kurotty-about" aria-labelledby="kurotty-about-title">
+        <div class="kurotty-section-heading">
+          <p class="eyebrow" data-i18n="kurotty.about.eyebrow">Why Kurotty</p>
+          <h2 id="kurotty-about-title" data-i18n="kurotty.about.title">
+            A terminal that feels built for the machine it runs on.
+          </h2>
+          <p data-i18n="kurotty.about.body">
+            Tabs, splits, menus, clipboard, notifications, and IME stay in the macOS layer. Parser, grid, scrollback,
+            and rendering contracts move toward a tighter Zig and Metal core.
+          </p>
+        </div>
+        <div class="kurotty-feature-grid">
+          <article class="reveal">
+            <span>01</span>
+            <h3 data-i18n="kurotty.feature.native.title">Native surface</h3>
+            <p data-i18n="kurotty.feature.native.body">
+              macOS windows, tabs, splits, menus, pasteboard, and input live where they belong.
+            </p>
+          </article>
+          <article class="reveal">
+            <span>02</span>
+            <h3 data-i18n="kurotty.feature.render.title">Sharp renderer</h3>
+            <p data-i18n="kurotty.feature.render.body">
+              Metal draws glyphs, backgrounds, cursor, underline, and strikethrough with direct control.
+            </p>
+          </article>
+          <article class="reveal">
+            <span>03</span>
+            <h3 data-i18n="kurotty.feature.protocol.title">Terminal detail</h3>
+            <p data-i18n="kurotty.feature.protocol.body">
+              16-color, 256-color, truecolor, OSC title, working directory, and notification paths are already in motion.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="kurotty-section kurotty-closing" aria-labelledby="kurotty-closing-title">
+        <p class="eyebrow" data-i18n="kurotty.closing.eyebrow">Open source</p>
+        <h2 id="kurotty-closing-title" data-i18n="kurotty.closing.title">
+          Built in public, tuned for terminal people.
+        </h2>
+        <p data-i18n="kurotty.closing.body">MIT licensed. Contributions and release notes live on GitHub.</p>
+        <a href="https://github.com/skyepodium/kurotty" class="kurotty-release-link" data-i18n="kurotty.github">
+          GitHub repository
+        </a>
+      </section>
+    </main>
+  </body>
+</html>

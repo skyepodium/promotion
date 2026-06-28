@@ -35,6 +35,38 @@ const TRANSLATIONS = {
     'home.actions.aria': '대표 작업',
     'home.project.body': '무료, 광고 없음, 여러 알림음. 아침을 조금 덜 미워하게 만드는 알람.',
     'home.project.linkAria': '키츠냥 소개 페이지로 이동',
+    'kurotty.nav': 'Kurotty',
+    'kurotty.meta.description':
+      'Kurotty는 Swift, Zig, Metal로 만든 macOS 우선 터미널 에뮬레이터입니다. 최신 알파 macOS 빌드를 다운로드하세요.',
+    'kurotty.meta.title': 'Kurotty - macOS terminal emulator',
+    'kurotty.hero.eyebrow': 'macOS terminal emulator',
+    'kurotty.hero.title': 'Kurotty',
+    'kurotty.hero.lead':
+      'Kurotty는 Swift/AppKit, Zig, Metal로 만든 조용하고 선명한 macOS 터미널입니다.',
+    'kurotty.download.primary': 'Download for macOS',
+    'kurotty.download.secondary': 'View releases',
+    'kurotty.download.note': 'Latest alpha: v0.1.0-alpha.3. macOS 14 이상 권장.',
+    'kurotty.visual.aria': '애니메이션 Kurotty 캐릭터와 터미널 미리보기',
+    'kurotty.icon.alt': 'Kurotty 고양이 앱 아이콘',
+    'kurotty.preview.alt': 'Kurotty 터미널 앱 미리보기',
+    'kurotty.badge.native': 'Native AppKit',
+    'kurotty.badge.metal': 'Metal renderer',
+    'kurotty.badge.zig': 'Zig core',
+    'kurotty.badge.ime': 'IME aware',
+    'kurotty.about.eyebrow': 'Shape',
+    'kurotty.about.title': 'Native shell outside. Terminal engine inside.',
+    'kurotty.about.body':
+      'macOS가 잘하는 일은 AppKit에 두고, 터미널 상태와 렌더링 경계는 Zig와 Metal 쪽으로 단단하게 모읍니다.',
+    'kurotty.feature.native.title': 'Native surface',
+    'kurotty.feature.native.body': 'macOS windows, tabs, splits, menus, pasteboard, and input live where they belong.',
+    'kurotty.feature.render.title': 'Sharp renderer',
+    'kurotty.feature.render.body': 'Metal draws glyphs, backgrounds, cursor, underline, and strikethrough with direct control.',
+    'kurotty.feature.protocol.title': 'Terminal detail',
+    'kurotty.feature.protocol.body': '16-color, 256-color, truecolor, OSC title, working directory, and notification paths are already wired.',
+    'kurotty.closing.eyebrow': 'Open source',
+    'kurotty.closing.title': 'Alpha builds are on GitHub.',
+    'kurotty.closing.body': 'MIT licensed. Early, useful, and still being shaped.',
+    'kurotty.github': 'GitHub repository',
     'kitsnyang.meta.description':
       '키츠냥은 무료이고 광고 없는 아침 알람 앱입니다. 여러 알림음과 감각적인 알람 설정 화면을 제공합니다.',
     'kitsnyang.meta.title': '키츠냥 - 아침을 조금 덜 미워하게 만드는 알람',
@@ -144,6 +176,38 @@ const TRANSLATIONS = {
     'home.actions.aria': 'Featured work',
     'home.project.body': 'Free, no ads, multiple alarm sounds. An alarm that makes mornings a little easier.',
     'home.project.linkAria': 'Go to the 키츠냥 service page',
+    'kurotty.nav': 'Kurotty',
+    'kurotty.meta.description':
+      'Kurotty is a macOS-first terminal emulator built with Swift, Zig, and Metal. Download the latest alpha build for macOS.',
+    'kurotty.meta.title': 'Kurotty - macOS terminal emulator',
+    'kurotty.hero.eyebrow': 'macOS terminal emulator',
+    'kurotty.hero.title': 'Kurotty',
+    'kurotty.hero.lead':
+      'Kurotty is a quiet, sharp macOS terminal built with Swift/AppKit, Zig, and Metal.',
+    'kurotty.download.primary': 'Download for macOS',
+    'kurotty.download.secondary': 'View releases',
+    'kurotty.download.note': 'Latest alpha: v0.1.0-alpha.3. macOS 14 or newer recommended.',
+    'kurotty.visual.aria': 'Animated Kurotty mascot and terminal preview',
+    'kurotty.icon.alt': 'Kurotty cat app icon',
+    'kurotty.preview.alt': 'Kurotty terminal app preview',
+    'kurotty.badge.native': 'Native AppKit',
+    'kurotty.badge.metal': 'Metal renderer',
+    'kurotty.badge.zig': 'Zig core',
+    'kurotty.badge.ime': 'IME aware',
+    'kurotty.about.eyebrow': 'Shape',
+    'kurotty.about.title': 'Native shell outside. Terminal engine inside.',
+    'kurotty.about.body':
+      'The macOS layer handles the parts macOS should own. Zig and Metal keep the terminal state and rendering path tight.',
+    'kurotty.feature.native.title': 'Native surface',
+    'kurotty.feature.native.body': 'macOS windows, tabs, splits, menus, pasteboard, and input live where they belong.',
+    'kurotty.feature.render.title': 'Sharp renderer',
+    'kurotty.feature.render.body': 'Metal draws glyphs, backgrounds, cursor, underline, and strikethrough with direct control.',
+    'kurotty.feature.protocol.title': 'Terminal detail',
+    'kurotty.feature.protocol.body': '16-color, 256-color, truecolor, OSC title, working directory, and notification paths are already wired.',
+    'kurotty.closing.eyebrow': 'Open source',
+    'kurotty.closing.title': 'Alpha builds are on GitHub.',
+    'kurotty.closing.body': 'MIT licensed. Early, useful, and still being shaped.',
+    'kurotty.github': 'GitHub repository',
     'kitsnyang.meta.description':
       '키츠냥 is a free, no-ad morning alarm app with multiple alarm sounds and a playful alarm setup screen.',
     'kitsnyang.meta.title': '키츠냥 - A gentler morning alarm',
@@ -2051,6 +2115,11 @@ for (const [language, translations] of Object.entries(SITE_TRANSLATION_OVERRIDES
 }
 
 const root = document.documentElement;
+const pageDefaultLanguage = normalizeLanguage(document.body?.dataset.defaultLanguage) || DEFAULT_LANGUAGE;
+const pageSupportedLanguages = (document.body?.dataset.supportedLanguages || SUPPORTED_LANGUAGES.join(','))
+  .split(',')
+  .map(language => normalizeLanguage(language.trim()))
+  .filter(Boolean);
 const cat = document.querySelector('[data-cat]');
 const heroStage = document.querySelector('[data-hero-stage]');
 const soundPlayer = document.querySelector('[data-sound-player]');
@@ -2173,25 +2242,25 @@ function getPreferredLanguage() {
   const params = new URLSearchParams(window.location.search);
   const queryLanguage = normalizeLanguage(params.get('lang'));
 
-  if (queryLanguage) {
+  if (queryLanguage && pageSupportedLanguages.includes(queryLanguage)) {
     return queryLanguage;
   }
 
   const storedLanguage = readStoredLanguage();
 
-  if (storedLanguage) {
+  if (storedLanguage && pageSupportedLanguages.includes(storedLanguage)) {
     return storedLanguage;
   }
 
   for (const language of window.navigator.languages || [window.navigator.language]) {
     const normalizedLanguage = normalizeLanguage(language);
 
-    if (normalizedLanguage) {
+    if (normalizedLanguage && pageSupportedLanguages.includes(normalizedLanguage)) {
       return normalizedLanguage;
     }
   }
 
-  return DEFAULT_LANGUAGE;
+  return pageDefaultLanguage;
 }
 
 function getRawTranslation(language, key) {
@@ -2205,7 +2274,7 @@ function getRawTranslation(language, key) {
     return TRANSLATIONS.en[key];
   }
 
-  return TRANSLATIONS[DEFAULT_LANGUAGE][key] || '';
+  return TRANSLATIONS[pageDefaultLanguage]?.[key] || TRANSLATIONS[DEFAULT_LANGUAGE][key] || '';
 }
 
 function formatTranslation(language, value) {
@@ -2250,7 +2319,7 @@ function renderHighlightedTranslation(language, textKey, highlightKey) {
 function updateLanguageUrl(language) {
   const url = new URL(window.location.href);
 
-  if (language === DEFAULT_LANGUAGE) {
+  if (language === pageDefaultLanguage) {
     url.searchParams.delete('lang');
   } else {
     url.searchParams.set('lang', language);
@@ -2268,7 +2337,7 @@ function localizeHref(href, language) {
   const query = queryIndex >= 0 ? beforeHash.slice(queryIndex + 1) : '';
   const params = new URLSearchParams(query);
 
-  if (language === DEFAULT_LANGUAGE) {
+  if (language === pageDefaultLanguage) {
     params.delete('lang');
   } else {
     params.set('lang', language);
@@ -2340,7 +2409,7 @@ function updateLocalizedContent(language) {
 }
 
 function setLanguage(language, options = {}) {
-  if (!SUPPORTED_LANGUAGES.includes(language)) {
+  if (!pageSupportedLanguages.includes(language)) {
     return;
   }
 
