@@ -45,7 +45,8 @@ const TRANSLATIONS = {
       'Kurotty는 Swift/AppKit, Zig, Metal로 만든 조용하고 선명한 macOS 터미널입니다.',
     'kurotty.download.primary': 'Download for macOS',
     'kurotty.download.secondary': 'View releases',
-    'kurotty.download.note': 'Latest alpha: v0.1.0-alpha.4. macOS 14 이상 권장.',
+    'kurotty.download.note':
+      'Latest alpha: v0.1.0-alpha.5. Intel 및 Apple Silicon Mac용 Universal DMG. macOS 14 이상 권장.',
     'kurotty.visual.aria': '애니메이션 Kurotty 캐릭터와 터미널 미리보기',
     'kurotty.icon.alt': 'Kurotty 고양이 앱 아이콘',
     'kurotty.preview.alt': 'Kurotty 터미널 앱 미리보기',
@@ -186,7 +187,8 @@ const TRANSLATIONS = {
       'Kurotty is a quiet, sharp macOS terminal built with Swift/AppKit, Zig, and Metal.',
     'kurotty.download.primary': 'Download for macOS',
     'kurotty.download.secondary': 'View releases',
-    'kurotty.download.note': 'Latest alpha: v0.1.0-alpha.4. macOS 14 or newer recommended.',
+    'kurotty.download.note':
+      'Latest alpha: v0.1.0-alpha.5. Universal DMG for Intel and Apple Silicon Macs. macOS 14 or newer recommended.',
     'kurotty.visual.aria': 'Animated Kurotty mascot and terminal preview',
     'kurotty.icon.alt': 'Kurotty cat app icon',
     'kurotty.preview.alt': 'Kurotty terminal app preview',
