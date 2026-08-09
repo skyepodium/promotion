@@ -1585,6 +1585,380 @@ const PRIVACY_TRANSLATIONS = {
   },
 };
 
+const EIVIL_PRIVACY_TRANSLATIONS = {
+  ko: {
+    'eivilPrivacy.meta.description':
+      'Eivil은 개발자에게 개인정보나 탐색 데이터를 전송하지 않습니다. 브라우징 기록, 북마크, 탭 세션과 웹사이트 데이터는 기기 내에 저장됩니다.',
+    'eivilPrivacy.meta.title': 'Eivil 개인정보 처리방침',
+    'eivilPrivacy.hero.eyebrow': '개인정보 처리방침',
+    'eivilPrivacy.hero.title': 'Eivil은 탐색 데이터를 개발자에게 전송하지 않습니다.',
+    'eivilPrivacy.hero.lead': '방문 기록, 북마크, 열린 탭과 웹사이트 데이터는 사용자의 기기 안에 저장됩니다.',
+    'eivilPrivacy.summary.aria': '개인정보 요약',
+    'eivilPrivacy.summary.collect.title': '개발자 수집 없음',
+    'eivilPrivacy.summary.collect.body':
+      'Eivil은 개인정보, 탐색 기록 또는 사용 분석 정보를 개발자 서버로 수집하지 않습니다.',
+    'eivilPrivacy.summary.local.title': '기기 내 저장',
+    'eivilPrivacy.summary.local.body':
+      '탭, 방문 기록, 북마크, 쿠키와 캐시는 브라우징 기능을 위해 기기 안에 저장됩니다.',
+    'eivilPrivacy.summary.thirdParty.title': '웹사이트와 직접 통신',
+    'eivilPrivacy.summary.thirdParty.body':
+      '입력한 주소와 검색어는 사용자가 선택한 웹사이트 또는 검색 제공자로 직접 전송됩니다.',
+    'eivilPrivacy.policy.title': 'Eivil 개인정보 처리방침',
+    'eivilPrivacy.operator.title': '운영자',
+    'eivilPrivacy.operator.body':
+      'Eivil은 skyepodium이 제공하는 모바일 웹 브라우저입니다. 이 방침은 Eivil 앱에서 개발자가 처리하는 정보에 적용됩니다.',
+    'eivilPrivacy.collection.title': '개발자가 수집하는 정보',
+    'eivilPrivacy.collection.body':
+      'Eivil은 이름, 이메일, 연락처, 위치, 기기 식별자, 탐색 기록 또는 사용 분석 정보를 개발자에게 전송하거나 수집하지 않습니다. 계정 생성도 요구하지 않습니다.',
+    'eivilPrivacy.local.title': '기기에 저장되는 정보',
+    'eivilPrivacy.local.body':
+      '브라우징 기능과 앱 재실행 후 복원을 위해 다음 정보가 사용자의 기기에 저장될 수 있습니다.',
+    'eivilPrivacy.local.item.tabs': '열린 탭의 제목과 주소, 현재 선택된 탭',
+    'eivilPrivacy.local.item.library': '방문 기록, 북마크, 저장된 사이트 아이콘',
+    'eivilPrivacy.local.item.website': 'WebKit이 관리하는 쿠키, 캐시, 로컬 저장소와 기타 웹사이트 데이터',
+    'eivilPrivacy.local.item.settings': '언어와 앱 동작에 필요한 설정',
+    'eivilPrivacy.network.title': '인터넷 연결과 제3자 웹사이트',
+    'eivilPrivacy.network.body':
+      'Eivil은 사용자가 입력하거나 선택한 웹주소에 연결합니다. 웹페이지를 열면 주소, 네트워크 주소, 브라우저가 보내는 표준 요청 정보가 해당 웹사이트에 전달될 수 있습니다. 검색어는 기본 검색 제공자인 Google에 전달됩니다. 이러한 제3자의 정보 처리는 각 웹사이트와 검색 제공자의 개인정보 처리방침을 따릅니다.',
+    'eivilPrivacy.sharing.title': '공유와 클립보드',
+    'eivilPrivacy.sharing.body':
+      '공유 기능은 사용자가 선택한 주소를 iOS 공유 시트로 전달합니다. 붙여넣기는 사용자가 해당 기능을 선택했을 때 클립보드의 텍스트를 기기에서 읽습니다. Eivil은 이 정보를 개발자에게 전송하지 않습니다.',
+    'eivilPrivacy.tracking.title': '광고, 분석 및 추적',
+    'eivilPrivacy.tracking.body':
+      'Eivil에는 개발자가 운영하는 광고 SDK, 분석 SDK 또는 사용자 추적 도구가 포함되어 있지 않습니다. 방문한 웹사이트는 자체 광고, 분석 또는 추적 기술을 사용할 수 있습니다.',
+    'eivilPrivacy.delete.title': '정보 삭제',
+    'eivilPrivacy.delete.body':
+      '설정의 브라우징 데이터 지우기를 사용하면 방문 기록, 쿠키, 캐시와 기타 웹사이트 데이터를 삭제할 수 있습니다. 북마크는 앱에서 개별적으로 삭제할 수 있습니다. 앱을 삭제하면 Eivil이 기기에 저장한 정보도 함께 삭제됩니다.',
+    'eivilPrivacy.children.title': '아동의 개인정보',
+    'eivilPrivacy.children.body':
+      'Eivil은 아동을 포함한 사용자로부터 개인정보를 개발자에게 의도적으로 수집하지 않습니다. 방문한 웹사이트에는 각 사이트의 연령 요건과 개인정보 처리방침이 적용됩니다.',
+    'eivilPrivacy.changes.title': '처리방침 변경',
+    'eivilPrivacy.changes.body':
+      'Eivil의 정보 처리 방식이 변경되면 이 페이지의 내용과 시행일을 업데이트합니다.',
+    'eivilPrivacy.contact.title': '문의',
+    'eivilPrivacy.contact.body': '개인정보 처리방침에 관한 문의는 이메일로 보내 주세요.',
+    'eivilPrivacy.updated': '시행일: 2026년 8월 9일',
+    'eivilPrivacy.backCta': 'skyepodium 홈으로 돌아가기',
+  },
+  en: {
+    'eivilPrivacy.meta.description':
+      'Eivil does not send personal information or browsing data to the developer. History, bookmarks, tab sessions, and website data stay on your device.',
+    'eivilPrivacy.meta.title': 'Eivil Privacy Policy',
+    'eivilPrivacy.hero.eyebrow': 'Privacy Policy',
+    'eivilPrivacy.hero.title': 'Eivil does not send your browsing data to the developer.',
+    'eivilPrivacy.hero.lead': 'History, bookmarks, open tabs, and website data are stored on your device.',
+    'eivilPrivacy.summary.aria': 'Privacy summary',
+    'eivilPrivacy.summary.collect.title': 'No developer collection',
+    'eivilPrivacy.summary.collect.body':
+      'Eivil does not collect personal information, browsing history, or usage analytics on developer servers.',
+    'eivilPrivacy.summary.local.title': 'Stored on your device',
+    'eivilPrivacy.summary.local.body':
+      'Tabs, history, bookmarks, cookies, and caches are stored on your device to provide browsing features.',
+    'eivilPrivacy.summary.thirdParty.title': 'Direct website connections',
+    'eivilPrivacy.summary.thirdParty.body':
+      'Addresses and searches go directly to the website or search provider you choose.',
+    'eivilPrivacy.policy.title': 'Eivil Privacy Policy',
+    'eivilPrivacy.operator.title': 'Operator',
+    'eivilPrivacy.operator.body':
+      'Eivil is a mobile web browser provided by skyepodium. This policy covers information handled by the developer through the Eivil app.',
+    'eivilPrivacy.collection.title': 'Information collected by the developer',
+    'eivilPrivacy.collection.body':
+      'Eivil does not transmit or collect your name, email address, contacts, location, device identifiers, browsing history, or usage analytics for the developer. No account is required.',
+    'eivilPrivacy.local.title': 'Information stored on your device',
+    'eivilPrivacy.local.body':
+      'The following information may be stored on your device to provide browsing features and restore the app after relaunch:',
+    'eivilPrivacy.local.item.tabs': 'Titles and addresses of open tabs and the currently selected tab',
+    'eivilPrivacy.local.item.library': 'Browsing history, bookmarks, and saved site icons',
+    'eivilPrivacy.local.item.website': 'Cookies, caches, local storage, and other website data managed by WebKit',
+    'eivilPrivacy.local.item.settings': 'Language and settings required for app behavior',
+    'eivilPrivacy.network.title': 'Internet connections and third-party websites',
+    'eivilPrivacy.network.body':
+      'Eivil connects to web addresses you enter or select. When you open a page, its address, your network address, and standard browser request information may be sent to that website. Search terms are sent to Google, the default search provider. Third parties process this information under their own privacy policies.',
+    'eivilPrivacy.sharing.title': 'Sharing and clipboard access',
+    'eivilPrivacy.sharing.body':
+      'Sharing passes the address you select to the iOS share sheet. Paste reads clipboard text on your device when you choose that action. Eivil does not send this information to the developer.',
+    'eivilPrivacy.tracking.title': 'Advertising, analytics, and tracking',
+    'eivilPrivacy.tracking.body':
+      'Eivil contains no developer-operated advertising SDK, analytics SDK, or user-tracking tool. Websites you visit may use their own advertising, analytics, or tracking technologies.',
+    'eivilPrivacy.delete.title': 'Deleting information',
+    'eivilPrivacy.delete.body':
+      'Clear Browsing Data in Settings removes history, cookies, caches, and other website data. You can delete bookmarks individually in the app. Deleting Eivil also deletes information the app stored on your device.',
+    'eivilPrivacy.children.title': "Children's privacy",
+    'eivilPrivacy.children.body':
+      'Eivil does not intentionally collect personal information for the developer from any user, including children. Websites you visit apply their own age requirements and privacy policies.',
+    'eivilPrivacy.changes.title': 'Changes to this policy',
+    'eivilPrivacy.changes.body':
+      'If the way Eivil handles information changes, we will update this page and its effective date.',
+    'eivilPrivacy.contact.title': 'Contact',
+    'eivilPrivacy.contact.body': 'Email us with questions about this Privacy Policy.',
+    'eivilPrivacy.updated': 'Effective date: August 9, 2026',
+    'eivilPrivacy.backCta': 'Back to skyepodium home',
+  },
+  ja: {
+    'eivilPrivacy.meta.description':
+      'Eivilは個人情報や閲覧データを開発者へ送信しません。履歴、ブックマーク、タブセッション、ウェブサイトデータは端末内に保存されます。',
+    'eivilPrivacy.meta.title': 'Eivil プライバシーポリシー',
+    'eivilPrivacy.hero.eyebrow': 'プライバシーポリシー',
+    'eivilPrivacy.hero.title': 'Eivilは閲覧データを開発者へ送信しません。',
+    'eivilPrivacy.hero.lead': '履歴、ブックマーク、開いているタブ、ウェブサイトデータは端末内に保存されます。',
+    'eivilPrivacy.summary.aria': 'プライバシーの概要',
+    'eivilPrivacy.summary.collect.title': '開発者による収集なし',
+    'eivilPrivacy.summary.collect.body':
+      'Eivilは個人情報、閲覧履歴、利用状況分析を開発者のサーバーに収集しません。',
+    'eivilPrivacy.summary.local.title': '端末内に保存',
+    'eivilPrivacy.summary.local.body':
+      'タブ、履歴、ブックマーク、Cookie、キャッシュは閲覧機能のため端末内に保存されます。',
+    'eivilPrivacy.summary.thirdParty.title': 'ウェブサイトへ直接接続',
+    'eivilPrivacy.summary.thirdParty.body':
+      '入力したアドレスと検索語句は、選択したウェブサイトまたは検索プロバイダへ直接送信されます。',
+    'eivilPrivacy.policy.title': 'Eivil プライバシーポリシー',
+    'eivilPrivacy.operator.title': '運営者',
+    'eivilPrivacy.operator.body':
+      'Eivilはskyepodiumが提供するモバイルウェブブラウザです。本ポリシーはEivilアプリを通じて開発者が取り扱う情報に適用されます。',
+    'eivilPrivacy.collection.title': '開発者が収集する情報',
+    'eivilPrivacy.collection.body':
+      'Eivilは氏名、メールアドレス、連絡先、位置情報、端末識別子、閲覧履歴、利用状況分析を開発者へ送信または収集しません。アカウントも不要です。',
+    'eivilPrivacy.local.title': '端末に保存される情報',
+    'eivilPrivacy.local.body':
+      '閲覧機能とアプリ再起動後の復元のため、次の情報が端末に保存される場合があります。',
+    'eivilPrivacy.local.item.tabs': '開いているタブのタイトルとアドレス、現在選択中のタブ',
+    'eivilPrivacy.local.item.library': '閲覧履歴、ブックマーク、保存されたサイトアイコン',
+    'eivilPrivacy.local.item.website': 'WebKitが管理するCookie、キャッシュ、ローカルストレージなどのウェブサイトデータ',
+    'eivilPrivacy.local.item.settings': '言語およびアプリの動作に必要な設定',
+    'eivilPrivacy.network.title': 'インターネット接続と第三者ウェブサイト',
+    'eivilPrivacy.network.body':
+      'Eivilは入力または選択したウェブアドレスへ接続します。ページを開くと、アドレス、ネットワークアドレス、ブラウザの標準的なリクエスト情報がそのサイトへ送信される場合があります。検索語句は既定の検索プロバイダであるGoogleへ送信されます。第三者による情報処理には各社のプライバシーポリシーが適用されます。',
+    'eivilPrivacy.sharing.title': '共有とクリップボード',
+    'eivilPrivacy.sharing.body':
+      '共有機能は選択したアドレスをiOSの共有シートへ渡します。貼り付けは、その操作を選択したときに端末上のクリップボード文字列を読み取ります。Eivilはこの情報を開発者へ送信しません。',
+    'eivilPrivacy.tracking.title': '広告、分析、トラッキング',
+    'eivilPrivacy.tracking.body':
+      'Eivilには開発者が運用する広告SDK、分析SDK、ユーザー追跡ツールは含まれません。閲覧したウェブサイトは独自の広告、分析、追跡技術を使用する場合があります。',
+    'eivilPrivacy.delete.title': '情報の削除',
+    'eivilPrivacy.delete.body':
+      '設定の「ブラウジングデータを消去」で履歴、Cookie、キャッシュなどのウェブサイトデータを削除できます。ブックマークはアプリ内で個別に削除できます。Eivilを削除すると、アプリが端末に保存した情報も削除されます。',
+    'eivilPrivacy.children.title': '子どものプライバシー',
+    'eivilPrivacy.children.body':
+      'Eivilは子どもを含む利用者から、開発者のために個人情報を意図的に収集しません。閲覧先には各サイトの年齢要件とプライバシーポリシーが適用されます。',
+    'eivilPrivacy.changes.title': '本ポリシーの変更',
+    'eivilPrivacy.changes.body': 'Eivilの情報処理方法が変わる場合は、このページの内容と発効日を更新します。',
+    'eivilPrivacy.contact.title': 'お問い合わせ',
+    'eivilPrivacy.contact.body': '本プライバシーポリシーに関するご質問はメールでお問い合わせください。',
+    'eivilPrivacy.updated': '発効日：2026年8月9日',
+    'eivilPrivacy.backCta': 'skyepodium ホームへ戻る',
+  },
+  zh: {
+    'eivilPrivacy.meta.description':
+      'Eivil 不会将个人信息或浏览数据发送给开发者。历史记录、书签、标签页会话和网站数据保存在设备上。',
+    'eivilPrivacy.meta.title': 'Eivil 隐私政策',
+    'eivilPrivacy.hero.eyebrow': '隐私政策',
+    'eivilPrivacy.hero.title': 'Eivil 不会将浏览数据发送给开发者。',
+    'eivilPrivacy.hero.lead': '历史记录、书签、打开的标签页和网站数据保存在您的设备上。',
+    'eivilPrivacy.summary.aria': '隐私摘要',
+    'eivilPrivacy.summary.collect.title': '开发者不收集数据',
+    'eivilPrivacy.summary.collect.body': 'Eivil 不会在开发者服务器上收集个人信息、浏览历史或使用分析数据。',
+    'eivilPrivacy.summary.local.title': '保存在设备上',
+    'eivilPrivacy.summary.local.body': '标签页、历史记录、书签、Cookie 和缓存会为浏览功能保存在设备上。',
+    'eivilPrivacy.summary.thirdParty.title': '直接连接网站',
+    'eivilPrivacy.summary.thirdParty.body': '输入的地址和搜索词会直接发送到您选择的网站或搜索服务商。',
+    'eivilPrivacy.policy.title': 'Eivil 隐私政策',
+    'eivilPrivacy.operator.title': '运营者',
+    'eivilPrivacy.operator.body':
+      'Eivil 是由 skyepodium 提供的手机网页浏览器。本政策适用于开发者通过 Eivil App 处理的信息。',
+    'eivilPrivacy.collection.title': '开发者收集的信息',
+    'eivilPrivacy.collection.body':
+      'Eivil 不会向开发者发送或收集您的姓名、电子邮件、联系人、位置、设备标识符、浏览历史或使用分析数据，也不要求创建账户。',
+    'eivilPrivacy.local.title': '设备上存储的信息',
+    'eivilPrivacy.local.body': '为了提供浏览功能并在重新启动后恢复 App，以下信息可能存储在您的设备上。',
+    'eivilPrivacy.local.item.tabs': '打开标签页的标题和地址，以及当前选择的标签页',
+    'eivilPrivacy.local.item.library': '浏览历史、书签和保存的网站图标',
+    'eivilPrivacy.local.item.website': '由 WebKit 管理的 Cookie、缓存、本地存储和其他网站数据',
+    'eivilPrivacy.local.item.settings': '语言和 App 运行所需的设置',
+    'eivilPrivacy.network.title': '互联网连接和第三方网站',
+    'eivilPrivacy.network.body':
+      'Eivil 会连接您输入或选择的网址。打开网页时，该地址、您的网络地址和浏览器发送的标准请求信息可能会传给相应网站。搜索词会发送给默认搜索服务商 Google。第三方将根据其各自的隐私政策处理这些信息。',
+    'eivilPrivacy.sharing.title': '分享和剪贴板',
+    'eivilPrivacy.sharing.body':
+      '分享功能会将您选择的地址传给 iOS 分享表单。只有当您选择粘贴操作时，App 才会读取设备剪贴板中的文本。Eivil 不会将这些信息发送给开发者。',
+    'eivilPrivacy.tracking.title': '广告、分析和跟踪',
+    'eivilPrivacy.tracking.body':
+      'Eivil 不包含由开发者运营的广告 SDK、分析 SDK 或用户跟踪工具。您访问的网站可能使用自己的广告、分析或跟踪技术。',
+    'eivilPrivacy.delete.title': '删除信息',
+    'eivilPrivacy.delete.body':
+      '在设置中使用“清除浏览数据”可删除历史记录、Cookie、缓存和其他网站数据。书签可在 App 中逐个删除。删除 Eivil 也会删除该 App 在设备上存储的信息。',
+    'eivilPrivacy.children.title': '儿童隐私',
+    'eivilPrivacy.children.body':
+      'Eivil 不会有意为开发者收集任何用户（包括儿童）的个人信息。您访问的网站适用其各自的年龄要求和隐私政策。',
+    'eivilPrivacy.changes.title': '政策变更',
+    'eivilPrivacy.changes.body': '如果 Eivil 处理信息的方式发生变化，我们会更新本页面内容和生效日期。',
+    'eivilPrivacy.contact.title': '联系我们',
+    'eivilPrivacy.contact.body': '如对本隐私政策有疑问，请发送电子邮件联系我们。',
+    'eivilPrivacy.updated': '生效日期：2026年8月9日',
+    'eivilPrivacy.backCta': '返回 skyepodium 首页',
+  },
+  'zh-TW': {
+    'eivilPrivacy.meta.description':
+      'Eivil 不會將個人資訊或瀏覽資料傳送給開發者。瀏覽記錄、書籤、分頁工作階段和網站資料會保存在裝置上。',
+    'eivilPrivacy.meta.title': 'Eivil 隱私權政策',
+    'eivilPrivacy.hero.eyebrow': '隱私權政策',
+    'eivilPrivacy.hero.title': 'Eivil 不會將瀏覽資料傳送給開發者。',
+    'eivilPrivacy.hero.lead': '瀏覽記錄、書籤、開啟的分頁和網站資料會保存在您的裝置上。',
+    'eivilPrivacy.summary.aria': '隱私權摘要',
+    'eivilPrivacy.summary.collect.title': '開發者不收集資料',
+    'eivilPrivacy.summary.collect.body': 'Eivil 不會在開發者伺服器上收集個人資訊、瀏覽記錄或使用分析資料。',
+    'eivilPrivacy.summary.local.title': '保存在裝置上',
+    'eivilPrivacy.summary.local.body': '分頁、瀏覽記錄、書籤、Cookie 和快取會為瀏覽功能保存在裝置上。',
+    'eivilPrivacy.summary.thirdParty.title': '直接連線網站',
+    'eivilPrivacy.summary.thirdParty.body': '輸入的網址和搜尋詞會直接傳送到您選擇的網站或搜尋服務供應商。',
+    'eivilPrivacy.policy.title': 'Eivil 隱私權政策',
+    'eivilPrivacy.operator.title': '營運者',
+    'eivilPrivacy.operator.body':
+      'Eivil 是由 skyepodium 提供的手機網頁瀏覽器。本政策適用於開發者透過 Eivil App 處理的資訊。',
+    'eivilPrivacy.collection.title': '開發者收集的資訊',
+    'eivilPrivacy.collection.body':
+      'Eivil 不會向開發者傳送或收集您的姓名、電子郵件、聯絡人、位置、裝置識別碼、瀏覽記錄或使用分析資料，也不要求建立帳號。',
+    'eivilPrivacy.local.title': '裝置上儲存的資訊',
+    'eivilPrivacy.local.body': '為了提供瀏覽功能並在重新啟動後復原 App，以下資訊可能儲存在您的裝置上。',
+    'eivilPrivacy.local.item.tabs': '開啟分頁的標題和網址，以及目前選取的分頁',
+    'eivilPrivacy.local.item.library': '瀏覽記錄、書籤和儲存的網站圖示',
+    'eivilPrivacy.local.item.website': '由 WebKit 管理的 Cookie、快取、本機儲存空間和其他網站資料',
+    'eivilPrivacy.local.item.settings': '語言和 App 運作所需的設定',
+    'eivilPrivacy.network.title': '網際網路連線和第三方網站',
+    'eivilPrivacy.network.body':
+      'Eivil 會連線到您輸入或選取的網址。開啟網頁時，該網址、您的網路位址和瀏覽器傳送的標準要求資訊可能會傳給該網站。搜尋詞會傳送給預設搜尋服務供應商 Google。第三方會依其各自的隱私權政策處理這些資訊。',
+    'eivilPrivacy.sharing.title': '分享和剪貼簿',
+    'eivilPrivacy.sharing.body':
+      '分享功能會將您選取的網址傳給 iOS 分享表單。只有在您選擇貼上操作時，App 才會讀取裝置剪貼簿中的文字。Eivil 不會將這些資訊傳送給開發者。',
+    'eivilPrivacy.tracking.title': '廣告、分析和追蹤',
+    'eivilPrivacy.tracking.body':
+      'Eivil 不包含由開發者營運的廣告 SDK、分析 SDK 或使用者追蹤工具。您造訪的網站可能使用自己的廣告、分析或追蹤技術。',
+    'eivilPrivacy.delete.title': '刪除資訊',
+    'eivilPrivacy.delete.body':
+      '在設定中使用「清除瀏覽資料」可刪除瀏覽記錄、Cookie、快取和其他網站資料。書籤可在 App 中逐一刪除。刪除 Eivil 也會刪除該 App 在裝置上儲存的資訊。',
+    'eivilPrivacy.children.title': '兒童隱私權',
+    'eivilPrivacy.children.body':
+      'Eivil 不會有意為開發者收集任何使用者（包括兒童）的個人資訊。您造訪的網站適用其各自的年齡要求和隱私權政策。',
+    'eivilPrivacy.changes.title': '政策變更',
+    'eivilPrivacy.changes.body': '如果 Eivil 處理資訊的方式發生變更，我們會更新本頁內容和生效日期。',
+    'eivilPrivacy.contact.title': '聯絡我們',
+    'eivilPrivacy.contact.body': '如對本隱私權政策有疑問，請傳送電子郵件與我們聯絡。',
+    'eivilPrivacy.updated': '生效日期：2026年8月9日',
+    'eivilPrivacy.backCta': '返回 skyepodium 首頁',
+  },
+  fr: {
+    'eivilPrivacy.meta.description':
+      "Eivil n'envoie aucune information personnelle ni donnée de navigation au développeur. L'historique, les favoris, les sessions d'onglets et les données des sites restent sur votre appareil.",
+    'eivilPrivacy.meta.title': 'Politique de confidentialité Eivil',
+    'eivilPrivacy.hero.eyebrow': 'Politique de confidentialité',
+    'eivilPrivacy.hero.title': "Eivil n'envoie pas vos données de navigation au développeur.",
+    'eivilPrivacy.hero.lead':
+      "L'historique, les favoris, les onglets ouverts et les données des sites sont stockés sur votre appareil.",
+    'eivilPrivacy.summary.aria': 'Résumé de la confidentialité',
+    'eivilPrivacy.summary.collect.title': 'Aucune collecte par le développeur',
+    'eivilPrivacy.summary.collect.body':
+      "Eivil ne collecte aucune information personnelle, historique de navigation ou donnée d'analyse sur les serveurs du développeur.",
+    'eivilPrivacy.summary.local.title': "Stockage sur l'appareil",
+    'eivilPrivacy.summary.local.body':
+      "Les onglets, l'historique, les favoris, les cookies et les caches sont stockés sur votre appareil pour permettre la navigation.",
+    'eivilPrivacy.summary.thirdParty.title': 'Connexion directe aux sites',
+    'eivilPrivacy.summary.thirdParty.body':
+      "Les adresses et recherches sont envoyées directement au site ou au moteur de recherche que vous choisissez.",
+    'eivilPrivacy.policy.title': 'Politique de confidentialité Eivil',
+    'eivilPrivacy.operator.title': 'Exploitant',
+    'eivilPrivacy.operator.body':
+      "Eivil est un navigateur web mobile proposé par skyepodium. Cette politique couvre les informations traitées par le développeur au moyen de l'app Eivil.",
+    'eivilPrivacy.collection.title': 'Informations collectées par le développeur',
+    'eivilPrivacy.collection.body':
+      "Eivil ne transmet ni ne collecte pour le développeur votre nom, adresse e-mail, contacts, position, identifiants d'appareil, historique ou données d'utilisation. Aucun compte n'est requis.",
+    'eivilPrivacy.local.title': "Informations stockées sur l'appareil",
+    'eivilPrivacy.local.body':
+      "Les informations suivantes peuvent être stockées sur votre appareil pour permettre la navigation et restaurer l'app après son redémarrage :",
+    'eivilPrivacy.local.item.tabs': "Titres et adresses des onglets ouverts et onglet actuellement sélectionné",
+    'eivilPrivacy.local.item.library': 'Historique de navigation, favoris et icônes de sites enregistrées',
+    'eivilPrivacy.local.item.website':
+      'Cookies, caches, stockage local et autres données de sites gérées par WebKit',
+    'eivilPrivacy.local.item.settings': "Langue et réglages nécessaires au fonctionnement de l'app",
+    'eivilPrivacy.network.title': 'Connexions Internet et sites tiers',
+    'eivilPrivacy.network.body':
+      "Eivil se connecte aux adresses que vous saisissez ou sélectionnez. Lorsque vous ouvrez une page, son adresse, votre adresse réseau et les informations de requête standard du navigateur peuvent être envoyées au site. Les recherches sont envoyées à Google, le moteur de recherche par défaut. Ces tiers traitent ces informations selon leurs propres politiques de confidentialité.",
+    'eivilPrivacy.sharing.title': 'Partage et presse-papiers',
+    'eivilPrivacy.sharing.body':
+      "Le partage transmet l'adresse choisie à la feuille de partage iOS. Coller lit le texte du presse-papiers sur votre appareil lorsque vous choisissez cette action. Eivil n'envoie pas ces informations au développeur.",
+    'eivilPrivacy.tracking.title': 'Publicité, analyse et suivi',
+    'eivilPrivacy.tracking.body':
+      "Eivil ne contient aucun SDK publicitaire, SDK d'analyse ou outil de suivi exploité par le développeur. Les sites visités peuvent utiliser leurs propres technologies de publicité, d'analyse ou de suivi.",
+    'eivilPrivacy.delete.title': 'Suppression des informations',
+    'eivilPrivacy.delete.body':
+      "Effacer les données de navigation dans Réglages supprime l'historique, les cookies, les caches et les autres données de sites. Les favoris peuvent être supprimés individuellement. Supprimer Eivil efface également les informations stockées par l'app sur votre appareil.",
+    'eivilPrivacy.children.title': 'Confidentialité des enfants',
+    'eivilPrivacy.children.body':
+      "Eivil ne collecte intentionnellement aucune information personnelle pour le développeur, y compris auprès des enfants. Les sites visités appliquent leurs propres limites d'âge et politiques de confidentialité.",
+    'eivilPrivacy.changes.title': 'Modifications de cette politique',
+    'eivilPrivacy.changes.body':
+      "Si la manière dont Eivil traite les informations change, nous mettrons à jour cette page et sa date d'entrée en vigueur.",
+    'eivilPrivacy.contact.title': 'Contact',
+    'eivilPrivacy.contact.body': 'Envoyez-nous un e-mail pour toute question concernant cette politique.',
+    'eivilPrivacy.updated': "Date d'entrée en vigueur : 9 août 2026",
+    'eivilPrivacy.backCta': "Retour à l'accueil skyepodium",
+  },
+  es: {
+    'eivilPrivacy.meta.description':
+      'Eivil no envía información personal ni datos de navegación al desarrollador. El historial, los marcadores, las sesiones de pestañas y los datos de sitios permanecen en tu dispositivo.',
+    'eivilPrivacy.meta.title': 'Política de privacidad de Eivil',
+    'eivilPrivacy.hero.eyebrow': 'Política de privacidad',
+    'eivilPrivacy.hero.title': 'Eivil no envía tus datos de navegación al desarrollador.',
+    'eivilPrivacy.hero.lead':
+      'El historial, los marcadores, las pestañas abiertas y los datos de sitios se almacenan en tu dispositivo.',
+    'eivilPrivacy.summary.aria': 'Resumen de privacidad',
+    'eivilPrivacy.summary.collect.title': 'Sin recopilación del desarrollador',
+    'eivilPrivacy.summary.collect.body':
+      'Eivil no recopila información personal, historial de navegación ni análisis de uso en servidores del desarrollador.',
+    'eivilPrivacy.summary.local.title': 'Guardado en tu dispositivo',
+    'eivilPrivacy.summary.local.body':
+      'Las pestañas, el historial, los marcadores, las cookies y la caché se guardan en tu dispositivo para permitir la navegación.',
+    'eivilPrivacy.summary.thirdParty.title': 'Conexión directa a sitios',
+    'eivilPrivacy.summary.thirdParty.body':
+      'Las direcciones y búsquedas se envían directamente al sitio o proveedor de búsqueda que elijas.',
+    'eivilPrivacy.policy.title': 'Política de privacidad de Eivil',
+    'eivilPrivacy.operator.title': 'Responsable',
+    'eivilPrivacy.operator.body':
+      'Eivil es un navegador web móvil ofrecido por skyepodium. Esta política cubre la información tratada por el desarrollador mediante la app Eivil.',
+    'eivilPrivacy.collection.title': 'Información recopilada por el desarrollador',
+    'eivilPrivacy.collection.body':
+      'Eivil no transmite ni recopila para el desarrollador tu nombre, correo, contactos, ubicación, identificadores del dispositivo, historial ni análisis de uso. No requiere una cuenta.',
+    'eivilPrivacy.local.title': 'Información almacenada en tu dispositivo',
+    'eivilPrivacy.local.body':
+      'La siguiente información puede guardarse en tu dispositivo para permitir la navegación y restaurar la app después de reiniciarla:',
+    'eivilPrivacy.local.item.tabs': 'Títulos y direcciones de pestañas abiertas y pestaña seleccionada',
+    'eivilPrivacy.local.item.library': 'Historial de navegación, marcadores e iconos de sitios guardados',
+    'eivilPrivacy.local.item.website':
+      'Cookies, cachés, almacenamiento local y otros datos de sitios gestionados por WebKit',
+    'eivilPrivacy.local.item.settings': 'Idioma y ajustes necesarios para el funcionamiento de la app',
+    'eivilPrivacy.network.title': 'Conexiones a Internet y sitios de terceros',
+    'eivilPrivacy.network.body':
+      'Eivil se conecta a las direcciones que escribes o seleccionas. Al abrir una página, su dirección, tu dirección de red y la información estándar de solicitud del navegador pueden enviarse al sitio. Las búsquedas se envían a Google, el proveedor predeterminado. Esos terceros tratan la información según sus propias políticas de privacidad.',
+    'eivilPrivacy.sharing.title': 'Compartir y portapapeles',
+    'eivilPrivacy.sharing.body':
+      'Compartir pasa la dirección seleccionada a la hoja de compartir de iOS. Pegar lee el texto del portapapeles en tu dispositivo cuando eliges esa acción. Eivil no envía esta información al desarrollador.',
+    'eivilPrivacy.tracking.title': 'Publicidad, análisis y seguimiento',
+    'eivilPrivacy.tracking.body':
+      'Eivil no contiene SDK de publicidad, SDK de análisis ni herramientas de seguimiento operadas por el desarrollador. Los sitios visitados pueden usar sus propias tecnologías de publicidad, análisis o seguimiento.',
+    'eivilPrivacy.delete.title': 'Eliminar información',
+    'eivilPrivacy.delete.body':
+      'Borrar datos de navegación en Ajustes elimina el historial, las cookies, las cachés y otros datos de sitios. Los marcadores pueden eliminarse individualmente. Al eliminar Eivil también se borra la información guardada por la app en tu dispositivo.',
+    'eivilPrivacy.children.title': 'Privacidad infantil',
+    'eivilPrivacy.children.body':
+      'Eivil no recopila intencionadamente información personal para el desarrollador de ningún usuario, incluidos menores. Los sitios visitados aplican sus propios requisitos de edad y políticas de privacidad.',
+    'eivilPrivacy.changes.title': 'Cambios en esta política',
+    'eivilPrivacy.changes.body':
+      'Si cambia la forma en que Eivil trata la información, actualizaremos esta página y su fecha de entrada en vigor.',
+    'eivilPrivacy.contact.title': 'Contacto',
+    'eivilPrivacy.contact.body': 'Envíanos un correo si tienes preguntas sobre esta Política de privacidad.',
+    'eivilPrivacy.updated': 'Fecha de entrada en vigor: 9 de agosto de 2026',
+    'eivilPrivacy.backCta': 'Volver al inicio de skyepodium',
+  },
+};
+
 const SITE_TRANSLATION_OVERRIDES = {
   de: {
     'home.meta.description': 'Eine statische Promotionsseite für Projekte und Services von skyepodium.',
@@ -2101,6 +2475,14 @@ const SITE_TRANSLATION_OVERRIDES = {
 };
 
 for (const [language, translations] of Object.entries(PRIVACY_TRANSLATIONS)) {
+  TRANSLATIONS[language] = {
+    ...TRANSLATIONS.en,
+    ...(TRANSLATIONS[language] || {}),
+    ...translations,
+  };
+}
+
+for (const [language, translations] of Object.entries(EIVIL_PRIVACY_TRANSLATIONS)) {
   TRANSLATIONS[language] = {
     ...TRANSLATIONS.en,
     ...(TRANSLATIONS[language] || {}),
