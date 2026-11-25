@@ -9,8 +9,8 @@
       content="Eivil은 개발자에게 개인정보나 탐색 데이터를 전송하지 않습니다. 브라우징 기록, 북마크, 탭 세션과 웹사이트 데이터는 기기 내에 저장됩니다."
     />
     <title data-i18n="eivilPrivacy.meta.title">Eivil 개인정보 처리방침</title>
-    <link rel="stylesheet" href="../assets/styles/site.css?v=20260809-eivil-privacy1" />
-    <script src="../assets/scripts/site.js?v=20260809-eivil-privacy1" defer></script>
+    <link rel="stylesheet" href="../assets/styles/site.css?v=20261125-eivil-privacy2" />
+    <script src="../assets/scripts/site.js?v=20261125-eivil-privacy2" defer></script>
   </head>
   <body
     class="privacy-page eivil-privacy-page"
@@ -97,7 +97,7 @@
           <section class="privacy-block" aria-labelledby="eivil-operator-title">
             <h3 id="eivil-operator-title" data-i18n="eivilPrivacy.operator.title">운영자</h3>
             <p data-i18n="eivilPrivacy.operator.body">
-              Eivil은 skyepodium이 제공하는 모바일 웹 브라우저입니다. 이 방침은 Eivil 앱에서 개발자가 처리하는 정보에 적용됩니다.
+              Eivil은 skyepodium이 제공하는 iPhone, iPad와 Android용 모바일 웹 브라우저입니다. 이 방침은 Eivil 앱에서 개발자가 처리하는 정보에 적용됩니다.
             </p>
           </section>
 
@@ -116,22 +116,32 @@
             <ul>
               <li data-i18n="eivilPrivacy.local.item.tabs">열린 탭의 제목과 주소, 현재 선택된 탭</li>
               <li data-i18n="eivilPrivacy.local.item.library">방문 기록, 북마크, 저장된 사이트 아이콘</li>
-              <li data-i18n="eivilPrivacy.local.item.website">WebKit이 관리하는 쿠키, 캐시, 로컬 저장소와 기타 웹사이트 데이터</li>
+              <li data-i18n="eivilPrivacy.local.item.website">쿠키, 캐시, 로컬 저장소와 기타 웹사이트 데이터(iPhone과 iPad에서는 WebKit이, Android에서는 Android System WebView가 관리합니다)</li>
               <li data-i18n="eivilPrivacy.local.item.settings">언어와 앱 동작에 필요한 설정</li>
             </ul>
+            <p data-i18n="eivilPrivacy.local.backup">
+              Android에서 기기 백업을 켜 두면 열린 탭, 방문 기록, 북마크와 설정이 기기 백업과 새 기기로의 이전에 포함될 수 있습니다. 로그인 상태가 담긴 쿠키와 기타 웹사이트 데이터는 백업에서 제외됩니다. 백업은 기기 설정에서 끌 수 있으며, 개발자는 백업 내용에 접근하지 않습니다.
+            </p>
           </section>
 
           <section class="privacy-block" aria-labelledby="eivil-network-title">
             <h3 id="eivil-network-title" data-i18n="eivilPrivacy.network.title">인터넷 연결과 제3자 웹사이트</h3>
             <p data-i18n="eivilPrivacy.network.body">
-              Eivil은 사용자가 입력하거나 선택한 웹주소에 연결합니다. 웹페이지를 열면 주소, 네트워크 주소, 브라우저가 보내는 표준 요청 정보가 해당 웹사이트에 전달될 수 있습니다. 검색어는 기본 검색 제공자인 Google에 전달됩니다. 이러한 제3자의 정보 처리는 각 웹사이트와 검색 제공자의 개인정보 처리방침을 따릅니다.
+              Eivil은 사용자가 입력하거나 선택한 웹주소에 연결합니다. 웹페이지를 열면 주소, 네트워크 주소, 브라우저가 보내는 표준 요청 정보가 해당 웹사이트에 전달될 수 있으며, Android에서는 Android System WebView가 요청에 앱 식별자(dev.eivil.mobile)를 함께 보낼 수 있습니다. 검색어는 설정에서 고른 검색 제공자에게 전달됩니다. 기본 검색 제공자는 기기의 지역에 따라 다르며(대부분의 지역은 Google, 한국은 NAVER, 중국 본토는 Baidu) 설정에서 바꿀 수 있습니다. 이러한 제3자의 정보 처리는 각 웹사이트와 검색 제공자의 개인정보 처리방침을 따릅니다.
             </p>
           </section>
 
           <section class="privacy-block" aria-labelledby="eivil-sharing-title">
             <h3 id="eivil-sharing-title" data-i18n="eivilPrivacy.sharing.title">공유와 클립보드</h3>
             <p data-i18n="eivilPrivacy.sharing.body">
-              공유 기능은 사용자가 선택한 주소를 iOS 공유 시트로 전달합니다. 붙여넣기는 사용자가 해당 기능을 선택했을 때 클립보드의 텍스트를 기기에서 읽습니다. Eivil은 이 정보를 개발자에게 전송하지 않습니다.
+              공유 기능은 사용자가 선택한 주소를 기기의 공유 화면으로 전달합니다. 붙여넣기는 사용자가 해당 기능을 선택했을 때 클립보드의 텍스트를 기기에서 읽습니다. Eivil은 이 정보를 개발자에게 전송하지 않습니다.
+            </p>
+          </section>
+
+          <section class="privacy-block" aria-labelledby="eivil-permissions-title">
+            <h3 id="eivil-permissions-title" data-i18n="eivilPrivacy.permissions.title">카메라, 마이크, 위치와 파일</h3>
+            <p data-i18n="eivilPrivacy.permissions.body">
+              iPhone과 iPad에서는 방문한 웹사이트가 카메라, 마이크 또는 위치를 요청할 수 있으며, 기기가 먼저 허용 여부를 묻습니다. 허용하면 그 정보는 해당 웹사이트로만 전달되고 개발자에게는 전송되지 않습니다. Android 앱은 카메라, 마이크, 위치 권한을 요청하지 않으므로 웹사이트도 이를 사용할 수 없습니다. 웹사이트에는 사용자가 직접 고른 파일만 올라가며, 다운로드한 파일과 사진 보관함에 저장하기로 고른 이미지는 기기에 저장됩니다.
             </p>
           </section>
 
@@ -171,7 +181,7 @@
             </p>
           </section>
 
-          <p class="privacy-updated" data-i18n="eivilPrivacy.updated">시행일: 2026년 8월 9일</p>
+          <p class="privacy-updated" data-i18n="eivilPrivacy.updated">시행일: 2026년 11월 25일</p>
           <a class="text-arrow privacy-back-link" href="../eivil.html" data-i18n="eivilPrivacy.backCta">
             Eivil 소개로 돌아가기
           </a>

@@ -1847,7 +1847,7 @@ const EIVIL_PRIVACY_TRANSLATIONS = {
     'eivilPrivacy.policy.title': 'Eivil 개인정보 처리방침',
     'eivilPrivacy.operator.title': '운영자',
     'eivilPrivacy.operator.body':
-      'Eivil은 skyepodium이 제공하는 모바일 웹 브라우저입니다. 이 방침은 Eivil 앱에서 개발자가 처리하는 정보에 적용됩니다.',
+      'Eivil은 skyepodium이 제공하는 iPhone, iPad와 Android용 모바일 웹 브라우저입니다. 이 방침은 Eivil 앱에서 개발자가 처리하는 정보에 적용됩니다.',
     'eivilPrivacy.collection.title': '개발자가 수집하는 정보',
     'eivilPrivacy.collection.body':
       'Eivil은 이름, 이메일, 연락처, 위치, 기기 식별자, 탐색 기록 또는 사용 분석 정보를 개발자에게 전송하거나 수집하지 않습니다. 계정 생성도 요구하지 않습니다.',
@@ -1856,14 +1856,21 @@ const EIVIL_PRIVACY_TRANSLATIONS = {
       '브라우징 기능과 앱 재실행 후 복원을 위해 다음 정보가 사용자의 기기에 저장될 수 있습니다.',
     'eivilPrivacy.local.item.tabs': '열린 탭의 제목과 주소, 현재 선택된 탭',
     'eivilPrivacy.local.item.library': '방문 기록, 북마크, 저장된 사이트 아이콘',
-    'eivilPrivacy.local.item.website': 'WebKit이 관리하는 쿠키, 캐시, 로컬 저장소와 기타 웹사이트 데이터',
+    'eivilPrivacy.local.item.website':
+      '쿠키, 캐시, 로컬 저장소와 기타 웹사이트 데이터(iPhone과 iPad에서는 WebKit이, Android에서는 Android System WebView가 관리합니다)',
     'eivilPrivacy.local.item.settings': '언어와 앱 동작에 필요한 설정',
+    'eivilPrivacy.local.backup':
+      'Android에서 기기 백업을 켜 두면 열린 탭, 방문 기록, 북마크와 설정이 기기 백업과 새 기기로의 이전에 포함될 수 있습니다. 로그인 상태가 담긴 쿠키와 기타 웹사이트 데이터는 백업에서 제외됩니다. 백업은 기기 설정에서 끌 수 있으며, 개발자는 백업 내용에 접근하지 않습니다.',
     'eivilPrivacy.network.title': '인터넷 연결과 제3자 웹사이트',
     'eivilPrivacy.network.body':
-      'Eivil은 사용자가 입력하거나 선택한 웹주소에 연결합니다. 웹페이지를 열면 주소, 네트워크 주소, 브라우저가 보내는 표준 요청 정보가 해당 웹사이트에 전달될 수 있습니다. 검색어는 기본 검색 제공자인 Google에 전달됩니다. 이러한 제3자의 정보 처리는 각 웹사이트와 검색 제공자의 개인정보 처리방침을 따릅니다.',
+      'Eivil은 사용자가 입력하거나 선택한 웹주소에 연결합니다. 웹페이지를 열면 주소, 네트워크 주소, 브라우저가 보내는 표준 요청 정보가 해당 웹사이트에 전달될 수 있으며, Android에서는 Android System WebView가 요청에 앱 식별자(dev.eivil.mobile)를 함께 보낼 수 있습니다. 검색어는 설정에서 고른 검색 제공자에게 전달됩니다. 기본 검색 제공자는 기기의 지역에 따라 다르며(대부분의 지역은 Google, 한국은 NAVER, 중국 본토는 Baidu) 설정에서 바꿀 수 있습니다. 이러한 제3자의 정보 처리는 각 웹사이트와 검색 제공자의 개인정보 처리방침을 따릅니다.',
     'eivilPrivacy.sharing.title': '공유와 클립보드',
     'eivilPrivacy.sharing.body':
-      '공유 기능은 사용자가 선택한 주소를 iOS 공유 시트로 전달합니다. 붙여넣기는 사용자가 해당 기능을 선택했을 때 클립보드의 텍스트를 기기에서 읽습니다. Eivil은 이 정보를 개발자에게 전송하지 않습니다.',
+      '공유 기능은 사용자가 선택한 주소를 기기의 공유 화면으로 전달합니다. 붙여넣기는 사용자가 해당 기능을 선택했을 때 클립보드의 텍스트를 기기에서 읽습니다. Eivil은 이 정보를 개발자에게 전송하지 않습니다.',
+    'eivilPrivacy.permissions.title':
+      '카메라, 마이크, 위치와 파일',
+    'eivilPrivacy.permissions.body':
+      'iPhone과 iPad에서는 방문한 웹사이트가 카메라, 마이크 또는 위치를 요청할 수 있으며, 기기가 먼저 허용 여부를 묻습니다. 허용하면 그 정보는 해당 웹사이트로만 전달되고 개발자에게는 전송되지 않습니다. Android 앱은 카메라, 마이크, 위치 권한을 요청하지 않으므로 웹사이트도 이를 사용할 수 없습니다. 웹사이트에는 사용자가 직접 고른 파일만 올라가며, 다운로드한 파일과 사진 보관함에 저장하기로 고른 이미지는 기기에 저장됩니다.',
     'eivilPrivacy.tracking.title': '광고, 분석 및 추적',
     'eivilPrivacy.tracking.body':
       'Eivil에는 개발자가 운영하는 광고 SDK, 분석 SDK 또는 사용자 추적 도구가 포함되어 있지 않습니다. 방문한 웹사이트는 자체 광고, 분석 또는 추적 기술을 사용할 수 있습니다.',
@@ -1878,7 +1885,8 @@ const EIVIL_PRIVACY_TRANSLATIONS = {
       'Eivil의 정보 처리 방식이 변경되면 이 페이지의 내용과 시행일을 업데이트합니다.',
     'eivilPrivacy.contact.title': '문의',
     'eivilPrivacy.contact.body': '개인정보 처리방침에 관한 문의는 이메일로 보내 주세요.',
-    'eivilPrivacy.updated': '시행일: 2026년 8월 9일',
+    'eivilPrivacy.updated':
+      '시행일: 2026년 11월 25일',
     'eivilPrivacy.backCta': 'Eivil 소개로 돌아가기',
   },
   en: {
@@ -1901,7 +1909,7 @@ const EIVIL_PRIVACY_TRANSLATIONS = {
     'eivilPrivacy.policy.title': 'Eivil Privacy Policy',
     'eivilPrivacy.operator.title': 'Operator',
     'eivilPrivacy.operator.body':
-      'Eivil is a mobile web browser provided by skyepodium. This policy covers information handled by the developer through the Eivil app.',
+      'Eivil is a mobile web browser for iPhone, iPad, and Android provided by skyepodium. This policy covers information handled by the developer through the Eivil app.',
     'eivilPrivacy.collection.title': 'Information collected by the developer',
     'eivilPrivacy.collection.body':
       'Eivil does not transmit or collect your name, email address, contacts, location, device identifiers, browsing history, or usage analytics for the developer. No account is required.',
@@ -1910,14 +1918,21 @@ const EIVIL_PRIVACY_TRANSLATIONS = {
       'The following information may be stored on your device to provide browsing features and restore the app after relaunch:',
     'eivilPrivacy.local.item.tabs': 'Titles and addresses of open tabs and the currently selected tab',
     'eivilPrivacy.local.item.library': 'Browsing history, bookmarks, and saved site icons',
-    'eivilPrivacy.local.item.website': 'Cookies, caches, local storage, and other website data managed by WebKit',
+    'eivilPrivacy.local.item.website':
+      'Cookies, caches, local storage, and other website data, managed by WebKit on iPhone and iPad and by Android System WebView on Android',
     'eivilPrivacy.local.item.settings': 'Language and settings required for app behavior',
+    'eivilPrivacy.local.backup':
+      'On Android, if device backup is on, your open tabs, history, bookmarks, and settings may be included in your device backup and in transfers to a new device. Cookies, which hold sign-in sessions, and other website data are excluded. You can turn backup off in your device settings, and the developer has no access to backup contents.',
     'eivilPrivacy.network.title': 'Internet connections and third-party websites',
     'eivilPrivacy.network.body':
-      'Eivil connects to web addresses you enter or select. When you open a page, its address, your network address, and standard browser request information may be sent to that website. Search terms are sent to Google, the default search provider. Third parties process this information under their own privacy policies.',
+      'Eivil connects to web addresses you enter or select. When you open a page, its address, your network address, and standard browser request information may be sent to that website; on Android, Android System WebView may also include the app identifier (dev.eivil.mobile) in requests. Search terms are sent to the search provider chosen in Settings. The default depends on your device region (Google in most regions, NAVER in Korea, Baidu in mainland China), and you can change it in Settings. Third parties process this information under their own privacy policies.',
     'eivilPrivacy.sharing.title': 'Sharing and clipboard access',
     'eivilPrivacy.sharing.body':
-      'Sharing passes the address you select to the iOS share sheet. Paste reads clipboard text on your device when you choose that action. Eivil does not send this information to the developer.',
+      "Sharing passes the address you select to your device's share sheet. Paste reads clipboard text on your device when you choose that action. Eivil does not send this information to the developer.",
+    'eivilPrivacy.permissions.title':
+      'Camera, microphone, location, and files',
+    'eivilPrivacy.permissions.body':
+      'On iPhone and iPad, a website you visit may ask for the camera, microphone, or location, and your device asks you first. If you allow it, that information goes only to that website, never to the developer. The Android app does not request camera, microphone, or location permissions, so websites cannot use them there. Only files you choose are uploaded to websites, and downloaded files and images you choose to save to your photo library are stored on your device.',
     'eivilPrivacy.tracking.title': 'Advertising, analytics, and tracking',
     'eivilPrivacy.tracking.body':
       'Eivil contains no developer-operated advertising SDK, analytics SDK, or user-tracking tool. Websites you visit may use their own advertising, analytics, or tracking technologies.',
@@ -1932,7 +1947,8 @@ const EIVIL_PRIVACY_TRANSLATIONS = {
       'If the way Eivil handles information changes, we will update this page and its effective date.',
     'eivilPrivacy.contact.title': 'Contact',
     'eivilPrivacy.contact.body': 'Email us with questions about this Privacy Policy.',
-    'eivilPrivacy.updated': 'Effective date: August 9, 2026',
+    'eivilPrivacy.updated':
+      'Effective date: November 25, 2026',
     'eivilPrivacy.backCta': 'Back to Eivil',
   },
   ja: {
@@ -1955,7 +1971,7 @@ const EIVIL_PRIVACY_TRANSLATIONS = {
     'eivilPrivacy.policy.title': 'Eivil プライバシーポリシー',
     'eivilPrivacy.operator.title': '運営者',
     'eivilPrivacy.operator.body':
-      'Eivilはskyepodiumが提供するモバイルウェブブラウザです。本ポリシーはEivilアプリを通じて開発者が取り扱う情報に適用されます。',
+      'EivilはskyepodiumがiPhone、iPad、Android向けに提供するモバイルウェブブラウザです。本ポリシーはEivilアプリを通じて開発者が取り扱う情報に適用されます。',
     'eivilPrivacy.collection.title': '開発者が収集する情報',
     'eivilPrivacy.collection.body':
       'Eivilは氏名、メールアドレス、連絡先、位置情報、端末識別子、閲覧履歴、利用状況分析を開発者へ送信または収集しません。アカウントも不要です。',
@@ -1964,14 +1980,21 @@ const EIVIL_PRIVACY_TRANSLATIONS = {
       '閲覧機能とアプリ再起動後の復元のため、次の情報が端末に保存される場合があります。',
     'eivilPrivacy.local.item.tabs': '開いているタブのタイトルとアドレス、現在選択中のタブ',
     'eivilPrivacy.local.item.library': '閲覧履歴、ブックマーク、保存されたサイトアイコン',
-    'eivilPrivacy.local.item.website': 'WebKitが管理するCookie、キャッシュ、ローカルストレージなどのウェブサイトデータ',
+    'eivilPrivacy.local.item.website':
+      'Cookie、キャッシュ、ローカルストレージなどのウェブサイトデータ（iPhoneとiPadではWebKit、AndroidではAndroid System WebViewが管理）',
     'eivilPrivacy.local.item.settings': '言語およびアプリの動作に必要な設定',
+    'eivilPrivacy.local.backup':
+      'Androidで端末のバックアップを有効にしている場合、開いているタブ、履歴、ブックマーク、設定が端末のバックアップや新しい端末への移行に含まれることがあります。ログイン状態を保持するCookieやその他のウェブサイトデータはバックアップから除外されます。バックアップは端末の設定でオフにでき、開発者がバックアップの内容にアクセスすることはありません。',
     'eivilPrivacy.network.title': 'インターネット接続と第三者ウェブサイト',
     'eivilPrivacy.network.body':
-      'Eivilは入力または選択したウェブアドレスへ接続します。ページを開くと、アドレス、ネットワークアドレス、ブラウザの標準的なリクエスト情報がそのサイトへ送信される場合があります。検索語句は既定の検索プロバイダであるGoogleへ送信されます。第三者による情報処理には各社のプライバシーポリシーが適用されます。',
+      'Eivilは入力または選択したウェブアドレスへ接続します。ページを開くと、アドレス、ネットワークアドレス、ブラウザの標準的なリクエスト情報がそのサイトへ送信される場合があり、AndroidではAndroid System WebViewがリクエストにアプリ識別子（dev.eivil.mobile）を含めることがあります。検索語句は設定で選んだ検索プロバイダへ送信されます。既定の検索プロバイダは端末の地域によって異なり（多くの地域ではGoogle、韓国ではNAVER、中国本土ではBaidu）、設定で変更できます。第三者による情報処理には各社のプライバシーポリシーが適用されます。',
     'eivilPrivacy.sharing.title': '共有とクリップボード',
     'eivilPrivacy.sharing.body':
-      '共有機能は選択したアドレスをiOSの共有シートへ渡します。貼り付けは、その操作を選択したときに端末上のクリップボード文字列を読み取ります。Eivilはこの情報を開発者へ送信しません。',
+      '共有機能は選択したアドレスを端末の共有シートへ渡します。貼り付けは、その操作を選択したときに端末上のクリップボード文字列を読み取ります。Eivilはこの情報を開発者へ送信しません。',
+    'eivilPrivacy.permissions.title':
+      'カメラ、マイク、位置情報、ファイル',
+    'eivilPrivacy.permissions.body':
+      'iPhoneとiPadでは、閲覧中のウェブサイトがカメラ、マイク、位置情報を求めることがあり、その前に端末が許可を確認します。許可した情報はそのウェブサイトにのみ送られ、開発者へは送信されません。Androidアプリはカメラ、マイク、位置情報の権限を求めないため、ウェブサイトもこれらを使用できません。ウェブサイトへアップロードされるのは自分で選んだファイルのみで、ダウンロードしたファイルと写真ライブラリへの保存を選んだ画像は端末に保存されます。',
     'eivilPrivacy.tracking.title': '広告、分析、トラッキング',
     'eivilPrivacy.tracking.body':
       'Eivilには開発者が運用する広告SDK、分析SDK、ユーザー追跡ツールは含まれません。閲覧したウェブサイトは独自の広告、分析、追跡技術を使用する場合があります。',
@@ -1985,7 +2008,8 @@ const EIVIL_PRIVACY_TRANSLATIONS = {
     'eivilPrivacy.changes.body': 'Eivilの情報処理方法が変わる場合は、このページの内容と発効日を更新します。',
     'eivilPrivacy.contact.title': 'お問い合わせ',
     'eivilPrivacy.contact.body': '本プライバシーポリシーに関するご質問はメールでお問い合わせください。',
-    'eivilPrivacy.updated': '発効日：2026年8月9日',
+    'eivilPrivacy.updated':
+      '発効日：2026年11月25日',
     'eivilPrivacy.backCta': 'Eivil の紹介へ戻る',
   },
   zh: {
@@ -2005,7 +2029,7 @@ const EIVIL_PRIVACY_TRANSLATIONS = {
     'eivilPrivacy.policy.title': 'Eivil 隐私政策',
     'eivilPrivacy.operator.title': '运营者',
     'eivilPrivacy.operator.body':
-      'Eivil 是由 skyepodium 提供的手机网页浏览器。本政策适用于开发者通过 Eivil App 处理的信息。',
+      'Eivil 是由 skyepodium 提供、适用于 iPhone、iPad 和 Android 的手机网页浏览器。本政策适用于开发者通过 Eivil App 处理的信息。',
     'eivilPrivacy.collection.title': '开发者收集的信息',
     'eivilPrivacy.collection.body':
       'Eivil 不会向开发者发送或收集您的姓名、电子邮件、联系人、位置、设备标识符、浏览历史或使用分析数据，也不要求创建账户。',
@@ -2013,14 +2037,21 @@ const EIVIL_PRIVACY_TRANSLATIONS = {
     'eivilPrivacy.local.body': '为了提供浏览功能并在重新启动后恢复 App，以下信息可能存储在您的设备上。',
     'eivilPrivacy.local.item.tabs': '打开标签页的标题和地址，以及当前选择的标签页',
     'eivilPrivacy.local.item.library': '浏览历史、书签和保存的网站图标',
-    'eivilPrivacy.local.item.website': '由 WebKit 管理的 Cookie、缓存、本地存储和其他网站数据',
+    'eivilPrivacy.local.item.website':
+      'Cookie、缓存、本地存储和其他网站数据（在 iPhone 和 iPad 上由 WebKit 管理，在 Android 上由 Android System WebView 管理）',
     'eivilPrivacy.local.item.settings': '语言和 App 运行所需的设置',
+    'eivilPrivacy.local.backup':
+      '在 Android 上，如果开启了设备备份，打开的标签页、历史记录、书签和设置可能会包含在设备备份以及迁移到新设备的数据中。保存登录状态的 Cookie 和其他网站数据不会包含在备份中。您可以在设备设置中关闭备份，开发者无法访问备份内容。',
     'eivilPrivacy.network.title': '互联网连接和第三方网站',
     'eivilPrivacy.network.body':
-      'Eivil 会连接您输入或选择的网址。打开网页时，该地址、您的网络地址和浏览器发送的标准请求信息可能会传给相应网站。搜索词会发送给默认搜索服务商 Google。第三方将根据其各自的隐私政策处理这些信息。',
+      'Eivil 会连接您输入或选择的网址。打开网页时，该地址、您的网络地址和浏览器发送的标准请求信息可能会传给相应网站；在 Android 上，Android System WebView 还可能在请求中附带应用标识符（dev.eivil.mobile）。搜索词会发送给您在设置中选择的搜索服务商。默认搜索服务商因设备所在地区而异（大多数地区为 Google，韩国为 NAVER，中国大陆为百度），可在设置中更改。第三方将根据其各自的隐私政策处理这些信息。',
     'eivilPrivacy.sharing.title': '分享和剪贴板',
     'eivilPrivacy.sharing.body':
-      '分享功能会将您选择的地址传给 iOS 分享表单。只有当您选择粘贴操作时，App 才会读取设备剪贴板中的文本。Eivil 不会将这些信息发送给开发者。',
+      '分享功能会将您选择的地址传给设备的分享面板。只有当您选择粘贴操作时，App 才会读取设备剪贴板中的文本。Eivil 不会将这些信息发送给开发者。',
+    'eivilPrivacy.permissions.title':
+      '相机、麦克风、位置和文件',
+    'eivilPrivacy.permissions.body':
+      '在 iPhone 和 iPad 上，您访问的网站可能请求使用相机、麦克风或位置，设备会先征求您的同意。若您允许，这些信息只会传给该网站，不会发送给开发者。Android App 不请求相机、麦克风或位置权限，因此网站也无法使用它们。只有您亲自选择的文件才会上传到网站；下载的文件以及您选择存入照片图库的图片会保存在设备上。',
     'eivilPrivacy.tracking.title': '广告、分析和跟踪',
     'eivilPrivacy.tracking.body':
       'Eivil 不包含由开发者运营的广告 SDK、分析 SDK 或用户跟踪工具。您访问的网站可能使用自己的广告、分析或跟踪技术。',
@@ -2034,7 +2065,8 @@ const EIVIL_PRIVACY_TRANSLATIONS = {
     'eivilPrivacy.changes.body': '如果 Eivil 处理信息的方式发生变化，我们会更新本页面内容和生效日期。',
     'eivilPrivacy.contact.title': '联系我们',
     'eivilPrivacy.contact.body': '如对本隐私政策有疑问，请发送电子邮件联系我们。',
-    'eivilPrivacy.updated': '生效日期：2026年8月9日',
+    'eivilPrivacy.updated':
+      '生效日期：2026年11月25日',
     'eivilPrivacy.backCta': '返回 Eivil 介绍',
   },
   'zh-TW': {
@@ -2054,7 +2086,7 @@ const EIVIL_PRIVACY_TRANSLATIONS = {
     'eivilPrivacy.policy.title': 'Eivil 隱私權政策',
     'eivilPrivacy.operator.title': '營運者',
     'eivilPrivacy.operator.body':
-      'Eivil 是由 skyepodium 提供的手機網頁瀏覽器。本政策適用於開發者透過 Eivil App 處理的資訊。',
+      'Eivil 是由 skyepodium 提供、適用於 iPhone、iPad 和 Android 的手機網頁瀏覽器。本政策適用於開發者透過 Eivil App 處理的資訊。',
     'eivilPrivacy.collection.title': '開發者收集的資訊',
     'eivilPrivacy.collection.body':
       'Eivil 不會向開發者傳送或收集您的姓名、電子郵件、聯絡人、位置、裝置識別碼、瀏覽記錄或使用分析資料，也不要求建立帳號。',
@@ -2062,14 +2094,21 @@ const EIVIL_PRIVACY_TRANSLATIONS = {
     'eivilPrivacy.local.body': '為了提供瀏覽功能並在重新啟動後復原 App，以下資訊可能儲存在您的裝置上。',
     'eivilPrivacy.local.item.tabs': '開啟分頁的標題和網址，以及目前選取的分頁',
     'eivilPrivacy.local.item.library': '瀏覽記錄、書籤和儲存的網站圖示',
-    'eivilPrivacy.local.item.website': '由 WebKit 管理的 Cookie、快取、本機儲存空間和其他網站資料',
+    'eivilPrivacy.local.item.website':
+      'Cookie、快取、本機儲存空間和其他網站資料（在 iPhone 和 iPad 上由 WebKit 管理，在 Android 上由 Android System WebView 管理）',
     'eivilPrivacy.local.item.settings': '語言和 App 運作所需的設定',
+    'eivilPrivacy.local.backup':
+      '在 Android 上，如果開啟了裝置備份，開啟的分頁、瀏覽記錄、書籤和設定可能會包含在裝置備份以及移轉到新裝置的資料中。保存登入狀態的 Cookie 和其他網站資料不會包含在備份中。您可以在裝置設定中關閉備份，開發者無法存取備份內容。',
     'eivilPrivacy.network.title': '網際網路連線和第三方網站',
     'eivilPrivacy.network.body':
-      'Eivil 會連線到您輸入或選取的網址。開啟網頁時，該網址、您的網路位址和瀏覽器傳送的標準要求資訊可能會傳給該網站。搜尋詞會傳送給預設搜尋服務供應商 Google。第三方會依其各自的隱私權政策處理這些資訊。',
+      'Eivil 會連線到您輸入或選取的網址。開啟網頁時，該網址、您的網路位址和瀏覽器傳送的標準要求資訊可能會傳給該網站；在 Android 上，Android System WebView 也可能在要求中附上應用程式識別碼（dev.eivil.mobile）。搜尋詞會傳送給您在設定中選擇的搜尋服務供應商。預設搜尋服務供應商依裝置所在地區而異（多數地區為 Google，韓國為 NAVER，中國大陸為百度），可在設定中變更。第三方會依其各自的隱私權政策處理這些資訊。',
     'eivilPrivacy.sharing.title': '分享和剪貼簿',
     'eivilPrivacy.sharing.body':
-      '分享功能會將您選取的網址傳給 iOS 分享表單。只有在您選擇貼上操作時，App 才會讀取裝置剪貼簿中的文字。Eivil 不會將這些資訊傳送給開發者。',
+      '分享功能會將您選取的網址傳給裝置的分享選單。只有在您選擇貼上操作時，App 才會讀取裝置剪貼簿中的文字。Eivil 不會將這些資訊傳送給開發者。',
+    'eivilPrivacy.permissions.title':
+      '相機、麥克風、位置和檔案',
+    'eivilPrivacy.permissions.body':
+      '在 iPhone 和 iPad 上，您造訪的網站可能要求使用相機、麥克風或位置，裝置會先徵求您的同意。若您允許，這些資訊只會傳給該網站，不會傳送給開發者。Android App 不要求相機、麥克風或位置權限，因此網站也無法使用。只有您親自選取的檔案才會上傳到網站；下載的檔案以及您選擇存入照片圖庫的圖片會儲存在裝置上。',
     'eivilPrivacy.tracking.title': '廣告、分析和追蹤',
     'eivilPrivacy.tracking.body':
       'Eivil 不包含由開發者營運的廣告 SDK、分析 SDK 或使用者追蹤工具。您造訪的網站可能使用自己的廣告、分析或追蹤技術。',
@@ -2083,7 +2122,8 @@ const EIVIL_PRIVACY_TRANSLATIONS = {
     'eivilPrivacy.changes.body': '如果 Eivil 處理資訊的方式發生變更，我們會更新本頁內容和生效日期。',
     'eivilPrivacy.contact.title': '聯絡我們',
     'eivilPrivacy.contact.body': '如對本隱私權政策有疑問，請傳送電子郵件與我們聯絡。',
-    'eivilPrivacy.updated': '生效日期：2026年8月9日',
+    'eivilPrivacy.updated':
+      '生效日期：2026年11月25日',
     'eivilPrivacy.backCta': '返回 Eivil 介紹',
   },
   fr: {
@@ -2107,7 +2147,7 @@ const EIVIL_PRIVACY_TRANSLATIONS = {
     'eivilPrivacy.policy.title': 'Politique de confidentialité Eivil',
     'eivilPrivacy.operator.title': 'Exploitant',
     'eivilPrivacy.operator.body':
-      "Eivil est un navigateur web mobile proposé par skyepodium. Cette politique couvre les informations traitées par le développeur au moyen de l'app Eivil.",
+      "Eivil est un navigateur web mobile pour iPhone, iPad et Android proposé par skyepodium. Cette politique couvre les informations traitées par le développeur au moyen de l'app Eivil.",
     'eivilPrivacy.collection.title': 'Informations collectées par le développeur',
     'eivilPrivacy.collection.body':
       "Eivil ne transmet ni ne collecte pour le développeur votre nom, adresse e-mail, contacts, position, identifiants d'appareil, historique ou données d'utilisation. Aucun compte n'est requis.",
@@ -2117,14 +2157,20 @@ const EIVIL_PRIVACY_TRANSLATIONS = {
     'eivilPrivacy.local.item.tabs': "Titres et adresses des onglets ouverts et onglet actuellement sélectionné",
     'eivilPrivacy.local.item.library': 'Historique de navigation, favoris et icônes de sites enregistrées',
     'eivilPrivacy.local.item.website':
-      'Cookies, caches, stockage local et autres données de sites gérées par WebKit',
+      'Cookies, caches, stockage local et autres données de sites, gérés par WebKit sur iPhone et iPad et par Android System WebView sur Android',
     'eivilPrivacy.local.item.settings': "Langue et réglages nécessaires au fonctionnement de l'app",
+    'eivilPrivacy.local.backup':
+      "Sur Android, si la sauvegarde de l'appareil est activée, vos onglets ouverts, votre historique, vos favoris et vos réglages peuvent être inclus dans la sauvegarde de l'appareil et lors d'un transfert vers un nouvel appareil. Les cookies, qui conservent vos connexions, et les autres données de sites en sont exclus. Vous pouvez désactiver la sauvegarde dans les réglages de l'appareil, et le développeur n'a pas accès à son contenu.",
     'eivilPrivacy.network.title': 'Connexions Internet et sites tiers',
     'eivilPrivacy.network.body':
-      "Eivil se connecte aux adresses que vous saisissez ou sélectionnez. Lorsque vous ouvrez une page, son adresse, votre adresse réseau et les informations de requête standard du navigateur peuvent être envoyées au site. Les recherches sont envoyées à Google, le moteur de recherche par défaut. Ces tiers traitent ces informations selon leurs propres politiques de confidentialité.",
+      "Eivil se connecte aux adresses que vous saisissez ou sélectionnez. Lorsque vous ouvrez une page, son adresse, votre adresse réseau et les informations de requête standard du navigateur peuvent être envoyées au site ; sur Android, Android System WebView peut aussi inclure l'identifiant de l'app (dev.eivil.mobile) dans les requêtes. Les recherches sont envoyées au moteur choisi dans Réglages. Le moteur par défaut dépend de la région de l'appareil (Google dans la plupart des régions, NAVER en Corée, Baidu en Chine continentale) et peut être modifié dans Réglages. Ces tiers traitent ces informations selon leurs propres politiques de confidentialité.",
     'eivilPrivacy.sharing.title': 'Partage et presse-papiers',
     'eivilPrivacy.sharing.body':
-      "Le partage transmet l'adresse choisie à la feuille de partage iOS. Coller lit le texte du presse-papiers sur votre appareil lorsque vous choisissez cette action. Eivil n'envoie pas ces informations au développeur.",
+      "Le partage transmet l'adresse choisie au menu de partage de l'appareil. Coller lit le texte du presse-papiers sur votre appareil lorsque vous choisissez cette action. Eivil n'envoie pas ces informations au développeur.",
+    'eivilPrivacy.permissions.title':
+      'Caméra, micro, position et fichiers',
+    'eivilPrivacy.permissions.body':
+      "Sur iPhone et iPad, un site visité peut demander l'accès à la caméra, au micro ou à la position, et l'appareil vous demande d'abord votre accord. Si vous l'accordez, ces informations sont transmises uniquement à ce site, jamais au développeur. L'app Android ne demande pas les autorisations de caméra, de micro ni de position ; les sites ne peuvent donc pas les utiliser. Seuls les fichiers que vous choisissez sont envoyés aux sites, et les fichiers téléchargés ainsi que les images que vous choisissez d'enregistrer dans la photothèque sont stockés sur votre appareil.",
     'eivilPrivacy.tracking.title': 'Publicité, analyse et suivi',
     'eivilPrivacy.tracking.body':
       "Eivil ne contient aucun SDK publicitaire, SDK d'analyse ou outil de suivi exploité par le développeur. Les sites visités peuvent utiliser leurs propres technologies de publicité, d'analyse ou de suivi.",
@@ -2139,7 +2185,8 @@ const EIVIL_PRIVACY_TRANSLATIONS = {
       "Si la manière dont Eivil traite les informations change, nous mettrons à jour cette page et sa date d'entrée en vigueur.",
     'eivilPrivacy.contact.title': 'Contact',
     'eivilPrivacy.contact.body': 'Envoyez-nous un e-mail pour toute question concernant cette politique.',
-    'eivilPrivacy.updated': "Date d'entrée en vigueur : 9 août 2026",
+    'eivilPrivacy.updated':
+      "Date d'entrée en vigueur : 25 novembre 2026",
     'eivilPrivacy.backCta': 'Retour à Eivil',
   },
   es: {
@@ -2163,7 +2210,7 @@ const EIVIL_PRIVACY_TRANSLATIONS = {
     'eivilPrivacy.policy.title': 'Política de privacidad de Eivil',
     'eivilPrivacy.operator.title': 'Responsable',
     'eivilPrivacy.operator.body':
-      'Eivil es un navegador web móvil ofrecido por skyepodium. Esta política cubre la información tratada por el desarrollador mediante la app Eivil.',
+      'Eivil es un navegador web móvil para iPhone, iPad y Android ofrecido por skyepodium. Esta política cubre la información tratada por el desarrollador mediante la app Eivil.',
     'eivilPrivacy.collection.title': 'Información recopilada por el desarrollador',
     'eivilPrivacy.collection.body':
       'Eivil no transmite ni recopila para el desarrollador tu nombre, correo, contactos, ubicación, identificadores del dispositivo, historial ni análisis de uso. No requiere una cuenta.',
@@ -2173,14 +2220,20 @@ const EIVIL_PRIVACY_TRANSLATIONS = {
     'eivilPrivacy.local.item.tabs': 'Títulos y direcciones de pestañas abiertas y pestaña seleccionada',
     'eivilPrivacy.local.item.library': 'Historial de navegación, marcadores e iconos de sitios guardados',
     'eivilPrivacy.local.item.website':
-      'Cookies, cachés, almacenamiento local y otros datos de sitios gestionados por WebKit',
+      'Cookies, cachés, almacenamiento local y otros datos de sitios, gestionados por WebKit en iPhone y iPad y por Android System WebView en Android',
     'eivilPrivacy.local.item.settings': 'Idioma y ajustes necesarios para el funcionamiento de la app',
+    'eivilPrivacy.local.backup':
+      'En Android, si la copia de seguridad del dispositivo está activada, tus pestañas abiertas, historial, marcadores y ajustes pueden incluirse en la copia de seguridad y en la transferencia a un dispositivo nuevo. Las cookies, que guardan tus sesiones iniciadas, y otros datos de sitios quedan excluidos. Puedes desactivar la copia de seguridad en los ajustes del dispositivo, y el desarrollador no tiene acceso a su contenido.',
     'eivilPrivacy.network.title': 'Conexiones a Internet y sitios de terceros',
     'eivilPrivacy.network.body':
-      'Eivil se conecta a las direcciones que escribes o seleccionas. Al abrir una página, su dirección, tu dirección de red y la información estándar de solicitud del navegador pueden enviarse al sitio. Las búsquedas se envían a Google, el proveedor predeterminado. Esos terceros tratan la información según sus propias políticas de privacidad.',
+      'Eivil se conecta a las direcciones que escribes o seleccionas. Al abrir una página, su dirección, tu dirección de red y la información estándar de solicitud del navegador pueden enviarse al sitio; en Android, Android System WebView también puede incluir el identificador de la app (dev.eivil.mobile) en las solicitudes. Las búsquedas se envían al proveedor elegido en Ajustes. El predeterminado depende de la región del dispositivo (Google en la mayoría de las regiones, NAVER en Corea, Baidu en China continental) y puedes cambiarlo en Ajustes. Esos terceros tratan la información según sus propias políticas de privacidad.',
     'eivilPrivacy.sharing.title': 'Compartir y portapapeles',
     'eivilPrivacy.sharing.body':
-      'Compartir pasa la dirección seleccionada a la hoja de compartir de iOS. Pegar lee el texto del portapapeles en tu dispositivo cuando eliges esa acción. Eivil no envía esta información al desarrollador.',
+      'Compartir pasa la dirección seleccionada al menú de compartir del dispositivo. Pegar lee el texto del portapapeles en tu dispositivo cuando eliges esa acción. Eivil no envía esta información al desarrollador.',
+    'eivilPrivacy.permissions.title':
+      'Cámara, micrófono, ubicación y archivos',
+    'eivilPrivacy.permissions.body':
+      'En iPhone y iPad, un sitio que visitas puede pedir la cámara, el micrófono o la ubicación, y el dispositivo te pregunta primero. Si lo permites, esa información solo va a ese sitio, nunca al desarrollador. La app de Android no solicita permisos de cámara, micrófono ni ubicación, así que los sitios no pueden usarlos. Solo se suben a los sitios los archivos que eliges, y los archivos descargados y las imágenes que decides guardar en la fototeca se almacenan en tu dispositivo.',
     'eivilPrivacy.tracking.title': 'Publicidad, análisis y seguimiento',
     'eivilPrivacy.tracking.body':
       'Eivil no contiene SDK de publicidad, SDK de análisis ni herramientas de seguimiento operadas por el desarrollador. Los sitios visitados pueden usar sus propias tecnologías de publicidad, análisis o seguimiento.',
@@ -2195,7 +2248,8 @@ const EIVIL_PRIVACY_TRANSLATIONS = {
       'Si cambia la forma en que Eivil trata la información, actualizaremos esta página y su fecha de entrada en vigor.',
     'eivilPrivacy.contact.title': 'Contacto',
     'eivilPrivacy.contact.body': 'Envíanos un correo si tienes preguntas sobre esta Política de privacidad.',
-    'eivilPrivacy.updated': 'Fecha de entrada en vigor: 9 de agosto de 2026',
+    'eivilPrivacy.updated':
+      'Fecha de entrada en vigor: 25 de noviembre de 2026',
     'eivilPrivacy.backCta': 'Volver a Eivil',
   },
 };
