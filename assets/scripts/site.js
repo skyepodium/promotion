@@ -1863,7 +1863,7 @@ const EIVIL_PRIVACY_TRANSLATIONS = {
       'Android에서 기기 백업을 켜 두면 열린 탭, 방문 기록, 북마크와 설정이 기기 백업과 새 기기로의 이전에 포함될 수 있습니다. 로그인 상태가 담긴 쿠키와 기타 웹사이트 데이터는 백업에서 제외됩니다. 백업은 기기 설정에서 끌 수 있으며, 개발자는 백업 내용에 접근하지 않습니다.',
     'eivilPrivacy.network.title': '인터넷 연결과 제3자 웹사이트',
     'eivilPrivacy.network.body':
-      'Eivil은 사용자가 입력하거나 선택한 웹주소에 연결합니다. 웹페이지를 열면 주소, 네트워크 주소, 브라우저가 보내는 표준 요청 정보가 해당 웹사이트에 전달될 수 있으며, Android에서는 Android System WebView가 요청에 앱 식별자(dev.eivil.mobile)를 함께 보낼 수 있습니다. 검색어는 설정에서 고른 검색 제공자에게 전달됩니다. 기본 검색 제공자는 기기의 지역에 따라 다르며(대부분의 지역은 Google, 한국은 NAVER, 중국 본토는 Baidu) 설정에서 바꿀 수 있습니다. 이러한 제3자의 정보 처리는 각 웹사이트와 검색 제공자의 개인정보 처리방침을 따릅니다.',
+      'Eivil은 사용자가 입력하거나 선택한 웹주소에 연결합니다. 웹페이지를 열면 주소, 네트워크 주소, 브라우저가 보내는 표준 요청 정보가 해당 웹사이트에 전달될 수 있으며, Android에서는 Android System WebView가 요청에 앱 식별자(dev.eivil.mobile)를 함께 보낼 수 있습니다. 검색어는 설정에서 고른 검색 제공자에게 전달됩니다. 기본 검색 제공자는 기기의 지역에 따라 다르며(대부분의 지역은 Google, 한국은 NAVER, 중국 본토는 Baidu) 설정에서 바꿀 수 있습니다. 검색어 추천이 켜져 있으면(기본값) 주소창에 입력하는 동안 입력한 내용이 추천 검색어를 보여 주기 위해 선택한 검색 제공자에게 전송됩니다. 이 기능은 NAVER, Yahoo! JAPAN, DuckDuckGo에서만 동작하며, 웹 주소와 비공개 탭에서 입력한 내용은 전송되지 않습니다. 설정 > 검색 엔진에서 끌 수 있습니다. 이러한 제3자의 정보 처리는 각 웹사이트와 검색 제공자의 개인정보 처리방침을 따릅니다.',
     'eivilPrivacy.sharing.title': '공유와 클립보드',
     'eivilPrivacy.sharing.body':
       '공유 기능은 사용자가 선택한 주소를 기기의 공유 화면으로 전달합니다. 붙여넣기는 사용자가 해당 기능을 선택했을 때 클립보드의 텍스트를 기기에서 읽습니다. Eivil은 이 정보를 개발자에게 전송하지 않습니다.',
@@ -1886,7 +1886,7 @@ const EIVIL_PRIVACY_TRANSLATIONS = {
     'eivilPrivacy.contact.title': '문의',
     'eivilPrivacy.contact.body': '개인정보 처리방침에 관한 문의는 이메일로 보내 주세요.',
     'eivilPrivacy.updated':
-      '시행일: 2026년 11월 25일',
+      '시행일: 2026년 11월 28일',
     'eivilPrivacy.backCta': 'Eivil 소개로 돌아가기',
   },
   en: {
@@ -1925,7 +1925,7 @@ const EIVIL_PRIVACY_TRANSLATIONS = {
       'On Android, if device backup is on, your open tabs, history, bookmarks, and settings may be included in your device backup and in transfers to a new device. Cookies, which hold sign-in sessions, and other website data are excluded. You can turn backup off in your device settings, and the developer has no access to backup contents.',
     'eivilPrivacy.network.title': 'Internet connections and third-party websites',
     'eivilPrivacy.network.body':
-      'Eivil connects to web addresses you enter or select. When you open a page, its address, your network address, and standard browser request information may be sent to that website; on Android, Android System WebView may also include the app identifier (dev.eivil.mobile) in requests. Search terms are sent to the search provider chosen in Settings. The default depends on your device region (Google in most regions, NAVER in Korea, Baidu in mainland China), and you can change it in Settings. Third parties process this information under their own privacy policies.',
+      'Eivil connects to web addresses you enter or select. When you open a page, its address, your network address, and standard browser request information may be sent to that website; on Android, Android System WebView may also include the app identifier (dev.eivil.mobile) in requests. Search terms are sent to the search provider chosen in Settings. The default depends on your device region (Google in most regions, NAVER in Korea, Baidu in mainland China), and you can change it in Settings. While Search Suggestions is on (the default), what you type in the address bar is sent to the chosen search provider as you type, to show suggested searches. This works only with NAVER, Yahoo! JAPAN, and DuckDuckGo; web addresses and text typed in private tabs are never sent. You can turn it off in Settings > Search Engine. Third parties process this information under their own privacy policies.',
     'eivilPrivacy.sharing.title': 'Sharing and clipboard access',
     'eivilPrivacy.sharing.body':
       "Sharing passes the address you select to your device's share sheet. Paste reads clipboard text on your device when you choose that action. Eivil does not send this information to the developer.",
@@ -1948,7 +1948,7 @@ const EIVIL_PRIVACY_TRANSLATIONS = {
     'eivilPrivacy.contact.title': 'Contact',
     'eivilPrivacy.contact.body': 'Email us with questions about this Privacy Policy.',
     'eivilPrivacy.updated':
-      'Effective date: November 25, 2026',
+      'Effective date: November 28, 2026',
     'eivilPrivacy.backCta': 'Back to Eivil',
   },
   ja: {
@@ -1987,7 +1987,7 @@ const EIVIL_PRIVACY_TRANSLATIONS = {
       'Androidで端末のバックアップを有効にしている場合、開いているタブ、履歴、ブックマーク、設定が端末のバックアップや新しい端末への移行に含まれることがあります。ログイン状態を保持するCookieやその他のウェブサイトデータはバックアップから除外されます。バックアップは端末の設定でオフにでき、開発者がバックアップの内容にアクセスすることはありません。',
     'eivilPrivacy.network.title': 'インターネット接続と第三者ウェブサイト',
     'eivilPrivacy.network.body':
-      'Eivilは入力または選択したウェブアドレスへ接続します。ページを開くと、アドレス、ネットワークアドレス、ブラウザの標準的なリクエスト情報がそのサイトへ送信される場合があり、AndroidではAndroid System WebViewがリクエストにアプリ識別子（dev.eivil.mobile）を含めることがあります。検索語句は設定で選んだ検索プロバイダへ送信されます。既定の検索プロバイダは端末の地域によって異なり（多くの地域ではGoogle、韓国ではNAVER、中国本土ではBaidu）、設定で変更できます。第三者による情報処理には各社のプライバシーポリシーが適用されます。',
+      'Eivilは入力または選択したウェブアドレスへ接続します。ページを開くと、アドレス、ネットワークアドレス、ブラウザの標準的なリクエスト情報がそのサイトへ送信される場合があり、AndroidではAndroid System WebViewがリクエストにアプリ識別子（dev.eivil.mobile）を含めることがあります。検索語句は設定で選んだ検索プロバイダへ送信されます。既定の検索プロバイダは端末の地域によって異なり（多くの地域ではGoogle、韓国ではNAVER、中国本土ではBaidu）、設定で変更できます。「検索候補」がオン（既定）のときは、検索候補を表示するため、アドレスバーに入力中の内容が選んだ検索プロバイダへ送信されます。この機能はNAVER、Yahoo! JAPAN、DuckDuckGoでのみ動作し、ウェブアドレスとプライベートタブで入力した内容は送信されません。「設定」>「検索エンジン」でオフにできます。第三者による情報処理には各社のプライバシーポリシーが適用されます。',
     'eivilPrivacy.sharing.title': '共有とクリップボード',
     'eivilPrivacy.sharing.body':
       '共有機能は選択したアドレスを端末の共有シートへ渡します。貼り付けは、その操作を選択したときに端末上のクリップボード文字列を読み取ります。Eivilはこの情報を開発者へ送信しません。',
@@ -2009,7 +2009,7 @@ const EIVIL_PRIVACY_TRANSLATIONS = {
     'eivilPrivacy.contact.title': 'お問い合わせ',
     'eivilPrivacy.contact.body': '本プライバシーポリシーに関するご質問はメールでお問い合わせください。',
     'eivilPrivacy.updated':
-      '発効日：2026年11月25日',
+      '発効日：2026年11月28日',
     'eivilPrivacy.backCta': 'Eivil の紹介へ戻る',
   },
   zh: {
@@ -2044,7 +2044,7 @@ const EIVIL_PRIVACY_TRANSLATIONS = {
       '在 Android 上，如果开启了设备备份，打开的标签页、历史记录、书签和设置可能会包含在设备备份以及迁移到新设备的数据中。保存登录状态的 Cookie 和其他网站数据不会包含在备份中。您可以在设备设置中关闭备份，开发者无法访问备份内容。',
     'eivilPrivacy.network.title': '互联网连接和第三方网站',
     'eivilPrivacy.network.body':
-      'Eivil 会连接您输入或选择的网址。打开网页时，该地址、您的网络地址和浏览器发送的标准请求信息可能会传给相应网站；在 Android 上，Android System WebView 还可能在请求中附带应用标识符（dev.eivil.mobile）。搜索词会发送给您在设置中选择的搜索服务商。默认搜索服务商因设备所在地区而异（大多数地区为 Google，韩国为 NAVER，中国大陆为百度），可在设置中更改。第三方将根据其各自的隐私政策处理这些信息。',
+      'Eivil 会连接您输入或选择的网址。打开网页时，该地址、您的网络地址和浏览器发送的标准请求信息可能会传给相应网站；在 Android 上，Android System WebView 还可能在请求中附带应用标识符（dev.eivil.mobile）。搜索词会发送给您在设置中选择的搜索服务商。默认搜索服务商因设备所在地区而异（大多数地区为 Google，韩国为 NAVER，中国大陆为百度），可在设置中更改。开启“搜索建议”（默认开启）时，您在地址栏输入的内容会在输入过程中发送给所选的搜索服务商，以显示搜索建议。此功能仅适用于 NAVER、Yahoo! JAPAN 和 DuckDuckGo；网址和在无痕标签页中输入的内容不会发送。可在“设置”>“搜索引擎”中关闭。第三方将根据其各自的隐私政策处理这些信息。',
     'eivilPrivacy.sharing.title': '分享和剪贴板',
     'eivilPrivacy.sharing.body':
       '分享功能会将您选择的地址传给设备的分享面板。只有当您选择粘贴操作时，App 才会读取设备剪贴板中的文本。Eivil 不会将这些信息发送给开发者。',
@@ -2066,7 +2066,7 @@ const EIVIL_PRIVACY_TRANSLATIONS = {
     'eivilPrivacy.contact.title': '联系我们',
     'eivilPrivacy.contact.body': '如对本隐私政策有疑问，请发送电子邮件联系我们。',
     'eivilPrivacy.updated':
-      '生效日期：2026年11月25日',
+      '生效日期：2026年11月28日',
     'eivilPrivacy.backCta': '返回 Eivil 介绍',
   },
   'zh-TW': {
@@ -2101,7 +2101,7 @@ const EIVIL_PRIVACY_TRANSLATIONS = {
       '在 Android 上，如果開啟了裝置備份，開啟的分頁、瀏覽記錄、書籤和設定可能會包含在裝置備份以及移轉到新裝置的資料中。保存登入狀態的 Cookie 和其他網站資料不會包含在備份中。您可以在裝置設定中關閉備份，開發者無法存取備份內容。',
     'eivilPrivacy.network.title': '網際網路連線和第三方網站',
     'eivilPrivacy.network.body':
-      'Eivil 會連線到您輸入或選取的網址。開啟網頁時，該網址、您的網路位址和瀏覽器傳送的標準要求資訊可能會傳給該網站；在 Android 上，Android System WebView 也可能在要求中附上應用程式識別碼（dev.eivil.mobile）。搜尋詞會傳送給您在設定中選擇的搜尋服務供應商。預設搜尋服務供應商依裝置所在地區而異（多數地區為 Google，韓國為 NAVER，中國大陸為百度），可在設定中變更。第三方會依其各自的隱私權政策處理這些資訊。',
+      'Eivil 會連線到您輸入或選取的網址。開啟網頁時，該網址、您的網路位址和瀏覽器傳送的標準要求資訊可能會傳給該網站；在 Android 上，Android System WebView 也可能在要求中附上應用程式識別碼（dev.eivil.mobile）。搜尋詞會傳送給您在設定中選擇的搜尋服務供應商。預設搜尋服務供應商依裝置所在地區而異（多數地區為 Google，韓國為 NAVER，中國大陸為百度），可在設定中變更。開啟「搜尋建議」（預設開啟）時，您在網址列輸入的內容會在輸入過程中傳送給所選的搜尋服務供應商，以顯示搜尋建議。此功能僅適用於 NAVER、Yahoo! JAPAN 和 DuckDuckGo；網址和在私密分頁中輸入的內容不會傳送。可在「設定」>「搜尋引擎」中關閉。第三方會依其各自的隱私權政策處理這些資訊。',
     'eivilPrivacy.sharing.title': '分享和剪貼簿',
     'eivilPrivacy.sharing.body':
       '分享功能會將您選取的網址傳給裝置的分享選單。只有在您選擇貼上操作時，App 才會讀取裝置剪貼簿中的文字。Eivil 不會將這些資訊傳送給開發者。',
@@ -2123,7 +2123,7 @@ const EIVIL_PRIVACY_TRANSLATIONS = {
     'eivilPrivacy.contact.title': '聯絡我們',
     'eivilPrivacy.contact.body': '如對本隱私權政策有疑問，請傳送電子郵件與我們聯絡。',
     'eivilPrivacy.updated':
-      '生效日期：2026年11月25日',
+      '生效日期：2026年11月28日',
     'eivilPrivacy.backCta': '返回 Eivil 介紹',
   },
   fr: {
@@ -2163,7 +2163,7 @@ const EIVIL_PRIVACY_TRANSLATIONS = {
       "Sur Android, si la sauvegarde de l'appareil est activée, vos onglets ouverts, votre historique, vos favoris et vos réglages peuvent être inclus dans la sauvegarde de l'appareil et lors d'un transfert vers un nouvel appareil. Les cookies, qui conservent vos connexions, et les autres données de sites en sont exclus. Vous pouvez désactiver la sauvegarde dans les réglages de l'appareil, et le développeur n'a pas accès à son contenu.",
     'eivilPrivacy.network.title': 'Connexions Internet et sites tiers',
     'eivilPrivacy.network.body':
-      "Eivil se connecte aux adresses que vous saisissez ou sélectionnez. Lorsque vous ouvrez une page, son adresse, votre adresse réseau et les informations de requête standard du navigateur peuvent être envoyées au site ; sur Android, Android System WebView peut aussi inclure l'identifiant de l'app (dev.eivil.mobile) dans les requêtes. Les recherches sont envoyées au moteur choisi dans Réglages. Le moteur par défaut dépend de la région de l'appareil (Google dans la plupart des régions, NAVER en Corée, Baidu en Chine continentale) et peut être modifié dans Réglages. Ces tiers traitent ces informations selon leurs propres politiques de confidentialité.",
+      "Eivil se connecte aux adresses que vous saisissez ou sélectionnez. Lorsque vous ouvrez une page, son adresse, votre adresse réseau et les informations de requête standard du navigateur peuvent être envoyées au site ; sur Android, Android System WebView peut aussi inclure l'identifiant de l'app (dev.eivil.mobile) dans les requêtes. Les recherches sont envoyées au moteur choisi dans Réglages. Le moteur par défaut dépend de la région de l'appareil (Google dans la plupart des régions, NAVER en Corée, Baidu en Chine continentale) et peut être modifié dans Réglages. Lorsque Suggestions de recherche est activé (par défaut), le texte saisi dans la barre d’adresse est envoyé au moteur choisi pendant la saisie, pour afficher des suggestions. Cela ne fonctionne qu’avec NAVER, Yahoo! JAPAN et DuckDuckGo ; les adresses web et le texte saisi dans un onglet privé ne sont jamais envoyés. Vous pouvez le désactiver dans Réglages > Moteur de recherche. Ces tiers traitent ces informations selon leurs propres politiques de confidentialité.",
     'eivilPrivacy.sharing.title': 'Partage et presse-papiers',
     'eivilPrivacy.sharing.body':
       "Le partage transmet l'adresse choisie au menu de partage de l'appareil. Coller lit le texte du presse-papiers sur votre appareil lorsque vous choisissez cette action. Eivil n'envoie pas ces informations au développeur.",
@@ -2186,7 +2186,7 @@ const EIVIL_PRIVACY_TRANSLATIONS = {
     'eivilPrivacy.contact.title': 'Contact',
     'eivilPrivacy.contact.body': 'Envoyez-nous un e-mail pour toute question concernant cette politique.',
     'eivilPrivacy.updated':
-      "Date d'entrée en vigueur : 25 novembre 2026",
+      "Date d'entrée en vigueur : 28 novembre 2026",
     'eivilPrivacy.backCta': 'Retour à Eivil',
   },
   es: {
@@ -2226,7 +2226,7 @@ const EIVIL_PRIVACY_TRANSLATIONS = {
       'En Android, si la copia de seguridad del dispositivo está activada, tus pestañas abiertas, historial, marcadores y ajustes pueden incluirse en la copia de seguridad y en la transferencia a un dispositivo nuevo. Las cookies, que guardan tus sesiones iniciadas, y otros datos de sitios quedan excluidos. Puedes desactivar la copia de seguridad en los ajustes del dispositivo, y el desarrollador no tiene acceso a su contenido.',
     'eivilPrivacy.network.title': 'Conexiones a Internet y sitios de terceros',
     'eivilPrivacy.network.body':
-      'Eivil se conecta a las direcciones que escribes o seleccionas. Al abrir una página, su dirección, tu dirección de red y la información estándar de solicitud del navegador pueden enviarse al sitio; en Android, Android System WebView también puede incluir el identificador de la app (dev.eivil.mobile) en las solicitudes. Las búsquedas se envían al proveedor elegido en Ajustes. El predeterminado depende de la región del dispositivo (Google en la mayoría de las regiones, NAVER en Corea, Baidu en China continental) y puedes cambiarlo en Ajustes. Esos terceros tratan la información según sus propias políticas de privacidad.',
+      'Eivil se conecta a las direcciones que escribes o seleccionas. Al abrir una página, su dirección, tu dirección de red y la información estándar de solicitud del navegador pueden enviarse al sitio; en Android, Android System WebView también puede incluir el identificador de la app (dev.eivil.mobile) en las solicitudes. Las búsquedas se envían al proveedor elegido en Ajustes. El predeterminado depende de la región del dispositivo (Google en la mayoría de las regiones, NAVER en Corea, Baidu en China continental) y puedes cambiarlo en Ajustes. Con Sugerencias de búsqueda activado (opción predeterminada), lo que escribes en la barra de direcciones se envía al proveedor elegido mientras escribes, para mostrar sugerencias. Solo funciona con NAVER, Yahoo! JAPAN y DuckDuckGo; las direcciones web y el texto escrito en pestañas privadas nunca se envían. Puedes desactivarlo en Ajustes > Motor de búsqueda. Esos terceros tratan la información según sus propias políticas de privacidad.',
     'eivilPrivacy.sharing.title': 'Compartir y portapapeles',
     'eivilPrivacy.sharing.body':
       'Compartir pasa la dirección seleccionada al menú de compartir del dispositivo. Pegar lee el texto del portapapeles en tu dispositivo cuando eliges esa acción. Eivil no envía esta información al desarrollador.',
@@ -2249,7 +2249,7 @@ const EIVIL_PRIVACY_TRANSLATIONS = {
     'eivilPrivacy.contact.title': 'Contacto',
     'eivilPrivacy.contact.body': 'Envíanos un correo si tienes preguntas sobre esta Política de privacidad.',
     'eivilPrivacy.updated':
-      'Fecha de entrada en vigor: 25 de noviembre de 2026',
+      'Fecha de entrada en vigor: 28 de noviembre de 2026',
     'eivilPrivacy.backCta': 'Volver a Eivil',
   },
 };
